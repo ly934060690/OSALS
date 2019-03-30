@@ -1,0 +1,10 @@
+package edu.zut.cs.software.admin.service;
+
+public class TestLog {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

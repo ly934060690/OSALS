@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+
+<log4j:configuration debug="false"
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<!-- ====== Appenders ===== -->
+	<appender name="Console" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d [%t] %-5p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="DefaultFileAppender"
+		class="org.apache.log4j.RollingFileAppender">
+		<!-- absolute path to log file -->
+		<param name="File" value="${log4e_log_path}/log4e.log" />
+		<!-- setting this to false will cause the file to be truncated with each restart -->
+		<param name="Append" value="true" />
+		<!-- MaxFileSize -->
+		<param name="MaxFileSize" value="2000KB" />
+		<!-- Oldest file will be deleted if more than n files were generated -->
+		<param name="MaxBackupIndex" value="2" />
+		<!-- the date format to use when rolling -->
+		<!--<param name="datePattern" value="'.'yyyy-MM-dd" />-->
+		<!-- Layout -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d [%t] %-5p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- ====== Categories ===== -->
+
+	<category name="de.jayefem" additivity="true">
+		<priority value="error" />
+	</category>
+
+	<!-- The root category -->
+	<root>
+		<priority value="error" />
+		<!-- <appender-ref ref="Console"/> -->
+		<appender-ref ref="DefaultFileAppender" />
+	</root>
+</log4j:configuration>

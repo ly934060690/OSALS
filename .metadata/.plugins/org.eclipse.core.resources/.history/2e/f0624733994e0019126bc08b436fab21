@@ -1,0 +1,12 @@
+package Impl;
+
+import edu.zut.cs.software.admin.service.Login;
+
+public class LogImpl implements Login {
+
+	public void login() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

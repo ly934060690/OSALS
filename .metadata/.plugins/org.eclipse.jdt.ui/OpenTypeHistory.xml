@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Demo-Maven/D:\/Java\/JDK\/jre\/lib\/rt.jar&lt;org.omg.CORBA(UserException.class[UserException" modifiers="1057" timestamp="1533702523483"/>
+<typeInfo handle="=sun-service/D:\/Java\/JDK\/jre\/lib\/rt.jar&lt;org.w3c.dom(UserDataHandler.class[UserDataHandler" modifiers="1537" timestamp="1533702523483"/>
+<typeInfo handle="=sun-service/src\/main\/java&lt;edu.zut.cs.software.admin.service{UserManager.java[UserManager" modifiers="513" timestamp="1552874770426"/>
+<typeInfo handle="=sun-service/D:\/Java\/repo\/org\/springframework\/spring-core\/5.1.5.RELEASE\/spring-core-5.1.5.RELEASE.jar&lt;org.springframework.cglib.proxy(MethodInterceptor.class[MethodInterceptor" modifiers="1537" timestamp="1551873426358"/>
+<typeInfo handle="=sun-service/D:\/Java\/JDK\/jre\/lib\/rt.jar&lt;java.lang.invoke(MethodHandleInfo.class[MethodHandleInfo" modifiers="1537" timestamp="1533702523483"/>
+<typeInfo handle="=sun-service/src\/main\/java&lt;edu.zut.cs.software.admin.service{Login.java[Login" modifiers="513" timestamp="1553475460728"/>
+</typeInfoHistroy>

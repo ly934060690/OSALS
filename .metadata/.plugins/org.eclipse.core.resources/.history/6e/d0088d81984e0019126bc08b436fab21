@@ -1,0 +1,5 @@
+package edu.zut.cs.software.admin.Advice;
+
+public class LogAdvice {
+
+}
