@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/superior.iml" filepath="$PROJECT_DIR$/superior.iml" />
+      <module fileurl="file://$PROJECT_DIR$/superior-service/superior-service.iml" filepath="$PROJECT_DIR$/superior-service/superior-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/superior-web/superior-web.iml" filepath="$PROJECT_DIR$/superior-web/superior-web.iml" />
+    </modules>
+  </component>
+</project>
