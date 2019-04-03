@@ -1,7 +1,6 @@
 package demo;
 
 
-    final static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 
 
 import java.sql.DriverManager;
