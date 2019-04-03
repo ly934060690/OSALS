@@ -1,0 +1,8 @@
+创建bean对象的三种方式
+    1.使用默认构造函数创建
+        <bean id = "accountService" class = "com.itheima.service.impl.AccountServiceImpl"></bean>
+    2.使用普通工厂中的方法创建对象（使用某个类中的方法创建对象，并存入spring容器）
+        <bean id = "instanceFactory" class = "com.itheima.factory.InstanceFactory"></bean>
+        <bean id = "accountService" factory-bean="instanceFactory" factory-method="getAccountService"></bean>
+    3.适用工厂中的静态方法创建对象（适用某个类中的静态方法创建对象，并存入到spring容器）
+        <bean id = "accountService" class = "com.itheima.factory.staticFactory" factory-method="getAccountService"></bean>
