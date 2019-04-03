@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hyh.www</groupId>
+  <artifactId>ExcelDemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-core -->
+<dependency>
+    <groupId>org.apache.activemq</groupId>
+    <artifactId>activemq-core</artifactId>
+    <version>5.7.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-nop</artifactId>
+   <version>1.7.2</version>
+</dependency>
+   
+   <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.15</version>
+</dependency>
+   
+  </dependencies>
+</project>
