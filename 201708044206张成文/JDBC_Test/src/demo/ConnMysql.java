@@ -2,16 +2,17 @@ package demo;
 
 import java.sql.*;
 
-public class test_class {
-    public static  void main(String[] args)
+public class ConnMysql {
+    public  static  void main(String [] args)
     {
-        String url = "jdbc:mysql://202.196.37.168:3306/dream";
-        String username = "student",password = "Student_123456";
-        Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(url,username,password);
-            Statement stmt = con.createStatement();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:mysql://202.196.37.168:3306/dream","student","Student_123456");
+            Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("select *from T_STUDENT order by CODE");
             while(rs.next())
             {
@@ -25,17 +26,8 @@ public class test_class {
                 rs.close();
                 stmt.close();
             }
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
-        finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
