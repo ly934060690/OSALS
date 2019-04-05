@@ -12,7 +12,10 @@ import edu.zut.cs.software.service.impl.AccountServiceImpl;
 public class Client {
     public static void main(String[] args) {
 //        AccountService accountService = new AccountServiceImpl();
-        AccountService accountService = (AccountService) BeanFactory.getBean("accountService");
-        accountService.saveAccount();
+        for(int i = 0; i <5; i++) {
+            AccountService accountService = (AccountService) BeanFactory.getBean("accountService");
+            System.out.println(accountService);
+            accountService.saveAccount();
+        }
     }
 }
