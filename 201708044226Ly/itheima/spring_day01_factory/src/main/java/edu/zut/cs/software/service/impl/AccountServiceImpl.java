@@ -11,8 +11,15 @@ import edu.zut.cs.software.service.AccountService;
 public class AccountServiceImpl implements AccountService {
 
 //    private AccountDao accountDao = new AccountDaoImpl();
+
     private AccountDao accountDao = (AccountDao) BeanFactory.getBean("accountDao");
+
+//    private int i = 1;
+
     public void saveAccount() {
+        int i = 1;
         accountDao.saveAccount();
+        System.out.println(i);
+        i++;
     }
 }
