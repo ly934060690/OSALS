@@ -1,6 +1,8 @@
 package com.zcw.service.ui;
 
 import com.zcw.service.AccountService;
+import com.zcw.service.dao.AccountDao;
+import com.zcw.service.factory.BeanFactory;
 import com.zcw.service.impl.AccountServiceImpl;
 
 /**
@@ -9,7 +11,8 @@ import com.zcw.service.impl.AccountServiceImpl;
 public class Client {
 
     public static void main(String[] args) {
-        AccountService as = new AccountServiceImpl();
+        //AccountService as = new AccountServiceImpl();
+        AccountService as = (AccountService) BeanFactory.getBean("accountService");
         as.saveAccount();
     }
 

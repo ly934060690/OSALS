@@ -7,5 +7,5 @@ public interface AccountDao {
     /**
      * 模拟保存账户
      */
-    void savaAccount();
+    void saveAccount();
 }
