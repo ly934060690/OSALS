@@ -1,7 +1,7 @@
 package edu.zut.cs.software.Tcp.Server;
 
 import edu.zut.cs.software.ActiveMQ.topic.ActiveMq_Topic_Consumer;
-import edu.zut.cs.software.ActiveMQ.topic.ActiverMq_Topic_Consumer_Demo;
+import edu.zut.cs.software.ActiveMQ.topic.ActiveMq_Topic_Consumer_Demo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.net.Socket;
 public class TcpServerThread_Send extends Thread {
 
     private Socket socket;
-    private String queueName;
+    private String activeMQ_Name;
     private BufferedReader reader;
     private PrintWriter writer;
 
@@ -27,20 +27,20 @@ public class TcpServerThread_Send extends Thread {
             reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             writer = new PrintWriter(socket.getOutputStream(),true);
 
-            queueName = reader.readLine();
-            System.out.println(queueName);
+            activeMQ_Name = reader.readLine();
+            System.out.println(activeMQ_Name);
 
             System.out.println("TcpServerThread_Send客户端信息接收："+ reader.readLine());
 
             /*
             ActiverMq_Consumer_Demo activerMq_consumer_demo = new ActiverMq_Consumer_Demo(socket);
             activerMq_consumer_demo.init();
-            new Thread(new ActiveMq_Consumer().new Consumer(activerMq_consumer_demo, queueName)).start();
+            new Thread(new ActiveMq_Consumer().new Consumer(activerMq_consumer_demo, activeMQ_Name)).start();
             */
-            ActiverMq_Topic_Consumer_Demo activerMq_topic_consumer_demo = new ActiverMq_Topic_Consumer_Demo(socket);
-            activerMq_topic_consumer_demo.init();
+            ActiveMq_Topic_Consumer_Demo activeMq_topic_consumer_demo = new ActiveMq_Topic_Consumer_Demo(socket);
+            activeMq_topic_consumer_demo.init();
             ActiveMq_Topic_Consumer activeMq_topic_consumer = new ActiveMq_Topic_Consumer();
-            new Thread(activeMq_topic_consumer.new Consumer(activerMq_topic_consumer_demo, queueName)).start();
+            new Thread(activeMq_topic_consumer.new Consumer(activeMq_topic_consumer_demo, activeMQ_Name)).start();
 
             /*
             Integer Number = Operation.getNumber();

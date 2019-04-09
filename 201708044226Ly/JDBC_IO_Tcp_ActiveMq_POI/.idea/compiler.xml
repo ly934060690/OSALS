@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JDBC_IO_Tcp_ActiveMQ_POI" target="1.5" />
+      <module name="JDBC_IO_Tcp_ActiveMQ_POI" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

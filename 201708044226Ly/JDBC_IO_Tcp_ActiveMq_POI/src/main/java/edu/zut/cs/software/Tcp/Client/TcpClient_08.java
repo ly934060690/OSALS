@@ -8,14 +8,14 @@ public class TcpClient_08 {
 
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("请输入您要生产的ActiveMQQueueName：");
-        String queueName1 = scanner.nextLine();
+        System.out.print("请输入您要生产的ActiveMQ_TopicName：");
+        String activeMQ_Name1 = scanner.nextLine();
 
-        System.out.print("请输入您要消费的ActiveMQQueueName：");
-        String queueName2 = scanner.nextLine();
+        System.out.print("请输入您要消费的ActiveMQ_TopicName：");
+        String activeMQ_Name2 = scanner.nextLine();
 
-        TcpClientChatThread_Send tcpClientChatThread_send = new TcpClientChatThread_Send(queueName1);
-        MyTcpClientThread_Listen myTcpClientThread_listen = new MyTcpClientThread_Listen(queueName2, 8);
+        TcpClientChatThread_Send tcpClientChatThread_send = new TcpClientChatThread_Send(activeMQ_Name1);
+        MyTcpClientThread_Listen myTcpClientThread_listen = new MyTcpClientThread_Listen(activeMQ_Name2, 8);
         tcpClientChatThread_send.start();
 //        myTcpClientThread_send.start();
         try {
