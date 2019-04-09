@@ -13,13 +13,13 @@ public class MyTcpClientThread_Listen extends Thread {
     private PrintWriter writer;
     private BufferedReader reader;
     private Socket socket;
-    private String queueName;
+    private String activeMQ_Name;
     private Integer integer;
 
 
-    public MyTcpClientThread_Listen(String queueName, Integer integer) {
+    public MyTcpClientThread_Listen(String activeMQ_Name, Integer integer) {
         super();
-        this.queueName = queueName;
+        this.activeMQ_Name = activeMQ_Name;
         this.integer = integer;
     }
 
@@ -40,7 +40,7 @@ public class MyTcpClientThread_Listen extends Thread {
             queueName = scanner.nextLine();
 */
 
-            writer.println(queueName);
+            writer.println(activeMQ_Name);
 
             writer.println("你好，来自MyTcpClient_Listen的连接");
 

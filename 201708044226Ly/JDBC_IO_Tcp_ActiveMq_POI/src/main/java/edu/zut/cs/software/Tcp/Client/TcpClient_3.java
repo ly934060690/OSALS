@@ -15,7 +15,7 @@ public class TcpClient_3 {
     private PrintWriter writer;
     private BufferedReader reader;
     private Socket socket;
-    private String queueName;
+    private String activeMQ_Name;
     public void connect(){
         System.out.println("尝试连接");
         try{
@@ -28,8 +28,8 @@ public class TcpClient_3 {
 
             Scanner scanner = new Scanner(System.in);
             System.out.print("请输入您要消费的ActiveMQQueueName：");
-            queueName = scanner.nextLine();
-            writer.println(queueName);
+            activeMQ_Name = scanner.nextLine();
+            writer.println(activeMQ_Name);
             writer.println("你好，来自TcpClient_3的连接");
             getserverMessage();
         }catch(Exception e){
