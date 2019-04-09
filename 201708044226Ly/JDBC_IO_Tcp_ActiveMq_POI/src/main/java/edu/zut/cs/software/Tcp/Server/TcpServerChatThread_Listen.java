@@ -18,7 +18,7 @@ public class TcpServerChatThread_Listen extends Thread {
     private Socket socket;
     private BufferedReader reader;
     private PrintWriter writer;
-    private String queueName;
+    private String activeMQ_Name;
 
     public TcpServerChatThread_Listen(Socket socket) {
         super();
@@ -38,9 +38,9 @@ public class TcpServerChatThread_Listen extends Thread {
             activeMq_topic_producter_demo.init();
 
             System.out.println("TcpServerThread_Listen_OK!");
-            queueName = reader.readLine();
+            activeMQ_Name = reader.readLine();
 
-            System.out.println("queueName:" + queueName);
+            System.out.println("activeMQ_Name:" + activeMQ_Name);
             while(true) {
 
                 String message = reader.readLine();
@@ -50,9 +50,9 @@ public class TcpServerChatThread_Listen extends Thread {
                 Operation.insert(new Message(message, date));
                 System.out.println("TcpServerThread_Listen客户端信息接收："+ message);
 //                ActiveMq_Producter activeMq_producter = new ActiveMq_Producter();
-//                new Thread(activeMq_producter.new Productor(activeMq_producter_demo, queueName, message + " (" + date + ") ")).start();
+//                new Thread(activeMq_producter.new Productor(activeMq_producter_demo, activeMQ_Name, message + " (" + date + ") ")).start();
                 ActiveMq_Topic_Producter activeMq_topic_producter = new ActiveMq_Topic_Producter();
-                new Thread(activeMq_topic_producter.new Productor(activeMq_topic_producter_demo, queueName, message + " (" + date + ") ")).start();
+                new Thread(activeMq_topic_producter.new Productor(activeMq_topic_producter_demo, activeMQ_Name, message + " (" + date + ") ")).start();
             }
 
         } catch (IOException e) {

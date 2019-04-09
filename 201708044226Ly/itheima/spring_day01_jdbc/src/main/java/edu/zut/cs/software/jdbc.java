@@ -22,7 +22,7 @@ public class jdbc {
 //        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
             Class.forName("com.mysql.jdbc.Driver");
             //2、获取连接
-            Connection connection = DriverManager.getConnection("jdbc:mysql://202.196.37.168:3306/test", "student", "Student_123456");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://202.196.37.168:3306/stars", "student", "Student_123456");
             //3、获取操作数据库的预处理对象
             PreparedStatement preparedStatement = connection.prepareStatement("select * from student");
             //4、执行SQL,得到结果集

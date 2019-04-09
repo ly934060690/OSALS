@@ -9,7 +9,7 @@ public class Writer {
     public static void Write_Tcp_Client(String string, Integer integer) {
         try {
             PrintWriter printWriter =
-                    new PrintWriter(new FileWriter("D:/Java/Java_Practice__SC/JDBC_IO_Tcp_ActiveMq_Demo/src/main/java/edu/zut/cs/software/TxtTcp_Client_" + integer + "_Txt", true));
+                    new PrintWriter(new FileWriter("D:/Java/Java_Practice__SC/JDBC_IO_Tcp_ActiveMQ_POI/src/main/java/edu/zut/cs/software/Txt/Tcp_Client_" + integer + "_Txt", true));
             /*
             printWriter.append("1");
             printWriter.append("2");

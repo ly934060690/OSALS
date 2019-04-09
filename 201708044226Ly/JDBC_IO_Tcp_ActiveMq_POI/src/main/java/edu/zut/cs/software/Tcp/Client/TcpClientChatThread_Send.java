@@ -8,11 +8,11 @@ import java.util.Scanner;
 public class TcpClientChatThread_Send extends Thread {
 
     private PrintWriter writer;
-    private String queueName;
+    private String activeMQ_Name;
     Socket socket;
 
-    public TcpClientChatThread_Send(String queueName) {
-        this.queueName = queueName;
+    public TcpClientChatThread_Send(String activeMQ_Name) {
+        this.activeMQ_Name = activeMQ_Name;
     }
 
     @Override
@@ -39,7 +39,7 @@ public class TcpClientChatThread_Send extends Thread {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        writer.println(queueName);
+        writer.println(activeMQ_Name);
         writer.println("你好，来自TcpClientChat_Send的连接");
 
         while(true) {
