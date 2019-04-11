@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="apidocs">
+    <CLASSES />
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../maven-Repository/c3p0-0.9.5.2/doc/apidocs" />
+      <root url="file://$PROJECT_DIR$/../../maven-Repository/c3p0-0.9.5.2/doc/apidocs-oracle-thin" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../maven-Repository/c3p0-0.9.5.2/examples" />
+    </SOURCES>
+  </library>
+</component>
