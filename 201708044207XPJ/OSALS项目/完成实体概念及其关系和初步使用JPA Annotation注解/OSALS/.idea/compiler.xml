@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="OSALS-dao" />
+        <module name="OSALS-service" />
         <module name="OSALSdao" />
         <module name="OSALSservice" />
       </profile>
