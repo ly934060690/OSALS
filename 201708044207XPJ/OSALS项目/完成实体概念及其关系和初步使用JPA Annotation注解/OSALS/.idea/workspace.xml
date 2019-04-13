@@ -2,44 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d594ec6e-d2e8-4b1f-bcac-eeaf2234bde4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/GroupDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/GroupManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/UserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/impl/GroupManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/impl/UserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/mysql_connector_java_5_1_30_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test/src/JDBCTest/Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_002factury/day01_eesy_02_factury.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_01jdbc/day01_eesy_01_jdbc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_03Spring/instruction" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_03Spring/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/instruction" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/src/main/java/com/itheima/factory/InstanceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/src/main/java/com/itheima/factory/staticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_05DI/src/main/java/com/itheima/service/impl/AccountServiceImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day01_eesy_05DI/src/main/java/com/itheima/service/impl/AccountServiceImpl3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/src/main/java/com/itheima/dao/impl/AccountDaoImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/dao/impl/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/test/java/com/itheima/test/AccountServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,25 +21,7 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/impl/GroupManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/GroupManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/UserManager.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OSALS-dao/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="405">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -113,8 +61,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="297">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OSALS.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -131,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="405">
               <caret line="16" column="28" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -148,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="621">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,7 +138,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -184,6 +150,13 @@
         <option value="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Group.java" />
         <option value="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/User.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -199,8 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,220 +208,31 @@
             <path>
               <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
               <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
               <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="zut" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554901308114" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4154762" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -475,28 +257,26 @@
       <option name="presentableId" value="Default" />
       <updated>1554895173414</updated>
       <workItem from="1554895175194" duration="3632000" />
+      <workItem from="1554996571538" duration="103000" />
+      <workItem from="1554996716307" duration="44000" />
+      <workItem from="1555000791941" duration="17000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3632000" />
+    <option name="totallyTimeSpent" value="3796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3507307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37527353" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -504,53 +284,31 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OSALS.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OSALS-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/META-INF/applicationContext-dao.xml.fxml" />
     <entry file="file://$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/impl/GroupManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/impl/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/META-INF/applicationContext-dao.xml.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -568,10 +326,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/impl/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="54">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -584,14 +342,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OSALS-dao/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="405">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="405">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -609,11 +388,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="621">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
         </state>
       </provider>
     </entry>

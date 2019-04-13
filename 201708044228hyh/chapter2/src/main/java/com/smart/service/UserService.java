@@ -10,34 +10,43 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-@Service                      //UserService标注为一个服务层的Bean
+//UserService标注为一个服务层的Bean
+
+@Service
 public class UserService {
     private UserDao userDao;
     private LoginLogDao loginLogDao;
 
-    @Autowired                //自动装配Bean
+    //自动装配Bean
+
+    @Autowired
     public void setUserDao(UserDao userDao){
         this.userDao=userDao;
     }
 
-    @Autowired                //自动装配Bean
+    //自动装配Bean
+
+    @Autowired
     public void setLoginLogDao(LoginLogDao loginLogDao){
         this.loginLogDao=loginLogDao;
     }
 
     //检查用户名/密码的正确性
-    public boolean hasMathchUser(String userName,String password){
+
+    public boolean hasMatchUser(String userName,String password){
         int mathchCount=userDao.getMatchCount(userName,password);
         return mathchCount>0;
     }
 
     //以用户名为条件加载User对象
-    public User findUserByUser(String username){
+
+    public User findUserByUserName(String username){
         return userDao.findUserByUserName(username);
     }
 
     //用户登录成功则调用，事务性数据操作，更新登录时间和ip，Transaction事务注解
-    @Transactional
+
+    @Transactional("transactionManager")
     public void loginSuccess(User user){
         user.setCredits(5+user.getCredits());
 

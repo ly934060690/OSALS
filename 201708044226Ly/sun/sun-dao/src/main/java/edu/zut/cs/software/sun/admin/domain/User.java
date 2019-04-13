@@ -1,11 +1,25 @@
 package edu.zut.cs.software.sun.admin.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
 import edu.zut.cs.software.sun.admin.dao.UserDao;
 
+@Table(name = "T_ADMIN_USER")
+@Entity
 public class User implements UserDao {
 	
+	@Column(name = "id")
 	private String id;
+	
+	@Column(name = "name")
 	private String name;
+	
+	@ManyToOne
+	@JoinColumn(name = "GROUP")
 	private Group group;
 	
 	
