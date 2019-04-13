@@ -39,14 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/zut/cs/software/mybatis/bean/EmployeeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="225">
+              <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zut/cs/software/mybatis/dao/EmployeeMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -69,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="324">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -97,6 +106,7 @@
         <option value="Tag Library Descriptor" />
         <option value="MyXml" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -112,10 +122,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zut/cs/software/mybatis/bean/Employee.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/zut/cs/software/mybatis/bean/EmployeeTest1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/zut/cs/software/mybatis/bean/EmployeeTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zut/cs/software/mybatis/dao/EmployeeMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/EmployeeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/zut/cs/software/mybatis/bean/EmployeeTest.java" />
       </list>
     </option>
   </component>
@@ -132,7 +143,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -175,7 +186,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyBatis" type="b2602c69:ProjectViewProjectNode" />
@@ -218,7 +238,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555139348347" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555171093804" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java_Practice__SC/itheima/spring_day01_jdbc" />
@@ -249,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeTest">
+  <component name="RunManager" selected="JUnit.EmployeeTest.test01">
     <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatis" />
       <extension name="coverage">
@@ -312,7 +332,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTest.testSetLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatis" />
       <extension name="coverage">
         <pattern>
@@ -322,7 +342,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.zut.cs.software.mybatis.bean" />
       <option name="MAIN_CLASS_NAME" value="edu.zut.cs.software.mybatis.bean.EmployeeTest" />
-      <option name="METHOD_NAME" value="testSetLastName" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -330,11 +350,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeTest.test01" />
         <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="JUnit.EmployeeTest.test" />
         <item itemvalue="JUnit.EmployeeTest1.test" />
         <item itemvalue="JUnit.EmployeeTest1" />
-        <item itemvalue="JUnit.EmployeeTest.testSetLastName" />
       </list>
     </recent_temporary>
   </component>
@@ -353,20 +373,11 @@
       <workItem from="1555127204000" duration="307000" />
       <workItem from="1555127536488" duration="266000" />
       <workItem from="1555127831289" duration="4723000" />
-      <workItem from="1555138197297" duration="1134000" />
+      <workItem from="1555138197297" duration="6296000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmployeeTest - 2019.04.13 at 14h 57m 09s.xml">
-      <configuration name="EmployeeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeTest_test - 2019.04.13 at 14h 58m 01s.xml">
-      <configuration name="EmployeeTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeTest - 2019.04.13 at 14h 58m 24s.xml">
-      <configuration name="EmployeeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EmployeeTest - 2019.04.13 at 14h 58m 37s.xml">
       <configuration name="EmployeeTest" configurationId="JUnit" />
     </history-entry>
@@ -388,25 +399,34 @@
     <history-entry file="EmployeeTest - 2019.04.13 at 15h 08m 01s.xml">
       <configuration name="EmployeeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EmployeeTest - 2019.04.13 at 15h 08m 57s.xml">
+      <configuration name="EmployeeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeTest_test01 - 2019.04.13 at 23h 48m 33s.xml">
+      <configuration name="EmployeeTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeTest_test01 - 2019.04.13 at 23h 49m 24s.xml">
+      <configuration name="EmployeeTest.test01" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10789000" />
+    <option name="totallyTimeSpent" value="15951000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20678337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32703003" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3269663" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.41490546" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.63595504" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -469,16 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/zut/cs/software/mybatis/bean/EmployeeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -502,8 +512,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="324">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zut/cs/software/mybatis/dao/EmployeeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/zut/cs/software/mybatis/bean/EmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

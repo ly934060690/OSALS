@@ -4,10 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="edu.zut.cs.software.mybatis.EmployeeMapper">
+<mapper namespace="edu.zut.cs.software.mybatis.dao.EmployeeMapper">
 
 
-    <select id="selectEmp" resultType="edu.zut.cs.software.mybatis.bean.Employee">
+    <select id="getEmpById" resultType="edu.zut.cs.software.mybatis.bean.Employee">
       select id,last_name lastName,gender,email from tbl_employee where id = #{id}
     </select>
 </mapper>
