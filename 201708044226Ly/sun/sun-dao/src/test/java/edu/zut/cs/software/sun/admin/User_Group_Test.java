@@ -1,10 +1,13 @@
 package edu.zut.cs.software.sun.admin;
 
+import org.junit.Test;
+
 import edu.zut.cs.software.sun.admin.domain.Group;
 import edu.zut.cs.software.sun.admin.domain.User;
 
 public class User_Group_Test {
 
+	@Test
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		User u1 = new User("01", "user01");

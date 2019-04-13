@@ -1,13 +1,35 @@
 package edu.zut.cs.software.sun.admin.domain;
 
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
 import edu.zut.cs.software.sun.admin.dao.GroupDao;
 
+@Table(name = "T_ADMIN_GROUP")
+@Entity
+@NamedQueries({ @NamedQuery(name = "Group.getRoot", query = "select g from Group g where g.parent is null") })
 public class Group implements GroupDao {
 	
+	@Column(name = "id")
 	private String id;
+	
+	@Column(name = "name")
 	private String name;
+	
+	
 	private User[] user;
 	private Group[] group;
+	
+	@OneToMany(mappedBy = "group", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+	Set<User> users;
 	
 	public Group() {
 		super();
