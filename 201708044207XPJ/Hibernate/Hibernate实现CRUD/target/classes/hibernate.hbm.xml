@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <!--创建实体类与数据库表格见得映射-->
+    <class name="zut.edu.cs.dao.Customer" table="Customer_message" catalog="mysql">
+        <!--建立类中的属性与表中的主键对应-->
+        <id name="cust_id" column="c_id">
+            <!--由Hibernate根据底层数据库自行判断采用identity、hilo、sequence
+其中一种作为主键生成方式-->
+            <generator class="native"></generator>
+        </id>
+        <!--建立类中的普通属性和表中字段的对应-->
+        <property name="cust_name" column="c_name" length="20" not-null="true"></property>
+        <property name="cust_source" column="c_source" length="20"></property>
+        <property name="cust_industry" column="c_industry" length="20"></property>
+        <property name="cust_level" column="c_level" length="20"></property>
+        <property name="cust_phone" column="c_phone" length="20"></property>
+        <property name="cust_mobile" column="c_mobile" length="20"></property>
+<!--
+        	name		：类中的属性名
+        	column		：表中的字段名
+        	length		：长度
+        	type			：类型
+        	not-null		：设置非空
+        	unique		：设置唯一
+-->
+    </class>
+</hibernate-mapping>
