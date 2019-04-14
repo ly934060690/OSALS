@@ -1,5 +1,6 @@
 package edu.zut.cs.software.mybatis.bean;
 
+import edu.zut.cs.software.mybatis.dao.EmployeeMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -13,8 +14,7 @@ import static org.junit.Assert.*;
 
 public class EmployeeTest {
 
-    @Test
-    public void test() {
+    public SqlSessionFactory getSqlSessionFactory() {
         String resource = "mybatis-config.xml";
 
         InputStream inputStream = null;
@@ -23,7 +23,13 @@ public class EmployeeTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        SqlSessionFactory sqlSessionFactory =  new SqlSessionFactoryBuilder().build(inputStream);
+        return new SqlSessionFactoryBuilder().build(inputStream);
+    }
+
+    @Test
+    public void test() {
+
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
 
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
@@ -34,6 +40,22 @@ public class EmployeeTest {
             sqlSession.close();
         }
 
+
+    }
+
+    @Test
+    public void test01() {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        try {
+            EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
+            Employee empById = mapper.getEmpById(1);
+            System.out.println(mapper.getClass());
+            System.out.println(empById);
+        } finally {
+            sqlSession.close();
+        }
 
     }
 
