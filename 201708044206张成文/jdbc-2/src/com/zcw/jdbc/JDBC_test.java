@@ -3,8 +3,10 @@ package com.zcw.jdbc;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.Driver;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -14,10 +16,128 @@ import java.util.Properties;
 import javax.sound.midi.MidiDevice.Info;
 
 import org.junit.Test;
+import org.junit.runner.notification.RunListener.ThreadSafe;
 
 
 
 public class JDBC_test {
+	/**
+	 * 
+	 * 使用PreparedStatement解决SQL注入问题
+	 */
+	@Test
+	public void testSqlInjection2()
+	{
+		String name ="a' or money = ";
+		String money= "or '1'='1";
+		String sql = "select * from account where name=?"+
+				"and money=?";
+		Connection connection=null;
+		PreparedStatement preparedStatement =null;
+		ResultSet resultSet =null;
+		try {
+			connection =JDBC_tools.getconnection();
+			preparedStatement=connection.prepareStatement(sql);
+			preparedStatement.setString(1, name);
+			preparedStatement.setString(2, money);
+			resultSet=preparedStatement.executeQuery();
+			if(resultSet.next())
+			{
+				System.out.println("登录成功");
+			}else{
+				System.out.println("失败");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally
+		{
+			JDBC_tools.release(resultSet, preparedStatement, connection);
+		}
+	}
+	
+	
+	/**
+	 * SQL注入
+	 * 
+	 */
+	@Test
+	public void testSqlInjection()
+	{
+		String name ="a' or money = ";
+		String money= "or '1'='1";
+		String sql = "select * from account where name='"+name
+				+ "'and"+"money='"+money+"'";
+		Connection connection=null;
+		Statement statement =null;
+		ResultSet resultSet =null;
+		try {
+			connection =JDBC_tools.getconnection();
+			statement =connection.createStatement();
+			resultSet=statement.executeQuery(sql);
+			if(resultSet.next())
+			{
+				System.out.println("登录成功");
+			}else{
+				System.out.println("失败");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally
+		{
+			JDBC_tools.release(resultSet, statement, connection);
+		}
+	}
+	
+	
+	
+	/**
+	 * 
+	 * PreparedStatement是Statement的子接口，可以传入带占位符的sql语句，
+	 *  提供了补充占位符变量的方法,还可以防范 SQL注入攻击
+	 * 1)使用Statement 需要进行 sql语句的拼写
+	 * 2)PreparedStatement  
+	 * 1.创建PreparedStatement
+	 * 
+	 * String sql = "insert into account values(?,?,?)";
+	 * PreparedStatement ps = conn.preparedstatement(sql);
+	 * 
+	 * 2.调用preparedstatement的setXXX（int index（索引值从1开始）,Object val）方法
+	 *  设置占位符的值
+	 *  
+	 *  3.执行sql语句 executeQuery（）或executeUpdate（）  执行时不需要传入sql
+	 *  
+	 * 
+	 */
+	
+//	@Test
+//	public void testPreparedStatement()
+//	{
+//		Connection connection= null;
+//		PreparedStatement preparedStatement =null;
+//		try {
+//			connection=JDBC_tools.getconnection();
+//			String sql="insert into account(name,money)"+
+//			"values(?,?)";
+//			/**
+//			 * update(String sql,Object...args(个数可变))
+//			 * for(int i=0;i<args.length;i++)
+//			 * {
+//			 * preparedStatement.setObject(i+1,args[i]);
+//			 * }
+//			 *   
+//			 */
+//			preparedStatement =connection.prepareStatement(sql);
+//			preparedStatement.setString(1, "Mary");
+//			preparedStatement.setInt(2,1000 );
+//			//preparedStatement.setDate(3, new Date(new java.util.Date().getTime()));
+//			preparedStatement.executeUpdate();
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//			e.printStackTrace();
+//		}finally {
+//			JDBC_tools.release(null, preparedStatement, connection);
+//		}
+//	}
 	
 	/**
 	 * 结果集，封装了使用JDBC，进行查询的结果
@@ -37,17 +157,36 @@ public class JDBC_test {
 		Statement statement =null;
 		ResultSet resultSet= null;
 		
-		//1.获取Connection
+		try {
+			
+			
+			//1.获取Connection
+			connection= JDBC_tools.getconnection();
+			//2.获取Statement
+			statement= connection.createStatement();
+			//3.准备sql
+			//String sql = "select id ,name,money from account where id=1";
+			String sql = "select id ,name,money from account ";
+			//4.执行查询得到ResultSet
+			resultSet= statement.executeQuery(sql);
+			//5.处理ResultSet
+			while(resultSet.next())
+			{
+				int id= resultSet.getInt(1);
+				String name = resultSet.getString("name");
+				int money = resultSet.getInt(3);
+				System.out.println(id);
+				System.out.println(name);
+				System.out.println(money);
+			}
+			//6.关闭
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally {
+			JDBC_tools.release(resultSet, statement, connection);
+		}
 		
-		//2.获取Statement
-		
-		//3.准备sql
-		
-		//4.执行查询得到ResultSet
-		
-		//5.处理ResultSet
-		
-		//6.关闭
 	}
 	
 	
