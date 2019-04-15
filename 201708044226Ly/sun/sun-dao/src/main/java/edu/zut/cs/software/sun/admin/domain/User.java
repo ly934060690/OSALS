@@ -1,5 +1,7 @@
 package edu.zut.cs.software.sun.admin.domain;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -56,6 +58,10 @@ public class User implements UserDao {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + "]";
+	}
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
