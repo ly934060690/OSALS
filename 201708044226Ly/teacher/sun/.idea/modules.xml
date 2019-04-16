@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sun.iml" filepath="$PROJECT_DIR$/sun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sun-base/sun-base.iml" filepath="$PROJECT_DIR$/sun-base/sun-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sun-dao/sun-dao.iml" filepath="$PROJECT_DIR$/sun-dao/sun-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sun-service/sun-service.iml" filepath="$PROJECT_DIR$/sun-service/sun-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sun-web/sun-web.iml" filepath="$PROJECT_DIR$/sun-web/sun-web.iml" />
+    </modules>
+  </component>
+</project>
