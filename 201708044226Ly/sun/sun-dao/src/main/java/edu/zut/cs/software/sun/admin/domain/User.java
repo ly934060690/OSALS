@@ -1,71 +1,64 @@
 package edu.zut.cs.software.sun.admin.domain;
 
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import edu.zut.cs.software.sun.admin.dao.UserDao;
+import edu.zut.cs.software.base.domain.BaseEntity;
 
 @Table(name = "T_ADMIN_USER")
 @Entity
-public class User implements UserDao {
-	
-	@Column(name = "id")
-	private String id;
-	
-	@Column(name = "name")
-	private String name;
-	
+public class User extends BaseEntity {
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = -4376674977047164142L;
+
+	@Column(name = "EMAIL")
+	String email;
+
 	@ManyToOne
-	@JoinColumn(name = "GROUP")
-	private Group group;
-	
-	
-	
-	public User() {
-		super();
-		// TODO Auto-generated constructor stub
+	@JoinColumn(name = "GROUP_ID")
+	Group group;
+
+	@Column(name = "PASSWORD")
+	String password;
+	@Column(name = "USERNAME")
+	String username;
+
+	public String getEmail() {
+		return email;
 	}
-	public User(String id, String name) {
-		super();
-		this.id = id;
-		this.name = name;
-	}
-	
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+
 	public Group getGroup() {
 		return group;
 	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public void setGroup(Group group) {
 		this.group = group;
 	}
-	
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", name=" + name + "]";
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public List<User> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
-	
-	
-	
-	
 
 }
