@@ -78,7 +78,7 @@ public class JDBC_test {
 			 			values.put(columnLabel, columnValue);
 			 		}
 			 	}
-			System.out.println(values);
+			//System.out.println(values);
 			
 			Class clazz= Customer.class;
 			Object object = clazz.newInstance();
@@ -87,9 +87,9 @@ public class JDBC_test {
 				String fieldName = entry.getKey();
 				Object fieldValue = entry.getValue();
 				//System.out.println(fieldName+":  "+fieldValue);
-				//ReflectionUtils.setFieldValue(object, fieldName, fieldValue);
+				ReflectionUtils.setFieldValue(object, fieldName, fieldValue);
 			}
-			//System.out.println(object);
+			System.out.println(object);
 			for(int  i= 0;i<resultSetMetaData.getColumnCount();i++)
 			{
 				String columnLabel = resultSetMetaData.getColumnLabel(i+1);
