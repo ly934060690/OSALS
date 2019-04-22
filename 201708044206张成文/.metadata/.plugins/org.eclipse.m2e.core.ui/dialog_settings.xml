@@ -8,6 +8,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="aa"/>
 			<item value="Parent"/>
 			<item value="MakeFriends"/>
 			<item value="WebProjct02"/>
