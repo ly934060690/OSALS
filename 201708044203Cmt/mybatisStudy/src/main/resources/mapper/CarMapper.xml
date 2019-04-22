@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.CarMapper">
+
+    <select id="getCarById" parameterType="Integer" resultType="entity.Car">
+        select id, num, load_capacity from t_car where id = #{id}
+    </select>
+
+    <select id="getCarByNumAndLoad" resultType="entity.Car">
+        select id, num, load_capacity from t_car where num like #{NUM} AND load_capacity = #{LOAD}
+    </select>
+
+    <update id="updateById" parameterType="entity.Car">
+        update t_car set num = #{car.num,jdbcType=VARCHAR} where id = #{car.id}
+    </update>
+    <delete id="deleteCarById" parameterType="Integer">
+            delete  from t_car where id=#{id}
+    </delete>
+    <insert id="insertCar">
+        insert into t_car value (null,#{NUM},#{LOAD})
+    </insert>
+</mapper>

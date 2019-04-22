@@ -1,9 +1,7 @@
 package edu.zut.cs.software.sun.admin.dao;
 
-import java.util.List;
-
+import edu.zut.cs.software.base.dao.GenericDao;
 import edu.zut.cs.software.sun.admin.domain.User;
 
-public interface UserDao {
-	List<User> findAll();
+public interface UserDao extends GenericDao<User, Long> {
 }
