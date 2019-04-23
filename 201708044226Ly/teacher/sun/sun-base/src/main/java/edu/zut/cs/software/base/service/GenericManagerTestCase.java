@@ -1,5 +1,7 @@
 package edu.zut.cs.software.base.service;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
@@ -24,10 +26,8 @@ public abstract class GenericManagerTestCase<PK extends Serializable, T extends 
 	public GenericManagerTestCase(final Class<T> persistentClass) {
 		this.persistentClass = persistentClass;
 	}
-
-	private void assertEquals(T entity2, T foundEntity) {
-		// TODO Auto-generated method stub
-
+	private void assertEntityEquals(T entity, T foundEntity) {
+		assertEquals(entity.getId(), foundEntity.getId());
 	}
 
 	@Before
@@ -44,25 +44,18 @@ public abstract class GenericManagerTestCase<PK extends Serializable, T extends 
 				@SuppressWarnings("unchecked")
 				PK entity_id = (PK) newEntity.getId();
 				T foundEntity = this.manager.findById(entity_id);
-				assertEquals(newEntity, foundEntity);
-
+				assertEntityEquals(newEntity, foundEntity);
 			} catch (InstantiationException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (IllegalArgumentException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (InvocationTargetException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (NoSuchMethodException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (SecurityException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
