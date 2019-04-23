@@ -184,7 +184,11 @@
   <uri name="http://www.w3.org/TR/html4/strict.dtd" uri="jar:file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.eclipse.wst.standard.schemas_1.0.700.v201304171715.jar!/dtds/strict.dtd"/>
   <uri name="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" uri="jar:file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.eclipse.wst.standard.schemas_1.0.700.v201304171715.jar!/xsd/ws-securitypolicy-1.2.xsd"/>
   <uri name="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200802" uri="jar:file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.eclipse.wst.standard.schemas_1.0.700.v201304171715.jar!/xsd/ws-securitypolicy.xsd"/>
-  <system systemId="http://www.w3.org/2001/xml.xsd" uri="jar:file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.eclipse.xsd_2.11.0.v20150806-0404.jar!/cache/www.w3.org/2001/xml.xsd"/>
-  <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.eclipse.xsd_2.11.0.v20150806-0404.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
+  <system systemId="http://www.w3.org/2001/xml.xsd" uri="jar:file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.eclipse.xsd_2.11.0.v20160208-0841.jar!/cache/www.w3.org/2001/xml.xsd"/>
+  <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.eclipse.xsd_2.11.0.v20160208-0841.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
   <uri id="org.w3c.xinclude" name="http://www.w3.org/2001/XInclude" uri="jar:file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.eclipse.wst.xsl.core_1.1.301.v201405151730.jar!/xslt-schemas/xinclude.xsd"/>
+  <public publicId="-//Hibernate/Hibernate Mapping DTD 3.0//EN" uri="file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.hibernate.eclipse.mapper_5.0.1.Final-v20160331-1852-B88/dtd/hibernate-mapping-3.0.dtd" webURL="http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Configuration DTD 3.0//EN" uri="file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.hibernate.eclipse.mapper_5.0.1.Final-v20160331-1852-B88/dtd/hibernate-configuration-3.0.dtd" webURL="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" uri="file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.hibernate.eclipse.mapper_5.0.1.Final-v20160331-1852-B88/dtd/hibernate-reverse-engineering-3.0.dtd"/>
+  <public publicId="-//Red Hat, Inc.//DTD Meta 1.0//EN" uri="file:/D:/JAVA/J2EE For Ecplise/eclipse/plugins/org.jboss.tools.common.model_3.7.1.Final-v20160408-2358-B112/schema/meta.dtd"/>
 </catalog>

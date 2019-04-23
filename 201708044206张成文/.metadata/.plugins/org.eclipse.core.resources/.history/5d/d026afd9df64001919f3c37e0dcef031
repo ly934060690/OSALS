@@ -1,0 +1,5 @@
+package com.zcw.hibernate.hello;
+
+public class News {
+
+}
