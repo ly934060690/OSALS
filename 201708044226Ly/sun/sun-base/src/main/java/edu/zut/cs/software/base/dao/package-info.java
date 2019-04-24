@@ -1,8 +1,7 @@
 /**
+ * Data Access Object (dao) Base Classes
  * 
- */
-/**
- * @author ÑÐ¸ç¸ç
+ * @author liuxiaoming
  *
  */
 package edu.zut.cs.software.base.dao;
