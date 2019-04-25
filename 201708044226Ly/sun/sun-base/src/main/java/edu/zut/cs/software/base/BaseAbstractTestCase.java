@@ -5,9 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 
 /**
- * 
- * @author ÑÐ¸ç¸ç
- *
+ * @author liuxiaoming
  */
 public class BaseAbstractTestCase extends AbstractTransactionalJUnit4SpringContextTests {
     protected Logger logger = LogManager.getLogger(BaseAbstractTestCase.class.getName());

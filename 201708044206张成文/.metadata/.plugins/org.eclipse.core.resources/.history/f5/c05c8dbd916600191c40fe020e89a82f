@@ -1,0 +1,5 @@
+package com.zcw.mybatis.dao;
+
+public interface EmployeeMapperAnnotation {
+
+}

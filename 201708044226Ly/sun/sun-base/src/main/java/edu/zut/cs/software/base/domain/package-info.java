@@ -1,8 +1,10 @@
 /**
- * 
+ * 领域实体基类
+ *
+ * @author liuxiaoming
  */
 /**
- * @author �и��
+ * @author liuxiaoming
  *
  */
 package edu.zut.cs.software.base.domain;

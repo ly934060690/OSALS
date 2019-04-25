@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 1.mybatis可以使用properties来引入外部properties配置文件的内容 resource,引入类路径下的资源 url,引入网络路径或者磁盘路径下的资源 -->
+   
+  <properties resource="dbconfig.properties"></properties>
+	<!-- 2.setting包含很多重要的设置项 name：设置项名 value:设置项取值 -->
+    <settings>
+          <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    
+    <!-- 3.typeAliases 别名处理器 ,为我们的java类型起别名，不区分大小写-->
+    <typeAliases>
+	<!-- typeAlias 为某个java类型起别名 type:指定要起别名的类型全类名，什么都不写，会有一个默认别名,类名的小写：employee 
+		alias指定新的别名 -->
+	<!-- <typeAlias type="com.zcw.mybatis.bean.Employee"/> -->         
+         <!-- package:为某个包下所有类批量起别名
+            name属性指定包名（为当前包以及下面所有后带包的每一个类都起一个默认别名（名字是类名的小写））
+          -->
+         <package name="com.zcw.mybatis.bean"/>
+         <!-- 批量起别名的情况下，使用@Alias注解为某个类型指定别名 -->
+    </typeAliases>
+    
+    <!-- 4.environments  可以配置多种环境 
+           environment:配置一个具体的环境信息(transactionManager、dataSource必须有)
+             transactionManager：事务管理器
+               type：事务管理器的类型 JDBC|MANAGE，还可以自定义实现某个接口
+             datasource:数据源
+               type：数据源类型UNPOOLED|POOLED|JNDI，还可以自定义实现某个接口
+           id:代表当前环境的唯一标识
+               <environment id="test"> 测试人员使用
+               <environment id="development"> 开发人员使用
+           default：默认当前id属性
+    -->
+  <environments default="development">
+    <environment id="test">
+       <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password"  value="${jdbc.password}"/>
+      </dataSource>
+    </environment>
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password"  value="${jdbc.password}"/>
+      </dataSource>
+    </environment>
+  </environments>
+  
+  <!-- 将我们写好的sql映射文件（EmployeeMapper.xml）一定要注册到全局配置文件中（mybatis-confing.xml） -->
+  
+  <!-- 6.mappers:将sql映射注册到全局配置中 -->
+  <mappers>
+  <!-- mapper:注册一个sql映射 
+      resource:引用类路径下
+      url：引用网络路径下或磁盘路径下的资源
+  -->
+    <mapper resource="mybatis/mapper/EmployeeMapper.xml"/>
+  </mappers>
+</configuration>

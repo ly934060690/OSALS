@@ -40,7 +40,7 @@ public class News {
 	}
 	public News()
 	{
-		
+		super();
 	}
 	@Override
 	public String toString() {
