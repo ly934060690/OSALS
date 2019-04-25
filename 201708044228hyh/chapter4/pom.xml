@@ -21,6 +21,12 @@
             <artifactId>spring-beans</artifactId>
             <version>5.1.5.RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.5.RELEASE</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
