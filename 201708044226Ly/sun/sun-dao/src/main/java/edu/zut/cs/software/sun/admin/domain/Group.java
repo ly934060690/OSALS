@@ -14,7 +14,7 @@ import javax.persistence.Table;
 import edu.zut.cs.software.base.domain.BaseTreeEntity;
 
 @Table(name = "T_ADMIN_GROUP")
-@Entity
+//@Entity
 @NamedQueries({ @NamedQuery(name = "Group.getRoot", query = "select g from Group g where g.parent is null") })
 public class Group extends BaseTreeEntity<Group> {
 

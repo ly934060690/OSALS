@@ -26,6 +26,6 @@ public class Car {
     }
 
     public void introduce(){
-        System.out.println("brand:"+brand+"; color:"+color+"; maxspeed:"+maxSpeed);
+        System.out.println("brand:"+brand+"; color:"+color+"; maxSpeed:"+maxSpeed);
     }
 }

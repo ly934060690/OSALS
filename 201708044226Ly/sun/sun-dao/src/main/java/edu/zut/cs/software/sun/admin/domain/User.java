@@ -9,7 +9,7 @@ import javax.persistence.Table;
 import edu.zut.cs.software.base.domain.BaseEntity;
 
 @Table(name = "T_ADMIN_USER")
-@Entity
+//@Entity
 public class User extends BaseEntity {
 
 	/**
