@@ -5,11 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import edu.zut.cs.software.base.domain.BaseEntity;
-import edu.zut.cs.software.star.admin.dao.RoleDao;
 
 @Entity
 @Table(name = "T_ADMIN_ROLE")
-public class Role extends BaseEntity implements RoleDao {
+public class Role extends BaseEntity {
 
 	/**
 	 * 

@@ -1,5 +1,8 @@
 package edu.zut.cs.software.star.admin.dao;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
@@ -13,7 +16,11 @@ import edu.zut.cs.software.star.admin.domain.Role;
 
 
 public class RoleDaoTest {
-
+	/**
+	 * Logger for this class
+	 */
+	private static final Logger logger = LogManager.getLogger(RoleDaoTest.class.getName());
+	/*
 	@Autowired
 	RoleDao roleDao;
 
@@ -27,7 +34,12 @@ public class RoleDaoTest {
 		assertEquals(test_role, result);
 		List<Role> all = this.roleDao.findAll();
 		if (logger.isInfoEnabled()) {
+			logger.info("test() - List<Role> all={}", all); //$NON-NLS-1$
+		}
+
+		if (logger.isInfoEnabled()) {
 			logger.info("test() - List<Role> all size ={}", all.size()); //$NON-NLS-1$
 		}
 	}
+	*/
 }
