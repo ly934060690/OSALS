@@ -8,4 +8,13 @@
           p:brand="红旗CA72"
           p:color="黑色"
           p:maxSpeed="200" />
+    <bean id="car" class="com.smart.Car"
+          init-method="myInit"
+          destroy-method="myDestroy"
+          p:brand="红旗CA72"
+          p:maxSpeed="200"/>
+    <!--工厂后处理器-->
+    <bean id="myBeanPostProcessor" class="com.smart.beanfactory.MyBeanPostProcessor"/>
+    <!--注册Bean后处理器-->
+    <bean id="myBeanFactoryProcessor" class="com.smart.context.MyBeanFactoryPostProcessor"/>
 </beans>
