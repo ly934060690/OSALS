@@ -10,132 +10,6 @@ insert into hibernate_sequence values (;
 
 );
 
-create table T_SHOP (;
-
-ID bigint not null,;
-
-DATECREATED datetime,;
-
-DATEMODIFIED datetime,;
-
-DELETED bit,;
-
-ENTITY_NAME varchar(;
-
-255;
-
-),;
-
-version bigint not null,;
-
-T_SHOP_NAME varchar(;
-
-255;
-
-),;
-
-primary key (;
-
-ID;
-
-);
-
-) engine=InnoDB;
-
-create table hibernate_sequence (;
-
-next_val bigint;
-
-) engine=InnoDB;
-
-insert into hibernate_sequence values (;
-
-1;
-
-);
-
-create table T_SHOP (;
-
-ID bigint not null,;
-
-DATECREATED datetime,;
-
-DATEMODIFIED datetime,;
-
-DELETED bit,;
-
-ENTITY_NAME varchar(;
-
-255;
-
-),;
-
-version bigint not null,;
-
-T_SHOP_NAME varchar(;
-
-255;
-
-),;
-
-primary key (;
-
-ID;
-
-);
-
-) engine=InnoDB;
-
-create table hibernate_sequence (;
-
-next_val bigint;
-
-) engine=InnoDB;
-
-insert into hibernate_sequence values (;
-
-1;
-
-);
-
-create table T_SHOP (;
-
-ID bigint not null,;
-
-DATECREATED datetime,;
-
-DATEMODIFIED datetime,;
-
-DELETED bit,;
-
-ENTITY_NAME varchar(;
-
-255;
-
-),;
-
-version bigint not null,;
-
-T_SHOP_NAME varchar(;
-
-255;
-
-),;
-
-primary key (;
-
-ID;
-
-);
-
-) engine=InnoDB;
-
-create table hibernate_sequence (;
-
-next_val bigint;
-
-) engine=InnoDB;
-
 insert into hibernate_sequence values (;
 
 1;
@@ -242,6 +116,52 @@ primary key (
 
 ) engine=InnoDB;
 
+create table T_Student (;
+
+ID bigint not null,;
+
+DATECREATED datetime,;
+
+DATEMODIFIED datetime,;
+
+DELETED bit,;
+
+ENTITY_NAME varchar(
+	255
+),;
+
+version bigint not null,;
+
+CLASS varchar(
+	255
+),;
+
+GRADE varchar(
+	255
+),;
+
+MAJOR varchar(
+	255
+),;
+
+NAME varchar(
+	255
+),;
+
+SEX varchar(
+	255
+),;
+
+SNO varchar(
+	255
+),;
+
+primary key (
+	ID
+);
+
+) engine=InnoDB;
+
 alter table T_COMMODITY;
 
 add constraint FKndiae9fghfdfd1a3yemmepk2f foreign key (
@@ -265,6 +185,10 @@ references T_SHOP (
 create table hibernate_sequence (
 	next_val bigint
 ) engine=InnoDB;
+
+insert into hibernate_sequence values (
+	 1 
+);
 
 insert into hibernate_sequence values (
 	 1 
@@ -312,6 +236,22 @@ create table T_SHOP (
 	TEXT varchar(255),
 	NAME varchar(255),
 	PARENT_ID bigint,
+	primary key (ID)
+) engine=InnoDB;
+
+create table T_STUDENT (
+	ID bigint not null,
+	DATECREATED datetime,
+	DATEMODIFIED datetime,
+	DELETED bit,
+	ENTITY_NAME varchar(255),
+	version bigint not null,
+	CLASS varchar(255),
+	GRADE varchar(255),
+	MAJOR varchar(255),
+	NAME varchar(255),
+	SEX varchar(255),
+	SNO varchar(255),
 	primary key (ID)
 ) engine=InnoDB;
 
