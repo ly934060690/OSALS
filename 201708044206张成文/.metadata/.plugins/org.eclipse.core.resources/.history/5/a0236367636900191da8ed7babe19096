@@ -1,0 +1,5 @@
+package com.zcw.osals.osals_base.domain;
+
+public class BaseEntity {
+
+}
