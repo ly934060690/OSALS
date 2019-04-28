@@ -10,11 +10,16 @@ id:唯一标识
 resultType:返回值类型
 #{id} : 从传递过来的参数中取出id值
  -->
-	<select id="getEmpById" resultType="com.zcw.mybatis.bean.Employee"> 
+	<select id="getEmpById" resultType="com.zcw.mybatis.bean.Employee"
+	databaseId="mysql"> 
 	     select * from account where id= #{id} 
     </select>
-    <!-- parameter可以省略 -->
-    <insert id="addEmp" parameterType="com.zcw.mybatis.bean.Employee">
+    <!-- parameter可以省略
+    useGeneratedKeys="true"使用自增主键获取主键值策略
+    keyProperty=""指定对应的主键属性，也就是mybatis获取到主键值以后，将这个值封装给javaBean的属性值 
+     -->
+    <insert id="addEmp" parameterType="com.zcw.mybatis.bean.Employee"
+    useGeneratedKeys="true" keyProperty="id" databaseId="mysql">
        insert into account(name,money)
           values(#{name},#{money})
     </insert>

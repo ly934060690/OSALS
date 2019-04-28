@@ -34,8 +34,8 @@
                <environment id="development"> 开发人员使用
            default：默认当前id属性
     -->
-  <environments default="development">
-    <environment id="test">
+  <environments default="dev_mysql">
+    <environment id="dev_mysql">
        <transactionManager type="JDBC"/>
       <dataSource type="POOLED">
         <property name="driver" value="${jdbc.driver}"/>
@@ -54,6 +54,16 @@
       </dataSource>
     </environment>
   </environments>
+  <!-- databaseIdProvider支持多数据库厂商 
+  type="DB_VENDOR":得到数据库厂商的标识，mybatis能根据数据库厂商标识执行不同的sql
+  -->
+  
+  <databaseIdProvider type="DB_VENDOR">
+  
+       <property name="MySQL" value="mysql"/>  
+       <property name="Oracle" value="oracle"/>
+       <property name="SQL Server" value="sql server"/>
+  </databaseIdProvider>
   
   <!-- 将我们写好的sql映射文件（EmployeeMapper.xml）一定要注册到全局配置文件中（mybatis-confing.xml） -->
   
