@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.zut.cs.software.star.admin.dao.RoleDaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.758 s <<< FAILURE! - in edu.zut.cs.software.star.admin.dao.RoleDaoTest
+test(edu.zut.cs.software.star.admin.dao.RoleDaoTest)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.zut.cs.software.star.admin.dao.RoleDaoTest.test(RoleDaoTest.java:31)
+

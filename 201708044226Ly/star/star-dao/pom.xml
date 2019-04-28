@@ -7,11 +7,14 @@
   </parent>
   <artifactId>star-dao</artifactId>
 	<dependencies>
+	
+		<!-- 依赖 base -->
 		<dependency>
 			<groupId>edu.zut.cs.software</groupId>
 			<artifactId>star-base</artifactId>
 			<version>0.0.1-SNAPSHOT</version>			
 		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
