@@ -1,0 +1,5 @@
+package com.zcw.osals.admin.service.impl;
+
+public class UserManagerImpl {
+
+}

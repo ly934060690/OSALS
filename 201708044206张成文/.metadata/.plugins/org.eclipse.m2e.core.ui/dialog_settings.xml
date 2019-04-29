@@ -2,10 +2,15 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.zcw.osals"/>
+			<item value="com.zcw.dao"/>
+			<item value="com.zcw."/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="osals-service"/>
+			<item value="osals-dao"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -69,13 +74,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.zcw.osals.osals_base"/>
 		</list>
 		<list key="groupId">
-			<item value="com.zcw.osals"/>
 		</list>
 		<list key="artifactId">
-			<item value="osals-base"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
