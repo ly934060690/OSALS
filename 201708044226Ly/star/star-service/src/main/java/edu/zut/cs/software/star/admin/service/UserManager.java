@@ -2,7 +2,7 @@ package edu.zut.cs.software.star.admin.service;
 
 import java.util.List;
 
-import edu.zut.cs.software.sun.admin.domain.User;
+import edu.zut.cs.software.star.admin.service.entity.User;
 
 public interface UserManager {
 	

@@ -1,15 +1,3 @@
-drop table if exists hibernate_sequence;
-
-drop table if exists T_SHOP;
-
-drop table if exists hibernate_sequence;
-
-drop table if exists T_SHOP;
-
-drop table if exists hibernate_sequence;
-
-drop table if exists T_SHOP;
-
 alter table T_COMMODITY;
 
 drop foreign key FKndiae9fghfdfd1a3yemmepk2f;
@@ -26,6 +14,8 @@ drop table if exists T_COMMODITY;
 
 drop table if exists T_SHOP;
 
+drop table if exists T_Student;
+
 alter table T_COMMODITY
 	drop foreign key FKndiae9fghfdfd1a3yemmepk2f;
 
@@ -39,4 +29,6 @@ drop table if exists T_ADMIN_ROLE;
 drop table if exists T_COMMODITY;
 
 drop table if exists T_SHOP;
+
+drop table if exists T_STUDENT;
 
