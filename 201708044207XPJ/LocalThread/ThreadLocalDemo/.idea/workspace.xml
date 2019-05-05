@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5445aafc-dd89-49ee-94f5-d8c6e3a48497" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/libraries/c3p0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/libraries/mysql_connector_java_5_1_30_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/libraries/required.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/main/java/zut/edu/cs/dao/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/main/java/zut/edu/cs/hibernate/HiberbateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/main/resources/hibernate.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/test/java/zut/edu/cs/HibernateDem1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/test/java/zut/edu/cs/HibernateDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/OSALSbase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/BaseAbstractTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDaoTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDaoTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/doamin/BaseDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/doamin/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/doamin/BaseTreeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/doamin/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericManagerTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericTreeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericTreeManagerTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/impl/GenericManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/impl/GenericTreeManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/impl/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/OSALSdao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/GoodsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/ShopDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/device/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/resources/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/resources/applicationContextTest-resources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-dao/src/test/java/GroupDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-service/OSALSservice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-web/OSALSweb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSALS/OSALS-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/javadocs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/mysql_connector_java_5_1_30_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/JDBCTest/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/com/zut/edu/User.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/com/zut/edu/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SequenceNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_002factury/day01_eesy_02_factury.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_01jdbc/day01_eesy_01_jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_03Spring/instruction" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_03Spring/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/instruction" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/src/main/java/com/itheima/factory/InstanceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/src/main/java/com/itheima/factory/staticFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_05DI/src/main/java/com/itheima/service/impl/AccountServiceImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_05DI/src/main/java/com/itheima/service/impl/AccountServiceImpl3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/src/main/java/com/itheima/dao/impl/AccountDaoImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/dao/impl/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/test/java/com/itheima/test/AccountServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/sun.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/sun.server/sun.server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/sun.web/sun.web.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SequenceNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+              <folding>
+                <element signature="e#94#103#0" expanded="true" />
+                <element signature="e#150#151#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#828#829#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/SequenceNumber.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="214" />
+    <option name="width" value="968" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ThreadLocalDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ThreadLocalDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThreadLocalDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ThreadLocalDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556456290491" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SequenceNumber">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ThreadLocalDemo" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SequenceNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SequenceNumber" />
+      <module name="ThreadLocalDemo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.SequenceNumber" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SequenceNumber" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5445aafc-dd89-49ee-94f5-d8c6e3a48497" name="Default Changelist" comment="" />
+      <created>1556450646068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556450646068</updated>
+      <workItem from="1556450647637" duration="3206000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3206000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09652928" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36117136" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#64#65#0" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SequenceNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="e#94#103#0" expanded="true" />
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
