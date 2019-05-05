@@ -13,7 +13,7 @@ public class WriterSheet {
         //在内存中创建一个Excel文件
         SXSSFWorkbook workbook = new SXSSFWorkbook();
         //给Excel文件创建一张 Sheet1表
-        Sheet sheet = workbook.createSheet("qq");//table --》下面的Sheet1名
+        Sheet sheet = workbook.createSheet("T_STUDENT");//table --》下面的Sheet1名
         //创建行
         for (int i = 1; i <= 9; i++) {
             Row row; //类似于以前的tr
@@ -26,7 +26,7 @@ public class WriterSheet {
             }
         }
         //文件输出流--》把内存中的excel文件写到磁盘中
-        FileOutputStream fos = new FileOutputStream("D:\\Java\\demos.xls");
+        FileOutputStream fos = new FileOutputStream("D:\\Java\\doc\\demos_01.xls");
         workbook.write(fos);
         fos.close();
     }

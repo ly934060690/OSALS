@@ -1,0 +1,12 @@
+package com.zcw.osals.osals_base.dao;
+
+import java.io.Serializable;
+
+import edu.zut.cs.software.base.dao.GenericDaoTestCase;
+import edu.zut.cs.software.base.dao.GenericTreeDao;
+import edu.zut.cs.software.base.domain.BaseTreeEntity;
+
+public class GenericTreeDaoTestCase<PK extends Serializable, T extends BaseTreeEntity<T>, M extends GenericTreeDao<T, PK>>
+extends GenericDaoTestCase<PK, T, M> {
+
+}

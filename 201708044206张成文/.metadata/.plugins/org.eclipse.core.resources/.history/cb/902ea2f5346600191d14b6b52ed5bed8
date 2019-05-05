@@ -1,5 +1,0 @@
-package com.zcw.osals.osals_base.dao;
-
-public interface GenericTreeDao {
-
-}

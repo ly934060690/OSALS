@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Test00 {
 	public static void main(String[] args) throws IOException {
-        String filePath="d:sample.xls";//文件路径
+        String filePath="d:sample.xlsx";//文件路径
         HSSFWorkbook workbook = new HSSFWorkbook();//创建Excel文件(Workbook)
         HSSFSheet sheet = workbook.createSheet();//创建工作表(Sheet)
         sheet = workbook.createSheet("Test");//创建工作表(Sheet)

@@ -1,8 +1,0 @@
-package com.zcw.osals.osals_base;
-
-import java.util.logging.LogManager;
-
-public class BaseAbstractTestCase extends AbstractTransactionalJUnit4SpringContextTests {
-
-	protected Logger logger = LogManager.getLogger(BaseAbstractTestCase.class.getName());
-}

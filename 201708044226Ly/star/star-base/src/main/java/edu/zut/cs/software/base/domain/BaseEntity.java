@@ -28,7 +28,12 @@ public class BaseEntity extends BaseDomain {
 	 *
 	 */
 	private static final long serialVersionUID = -6163675075289529459L;
+	
+	/**
+	 * 实体创建时间
+	 */
 	@Temporal(TemporalType.TIMESTAMP)
+//	@Temporal(TemporalType.DATE)
 	@Column(name = "DATECREATED")
 	protected Date dateCreated = new Date();
 
@@ -36,6 +41,7 @@ public class BaseEntity extends BaseDomain {
 	 * 实体修改时间
 	 */
 	@Temporal(TemporalType.TIMESTAMP)
+//	@Temporal(TemporalType.TIME)
 	@Column(name = "DATEMODIFIED")
 	protected Date dateModified = new Date();
 

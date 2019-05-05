@@ -96,6 +96,7 @@ public class MyBatisTest {
 
 			Employee employee = new Employee(null, "jerry", 2000);
 			employeeMapper.addEmp(employee);
+			System.out.println(employee.getId());
 			openSession.commit();
 		} finally {
 			openSession.close();
