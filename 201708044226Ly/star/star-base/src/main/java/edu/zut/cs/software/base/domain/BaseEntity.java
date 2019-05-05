@@ -32,16 +32,16 @@ public class BaseEntity extends BaseDomain {
 	/**
 	 * 实体创建时间
 	 */
-//	@Temporal(TemporalType.TIMESTAMP)
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
+//	@Temporal(TemporalType.DATE)
 	@Column(name = "DATECREATED")
 	protected Date dateCreated = new Date();
 
 	/**
 	 * 实体修改时间
 	 */
-//	@Temporal(TemporalType.TIMESTAMP)
-	@Temporal(TemporalType.TIME)
+	@Temporal(TemporalType.TIMESTAMP)
+//	@Temporal(TemporalType.TIME)
 	@Column(name = "DATEMODIFIED")
 	protected Date dateModified = new Date();
 
