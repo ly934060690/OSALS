@@ -1,0 +1,10 @@
+package com.zcw.spring.beans;
+
+public class Main {
+
+	public static void main(String[] args) {
+		HelloWorld helloWorld = new HelloWorld();
+		helloWorld.setName("zcw");
+		helloWorld.hello();
+	}
+}
