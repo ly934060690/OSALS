@@ -6,21 +6,29 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
+import edu.zut.cs.software.star.student.dao.StudentDao;
 import edu.zut.cs.software.star.student.domain.Student;
 import edu.zut.cs.software.star.student.service.StudentManager;
 
+@Component
+@Transactional
 @Service("studentManager")
 public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implements StudentManager {
 	/**
 	 * Logger for this class
 	 */
+	
+	StudentDao studentdao;
 	
 	private static FileInputStream fileInputStream;
     
@@ -89,6 +97,12 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
         }
 //		this.dao.saveAll(all);
 		return all;
+	}
+
+	@Override
+	public Student findByStudentname(String studentname) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

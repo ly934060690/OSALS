@@ -3,8 +3,6 @@ package edu.zut.cs.software.base.service.impl;
 import java.io.Serializable;
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,15 +19,13 @@ import edu.zut.cs.software.base.service.GenericManager;
  * <p>
  * To register this class in your Spring context file, use the following XML.
  *
- * @param <T> a type variable
- * @param <PK> the primary key for that type
+ * @param <T>
+ *            a type variable
+ * @param <PK>
+ *            the primary key for that type
  */
 @Transactional
 public class GenericManagerImpl<T extends BaseEntity, PK extends Serializable> implements GenericManager<T, PK> {
-	/**
-	 * Logger for this class
-	 */
-	protected static final Logger logger = LogManager.getLogger(GenericManagerImpl.class.getName());
 
 	protected GenericDao<T, PK> dao;
 

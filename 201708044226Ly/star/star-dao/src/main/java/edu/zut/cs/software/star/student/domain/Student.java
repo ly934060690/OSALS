@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import edu.zut.cs.software.base.domain.BaseEntity;
-import edu.zut.cs.software.star.student.dao.StudentDao;
 
 /**
  * Student µÃÂ¿‡
@@ -15,7 +14,7 @@ import edu.zut.cs.software.star.student.dao.StudentDao;
 
 @Entity
 @Table(name = "T_STUDENT")
-public class Student extends BaseEntity implements StudentDao {
+public class Student extends BaseEntity {
 
 	/**
 	 * 

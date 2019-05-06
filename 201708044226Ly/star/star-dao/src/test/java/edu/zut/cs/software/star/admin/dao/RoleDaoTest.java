@@ -27,8 +27,8 @@ public class RoleDaoTest extends GenericDaoTestCase<Long, Role, RoleDao> {
 		Role r = new Role();
 		r.setName("test_role");
 //		System.out.println(Date.valueOf("2019-4-28 23:10:59"));
-		r.setDateCreated(null);
-		r.setDateModified(null);
+//		r.setDateCreated(null);
+//		r.setDateModified(null);
 //		System.out.println(r);
 
 		
@@ -49,10 +49,10 @@ public class RoleDaoTest extends GenericDaoTestCase<Long, Role, RoleDao> {
 //		Long role_id = test_role.getId();
 //		Role result = this.roleDao.getOne(role_id);
 //		assertEquals(test_role, result);
-//		List<Role> all = this.roleDao.findAll();
-//		if (logger.isInfoEnabled()) {
-//			logger.info("test() - List<Role> all={}", all); //$NON-NLS-1$
-//		}
+		List<Role> all = this.roleDao.findAll();
+		if (logger.isInfoEnabled()) {
+			logger.info("test() - List<Role> all={}", all); //$NON-NLS-1$
+		}
 
 	}
 	
