@@ -1,0 +1,10 @@
+package com.zcw.osals.admin.dao;
+
+
+
+
+
+public interface GroupDao extends GenericTreeDao<Group, Long> {
+
+}
+

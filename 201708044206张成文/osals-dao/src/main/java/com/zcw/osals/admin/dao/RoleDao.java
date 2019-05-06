@@ -1,5 +1,8 @@
 package com.zcw.osals.admin.dao;
 
-public interface RoleDao {
+import com.zcw.osals.admin.domain.Role;
+import com.zcw.osals.osals_base.dao.GenericDao;
+
+public interface RoleDao extends GenericDao<Role, Long> {
 
 }

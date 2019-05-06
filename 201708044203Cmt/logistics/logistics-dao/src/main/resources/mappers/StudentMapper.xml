@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="logistics.dao.StudentMapper">
+
+    <insert id="saveOne" parameterType="student">
+        insert into t_student values (
+            null,#{stuNum,jdbcType=VARCHAR},#{stuName,jdbcType=VARCHAR},
+            #{stuSex,jdbcType=INTEGER},#{stuClass,jdbcType=VARCHAR}
+        )
+    </insert>
+
+    <select id="getAllStudent" resultType="student">
+        select id, stu_num, stu_name, stu_sex, stu_class from t_student
+    </select>
+
+    <insert id="saveAllStudent" parameterType="java.util.List">
+        INSERT  INTO t_student(stu_num, stu_name, stu_sex, stu_class)values
+        <foreach collection="list" index="index" item="item" separator=",">
+            (
+            #{item.stuNum,jdbcType=VARCHAR},#{item.stuName,jdbcType=VARCHAR},
+            #{item.stuSex,jdbcType=INTEGER},#{item.stuClass,jdbcType=VARCHAR}
+            )
+        </foreach>
+
+    </insert>
+
+</mapper>

@@ -12,7 +12,6 @@
 <fullyQualifiedTypeName name="org.slf4j.Logger"/>
 <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
 <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
-<fullyQualifiedTypeName name="com.zcw.osals.osals_base.BaseAbstractTestCase"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
@@ -23,8 +22,23 @@
 <fullyQualifiedTypeName name="com.zcw.mybatis.dao.EmployeeMapper"/>
 <fullyQualifiedTypeName name="com.zcw.mybatis.bean.Employee"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.beans.Transient"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests"/>
+<fullyQualifiedTypeName name="com.zcw.osals.osals_base.BaseAbstractTestCase"/>
+<fullyQualifiedTypeName name="com.zcw.osals.osals_base.domain.BaseEntity"/>
+<fullyQualifiedTypeName name="com.zcw.osals.osals_base.service.GenericManager"/>
+<fullyQualifiedTypeName name="com.zcw.osals.osals_base.domain.BaseTreeEntity"/>
+<fullyQualifiedTypeName name="com.zcw.osals.osals_base.service.GenericTreeManager"/>
+<fullyQualifiedTypeName name="com.zcw.osals.osals_base.dao.GenericTreeDao"/>
+<fullyQualifiedTypeName name="com.zcw.osals.admin.domain.Group"/>
+<fullyQualifiedTypeName name="com.zcw.osals.admin.domain.Role"/>
+<fullyQualifiedTypeName name="com.zcw.osals.osals_base.dao.GenericDao"/>
+<fullyQualifiedTypeName name="com.zcw.osals.admin.domain.User"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.applet.AppletContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.zcw.spring.beans.HelloWorld"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 </qualifiedTypeNameHistroy>

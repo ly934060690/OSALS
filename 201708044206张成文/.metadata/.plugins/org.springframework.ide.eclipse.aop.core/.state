@@ -2,5 +2,7 @@
 <aop-reference-model>
 <aop-project name="HelloFriend"/>
 <aop-project name="mvn_command"/>
+<aop-project name="osals-base"/>
 <aop-project name="MakeFriends"/>
+<aop-project name="spring-1"/>
 </aop-reference-model>

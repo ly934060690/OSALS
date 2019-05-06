@@ -1,0 +1,5 @@
+package com.zcw.spring.beans;
+
+public class HelloWorld {
+
+}
