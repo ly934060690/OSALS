@@ -1,20 +1,20 @@
 package edu.zut.cs.software.star.student.dao;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Rollback;
 
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import edu.zut.cs.software.star.student.domain.Student;
@@ -38,6 +38,7 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
     private static Integer cellNumber = 0;
     
 	@Test
+	//@Rollback(false)
 	public void test() {
 		
 		List<Student> all = new ArrayList<Student>();
