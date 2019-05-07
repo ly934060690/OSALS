@@ -35,10 +35,20 @@
 <fullyQualifiedTypeName name="com.zcw.osals.admin.domain.Role"/>
 <fullyQualifiedTypeName name="com.zcw.osals.osals_base.dao.GenericDao"/>
 <fullyQualifiedTypeName name="com.zcw.osals.admin.domain.User"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.applet.AppletContext"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.zcw.spring.beans.HelloWorld"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.zcw.spring.beans.Car"/>
+<fullyQualifiedTypeName name="com.zcw.spring.beans.Person"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.swing.text.PasswordView"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.zcw.spring.beans.collections.Person"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.zcw.spring.beans.collections.NewPerson"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="com.zcw.spring.beans.collections.DataSource"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
