@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 
+配置bean
+
+class:bean的全类名，通过反射的方式在IOC中创建Bean，要求Bean中必须有无参数的构造器
+
+id:标识容器中的Bean，id唯一
+
+ -->
+<bean id="helloWorld" class="com.zcw.spring.beans.HelloWorld">
+   <property name="name" value="Spring"></property>
+</bean>
+<!-- 通过构造方法来配置bean的属性 -->
+
+<bean id="car" class="com.zcw.spring.beans.Car">
+    <constructor-arg value="Audi" index="0"></constructor-arg>
+    <constructor-arg value="1000" index="1"></constructor-arg>
+
+</bean>
+
+<bean id="car2" class="com.zcw.spring.beans.Car">
+  <constructor-arg value="bap"></constructor-arg>
+   <constructor-arg value="200"></constructor-arg>
+</bean>
+
+</beans>
