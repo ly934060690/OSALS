@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
 import edu.zut.cs.software.star.student.domain.Student;
 
-@ContextConfiguration(locations = { "classpath:applicationContextTest-service.xml" })
+@ContextConfiguration(locations = { "classpath:applicationContext-service.xml" })
 public class StudentManagerTest extends AbstractJUnit4SpringContextTests {
 	/**
 	 * Logger for this class

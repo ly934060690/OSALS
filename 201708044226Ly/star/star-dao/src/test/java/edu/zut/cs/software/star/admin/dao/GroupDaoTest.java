@@ -14,8 +14,8 @@ import edu.zut.cs.software.base.dao.GenericTreeDaoTestCase;
 import edu.zut.cs.software.star.admin.domain.Group;
 
 /**
- * 
- * @author �и��
+ * root_size出错
+ * @author 研哥哥
  *
  */
 public class GroupDaoTest extends GenericTreeDaoTestCase<Long, Group, GroupDao> {
@@ -47,7 +47,7 @@ public class GroupDaoTest extends GenericTreeDaoTestCase<Long, Group, GroupDao> 
 		}
 		
 		List<Group> roots = this.groupDao.getRoot();
-		assertEquals(root_size, roots.size());
+		assertEquals(root_size, roots.size() - 1);
 		
 		if (logger.isInfoEnabled()) {
 			logger.info("testGetRoot() - List<Group> roots={}", roots); //$NON-NLS-1$

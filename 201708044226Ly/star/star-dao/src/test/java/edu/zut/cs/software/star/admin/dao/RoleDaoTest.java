@@ -11,7 +11,11 @@ import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import edu.zut.cs.software.star.admin.domain.Role;
 
 
-
+/**
+ * 
+ * @author 研哥哥
+ *
+ */
 
 public class RoleDaoTest extends GenericDaoTestCase<Long, Role, RoleDao> {
 	/**

@@ -7,18 +7,17 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import edu.zut.cs.software.base.domain.BaseEntity;
-import edu.zut.cs.software.star.commodity.dao.CommodityDao;
 import edu.zut.cs.software.star.shop.domain.Shop;
 
 /**
- * ÊµÌåÉÌÆ·Àà
- * ÉÌÆ·¶ÔÉÌµê£ºManyToOne
- * @author ÑĞ¸ç¸ç
+ * å•†å“ç±»
+ * å•†å“ -- å•†åº—ï¼šManyToOne
+ * @author ç ”å“¥å“¥
  *
  */
 @Entity
 @Table(name = "T_COMMODITY")
-public class Commodity extends BaseEntity implements CommodityDao {
+public class Commodity extends BaseEntity {
 
 	/**
 	 * 

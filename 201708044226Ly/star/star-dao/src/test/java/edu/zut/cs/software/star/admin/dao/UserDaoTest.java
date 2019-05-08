@@ -13,7 +13,7 @@ import edu.zut.cs.software.star.admin.domain.User;
 
 /**
  * 
- * @author ÑÐ¸ç¸ç
+ * @author ç ”å“¥å“¥
  *
  */
 public class UserDaoTest extends GenericDaoTestCase<Long, User, UserDao> {
@@ -27,10 +27,13 @@ public class UserDaoTest extends GenericDaoTestCase<Long, User, UserDao> {
 	
 	@Test
 	public void testFindAll() {
+		
 		List<User> all = this.userDao.findAll();
 		if (logger.isInfoEnabled()) {
 			logger.info("testFindAll() - List<User> all={}", all); //$NON-NLS-1$
 		}
+		
+		
 	}
 	
 }
