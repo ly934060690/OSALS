@@ -1,5 +1,15 @@
+edu\zut\cs\software\base\dao\GenericDaoTestCase.class
+edu\zut\cs\software\base\service\impl\GenericTreeManagerImpl.class
+edu\zut\cs\software\base\service\GenericTreeManager.class
+edu\zut\cs\software\base\service\GenericTreeManagerTestCase.class
 edu\zut\cs\software\base\domain\BaseEntity.class
+edu\zut\cs\software\base\service\impl\GenericManagerImpl.class
+edu\zut\cs\software\base\dao\GenericTreeDao.class
 edu\zut\cs\software\base\domain\BaseDomain.class
+edu\zut\cs\software\base\service\GenericManager.class
 edu\zut\cs\software\base\domain\BaseTreeEntity.class
+edu\zut\cs\software\base\service\GenericManagerTestCase.class
 edu\zut\cs\software\base\BaseAbstractTestCase.class
 edu\zut\cs\software\base\dao\GenericDao.class
+edu\zut\cs\software\base\service\GenericGenerator.class
+edu\zut\cs\software\base\dao\GenericTreeDaoTestCase.class

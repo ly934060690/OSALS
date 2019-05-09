@@ -16,7 +16,7 @@ import edu.zut.cs.software.base.domain.BaseTreeEntity;
 /**
  * OneToMany
  * Group -- User
- * @author ÑÐ¸ç¸ç
+ * @author ç ”å“¥å“¥
  *
  */
 @Entity

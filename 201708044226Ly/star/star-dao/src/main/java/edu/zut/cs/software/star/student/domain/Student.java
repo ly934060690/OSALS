@@ -7,8 +7,8 @@ import javax.persistence.Table;
 import edu.zut.cs.software.base.domain.BaseEntity;
 
 /**
- * StudentÊµÌåÀà
- * @author ÑĞ¸ç¸ç
+ * Studentç±»
+ * @author ç ”å“¥å“¥
  *
  */
 

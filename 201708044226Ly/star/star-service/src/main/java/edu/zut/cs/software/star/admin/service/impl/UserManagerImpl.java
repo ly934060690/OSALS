@@ -1,33 +1,31 @@
 package edu.zut.cs.software.star.admin.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.transaction.Transactional;
 
-import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
+import edu.zut.cs.software.star.admin.dao.UserDao;
+import edu.zut.cs.software.star.admin.domain.User;
 import edu.zut.cs.software.star.admin.service.UserManager;
-import edu.zut.cs.software.star.admin.service.entity.User;
 
-@Service("userManager")
-public class UserManagerImpl implements UserManager {
+@Component
+@Transactional
+public class UserManagerImpl extends GenericManagerImpl<User, Long> implements UserManager {
+
+	UserDao userDao;
 
 	@Override
-	public String sayHello(String name) {
+	public User findbyUsername(String username) {
 		// TODO Auto-generated method stub
-		String result = "Hello, " + name + "!";
-		return result;
+		return null;
 	}
 
-	@Override
-	public List<User> getAll() {
-		// TODO Auto-generated method stub
-		List<User> all = new ArrayList<User>();
-		for(int i = 0; i < 100; i++) {
-			User user = new User();
-			user.setName("User_" + i);
-			all.add(user);
-		}
-		return all;
+	@Autowired
+	public void setUserDao(UserDao userDao) {
+		this.userDao = userDao;
+		this.dao = this.userDao;
 	}
 
 }

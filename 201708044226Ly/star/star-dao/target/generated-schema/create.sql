@@ -28,6 +28,58 @@ insert into hibernate_sequence values (;
 
 );
 
+insert into hibernate_sequence values (;
+
+1;
+
+);
+
+insert into hibernate_sequence values (;
+
+1;
+
+);
+
+create table T_ADMIN_GROUP (;
+
+ID bigint not null,;
+
+DATECREATED datetime,;
+
+DATEMODIFIED datetime,;
+
+DELETED bit,;
+
+ENTITY_NAME varchar(;
+
+255;
+
+),;
+
+version bigint not null,;
+
+TEXT varchar(;
+
+255;
+
+),;
+
+NAME varchar(;
+
+255;
+
+),;
+
+PARENT_ID bigint,;
+
+primary key (;
+
+ID;
+
+);
+
+) engine=InnoDB;
+
 create table T_ADMIN_ROLE (;
 
 ID bigint not null,;
@@ -51,6 +103,52 @@ NAME varchar(;
 255;
 
 ),;
+
+primary key (;
+
+ID;
+
+);
+
+) engine=InnoDB;
+
+create table T_ADMIN_USER (;
+
+ID bigint not null,;
+
+DATECREATED datetime,;
+
+DATEMODIFIED datetime,;
+
+DELETED bit,;
+
+ENTITY_NAME varchar(;
+
+255;
+
+),;
+
+version bigint not null,;
+
+EMAIL varchar(;
+
+255;
+
+),;
+
+PASSWORD varchar(;
+
+255;
+
+),;
+
+USERNAME varchar(;
+
+255;
+
+),;
+
+GROUP_ID bigint,;
 
 primary key (;
 
@@ -136,7 +234,7 @@ ID;
 
 ) engine=InnoDB;
 
-create table T_Student (;
+create table T_STUDENT (;
 
 ID bigint not null,;
 
@@ -198,6 +296,34 @@ ID;
 
 ) engine=InnoDB;
 
+alter table T_ADMIN_GROUP;
+
+add constraint FKb2p0eo4g64vjc1nrnixmv2tdb foreign key (;
+
+PARENT_ID;
+
+);
+
+references T_ADMIN_GROUP (;
+
+ID;
+
+);
+
+alter table T_ADMIN_USER;
+
+add constraint FK2q682guad28b1t6w3jg06ejyh foreign key (;
+
+GROUP_ID;
+
+);
+
+references T_ADMIN_GROUP (;
+
+ID;
+
+);
+
 alter table T_COMMODITY;
 
 add constraint FKndiae9fghfdfd1a3yemmepk2f foreign key (;
@@ -256,6 +382,50 @@ insert into hibernate_sequence values (;
 
 );
 
+insert into hibernate_sequence values (;
+
+1;
+
+);
+
+insert into hibernate_sequence values (;
+
+1;
+
+);
+
+create table T_ADMIN_GROUP (;
+
+ID bigint not null,;
+
+DATECREATED datetime,;
+
+DATEMODIFIED datetime,;
+
+DELETED bit,;
+
+ENTITY_NAME varchar(
+	255
+),;
+
+version bigint not null,;
+
+TEXT varchar(
+	255
+),;
+
+NAME varchar(
+	255
+),;
+
+PARENT_ID bigint,;
+
+primary key (
+	ID
+);
+
+) engine=InnoDB;
+
 create table T_ADMIN_ROLE (;
 
 ID bigint not null,;
@@ -275,6 +445,42 @@ version bigint not null,;
 NAME varchar(
 	255
 ),;
+
+primary key (
+	ID
+);
+
+) engine=InnoDB;
+
+create table T_ADMIN_USER (;
+
+ID bigint not null,;
+
+DATECREATED datetime,;
+
+DATEMODIFIED datetime,;
+
+DELETED bit,;
+
+ENTITY_NAME varchar(
+	255
+),;
+
+version bigint not null,;
+
+EMAIL varchar(
+	255
+),;
+
+PASSWORD varchar(
+	255
+),;
+
+USERNAME varchar(
+	255
+),;
+
+GROUP_ID bigint,;
 
 primary key (
 	ID
@@ -389,6 +595,26 @@ primary key (
 );
 
 ) engine=InnoDB;
+
+alter table T_ADMIN_GROUP;
+
+add constraint FKb2p0eo4g64vjc1nrnixmv2tdb foreign key (
+	PARENT_ID
+);
+
+references T_ADMIN_GROUP (
+	ID
+);
+
+alter table T_ADMIN_USER;
+
+add constraint FK2q682guad28b1t6w3jg06ejyh foreign key (
+	GROUP_ID
+);
+
+references T_ADMIN_GROUP (
+	ID
+);
 
 alter table T_COMMODITY;
 

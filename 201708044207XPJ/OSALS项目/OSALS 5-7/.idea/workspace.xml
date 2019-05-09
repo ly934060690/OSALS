@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b644c91-62a5-461a-8ca4-8d7b8f7b9524" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/libraries/c3p0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/libraries/mysql_connector_java_5_1_30_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/libraries/required.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/main/java/zut/edu/cs/dao/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/main/java/zut/edu/cs/hibernate/HiberbateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/main/resources/hibernate.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/test/java/zut/edu/cs/HibernateDem1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate_study01/src/test/java/zut/edu/cs/HibernateDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/OSALSbase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/BaseAbstractTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDaoTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDaoTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseTreeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/resources/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/resources/applicationContextTest-resources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-base/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/OSALSdao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/GoodsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/ShopDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/resources/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/resources/applicationContextTest-resources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/GoodsDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/ShopDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OSALS-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/javadocs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/libraries/mysql_connector_java_5_1_30_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/JDBCTest/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/com/zut/edu/User.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/com/zut/edu/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_aop_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_context_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_orm_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_test_5_1_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_tx_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/TM-dao/TM-dao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/TM-dao/src/main/java/edu/zut/cs/TestM/base/BaseAbstractTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/TM-dao/src/main/java/edu/zut/cs/TestM/base/dao/GenericDaoTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/TM-dao/src/main/java/edu/zut/cs/TestM/base/dao/GenericTreeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/TM-dao/src/main/java/edu/zut/cs/TestM/base/dao/GenericTreeDaoTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/TM-service/TM-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/TM-service/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/TestMaven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThreadLocalDemo/src/SequenceNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_002factury/day01_eesy_02_factury.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_01jdbc/day01_eesy_01_jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_03Spring/instruction" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_03Spring/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/instruction" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/src/main/java/com/itheima/factory/InstanceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_04_bean/src/main/java/com/itheima/factory/staticFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_05DI/src/main/java/com/itheima/service/impl/AccountServiceImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01_eesy_05DI/src/main/java/com/itheima/service/impl/AccountServiceImpl3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_IOC/src/main/java/com/itheima/dao/impl/AccountDaoImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/dao/impl/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02_eesy_02account_xmlIOC/src/test/java/com/itheima/test/AccountServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/sun.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/sun.server/sun.server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sun/sun.web/sun.web.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/TM-dao/target/" />
+    <ignored path="$PROJECT_DIR$/OSALS-base/target/" />
+    <ignored path="$PROJECT_DIR$/OSALS-web/target/" />
+    <ignored path="$PROJECT_DIR$/OSALS-service/target/" />
+    <ignored path="$PROJECT_DIR$/OSALS-dao/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/BaseAbstractTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/applicationContext-dao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/applicationContextTest-resources.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1890">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/log4j2.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Goods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Shop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/ShopDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1107">
+              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/damain/BaseDomain.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/damain/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDao.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/Shop.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/GoodsDao.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/ShopDao.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/GroupDaoTest.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/main/resources/applicationContext-dao.xml" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/damain/package-info.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/package-info.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/package-info.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/resources/applicationContextTest-resources.xml" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/main/resources/applicationContextTest-resources.xml" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/OSALS-base/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Goods.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/GoodsDaoTest1.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseTreeEntity.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDaoTestCase.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/GoodsDaoTest.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDaoTestCase.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDao.java" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Shop.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/resources/applicationContext-dao.xml" />
+        <option value="$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/ShopDaoTest.java" />
+        <option value="$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/BaseAbstractTestCase.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="OSALS" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="OSALS" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="473" />
+    <option name="y" value="-16" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="zut" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="OSALS" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSALS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557231531797" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\eclipse-workspace\OSALS\OSALS-base\src\main\resources" />
+      <recent name="D:\java\eclipse-workspace\OSALS\OSALS-base\src\main\java\edu\zut\cs\OSALS\base\damain" />
+      <recent name="D:\java\eclipse-workspace\OSALS\OSALS-base\src\main\java\edu\zut\cs\OSALS\base\dao" />
+      <recent name="D:\java\eclipse-workspace\OSALS\OSALS-dao\src\main\resources" />
+      <recent name="D:\java\eclipse-workspace\OSALS\OSALS-dao\src\test\java\edu\zut\cs\OSALS\admin\dao" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ShopDaoTest.test">
+    <configuration name="GoodsDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OSALSdao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.zut.cs.OSALS.admin.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.zut.cs.OSALS.admin.dao" />
+      <option name="MAIN_CLASS_NAME" value="edu.zut.cs.OSALS.admin.dao.GoodsDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsDaoTest.testGoodsDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OSALSdao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.zut.cs.OSALS.admin.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.zut.cs.OSALS.admin.dao" />
+      <option name="MAIN_CLASS_NAME" value="edu.zut.cs.OSALS.admin.dao.GoodsDaoTest" />
+      <option name="METHOD_NAME" value="testGoodsDao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OSALSdao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.zut.cs.OSALS.admin.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.zut.cs.OSALS.admin.dao" />
+      <option name="MAIN_CLASS_NAME" value="edu.zut.cs.OSALS.admin.dao.ShopDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OSALSdao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.zut.cs.OSALS.admin.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.zut.cs.OSALS.admin.dao" />
+      <option name="MAIN_CLASS_NAME" value="edu.zut.cs.OSALS.admin.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.testGetRoot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OSALSdao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.zut.cs.OSALS.admin.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.zut.cs.OSALS.admin.dao" />
+      <option name="MAIN_CLASS_NAME" value="edu.zut.cs.OSALS.admin.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testGetRoot" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShopDaoTest.test" />
+        <item itemvalue="JUnit.GoodsDaoTest.testGoodsDao" />
+        <item itemvalue="JUnit.GoodsDaoTest.test" />
+        <item itemvalue="JUnit.ShopDaoTest.testGetRoot" />
+        <item itemvalue="JUnit.ShopDaoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b644c91-62a5-461a-8ca4-8d7b8f7b9524" name="Default Changelist" comment="" />
+      <created>1557048171752</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557048171752</updated>
+      <workItem from="1557048176418" duration="3625000" />
+      <workItem from="1557056001262" duration="4803000" />
+      <workItem from="1557102719732" duration="2839000" />
+      <workItem from="1557122352016" duration="10629000" />
+      <workItem from="1557195998824" duration="13338000" />
+      <workItem from="1557231419142" duration="226000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ShopDaoTest_test - 2019.05.07 at 10h 42m 38s.xml">
+      <configuration name="ShopDaoTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopDaoTest_test - 2019.05.07 at 10h 44m 19s.xml">
+      <configuration name="ShopDaoTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopDaoTest_test - 2019.05.07 at 15h 06m 56s.xml">
+      <configuration name="ShopDaoTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopDaoTest_test - 2019.05.07 at 15h 07m 28s.xml">
+      <configuration name="ShopDaoTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GoodsDaoTest_test - 2019.05.07 at 16h 26m 04s.xml">
+      <configuration name="GoodsDaoTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GoodsDaoTest_testGoodsDao - 2019.05.07 at 16h 29m 19s.xml">
+      <configuration name="GoodsDaoTest.testGoodsDao" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GoodsDaoTest_testGoodsDao - 2019.05.07 at 16h 30m 15s.xml">
+      <configuration name="GoodsDaoTest.testGoodsDao" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GoodsDaoTest_testGoodsDao - 2019.05.07 at 16h 31m 20s.xml">
+      <configuration name="GoodsDaoTest.testGoodsDao" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopDaoTest_test - 2019.05.07 at 17h 38m 25s.xml">
+      <configuration name="ShopDaoTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopDaoTest_test - 2019.05.07 at 17h 38m 56s.xml">
+      <configuration name="ShopDaoTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="35234000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26385927" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Persistence" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.22559653" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.14967462" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.36876357" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TM-dao/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/OSALS-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/META-INF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/applicationContextTest-resources.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.0.RELEASE/spring-test-5.1.0.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3672">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.2.Final/hibernate-core-5.4.2.Final-sources.jar!/org/hibernate/ejb/HibernateEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2349">
+          <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/applicationContextTest-resources.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.6.RELEASE/spring-beans-5.1.6.RELEASE-sources.jar!/org/springframework/beans/factory/annotation/Autowired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.6.RELEASE/spring-data-jpa-2.1.6.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.6.RELEASE/spring-data-jpa-2.1.6.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaSpecificationExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDaoTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="20" column="93" lean-forward="true" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#GenericDaoTestCase#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDaoTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseTreeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/GoodsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/ShopDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/GoodsDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/applicationContextTest-resources.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#1014#1036#0" expanded="true" />
+            <element signature="e#1069#1082#0" expanded="true" />
+            <element signature="e#1120#1138#0" expanded="true" />
+            <element signature="e#1176#1194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/ShopDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/BaseAbstractTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="89" lean-forward="true" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

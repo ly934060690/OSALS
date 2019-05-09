@@ -11,7 +11,7 @@ import edu.zut.cs.software.base.domain.BaseEntity;
 /**
  * ManyToOne
  * User -- Group
- * @author ÑÐ¸ç¸ç
+ * @author ç ”å“¥å“¥
  *
  */
 @Entity
