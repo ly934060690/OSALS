@@ -1,12 +1,11 @@
 package edu.zut.cs.software.star.shop.dao;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -34,6 +33,7 @@ public class ShopDaoTest extends GenericTreeDaoTestCase<Long, Shop, ShopDao> {
 	}
 	
 	@Test
+	//@Rollback(false)
 	public void testGetRoot() {
 		int root_size = 10;
 		for(int i = 0; i < root_size; i++) {

@@ -18,6 +18,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import edu.zut.cs.software.base.service.GenericGenerator;
 import edu.zut.cs.software.star.student.domain.Student;
 
+/**
+ * 
+ * 无事物回滚
+ * Software17级学生信息录入MYSQL数据库中
+ * @author 研哥哥
+ *
+ */
 public class StudentEntityGenerator extends GenericGenerator {
 	/**
 	 * Logger for this class
@@ -37,7 +44,7 @@ public class StudentEntityGenerator extends GenericGenerator {
     private static Integer cellNumber = 0;
     
 	@Test
-	public void test() {
+	public void testSaveStudent() {
 		
 		List<Student> all = new ArrayList<Student>();
 		
@@ -78,7 +85,7 @@ public class StudentEntityGenerator extends GenericGenerator {
 	                	cellNumber++;
 	                    System.out.print(cell + "\t");
 	                }
-//	                this.studentManager.save(student);
+	                this.studentManager.save(student);
 	                all.add(student);
             	}
             	
@@ -95,12 +102,23 @@ public class StudentEntityGenerator extends GenericGenerator {
 		if (logger.isInfoEnabled()) {
 			logger.info("test() - List<Student> all={}", all); //$NON-NLS-1$
 		}
-		this.studentManager.save(all);
-//		List<Student> allStudent = this.studentManager.findAll();
-//		if (logger.isInfoEnabled()) {
-//			logger.info("test() - List<Student> allStudent={}", allStudent); //$NON-NLS-1$
-//		}
 		
+	}
+	
+	@Test
+	public void testSaveAllStudent() {
+		
+//		this.studentManager.save(all);
+
+	}
+	
+	@Test
+	public void testFindAll() {
+		
+		List<Student> allStudent = this.studentManager.findAll();
+		if (logger.isInfoEnabled()) {
+			logger.info("test() - List<Student> allStudent={}", allStudent); //$NON-NLS-1$
+		}
 		
 	}
 }

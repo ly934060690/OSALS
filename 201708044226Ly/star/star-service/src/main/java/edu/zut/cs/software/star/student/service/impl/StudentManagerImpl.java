@@ -6,14 +6,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.transaction.Transactional;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
 import edu.zut.cs.software.star.student.dao.StudentDao;
@@ -21,14 +19,28 @@ import edu.zut.cs.software.star.student.domain.Student;
 import edu.zut.cs.software.star.student.service.StudentManager;
 
 @Component
-@Transactional
-@Service("studentManager")
+//@Transactional
+//@Service("studentManager")
+/**
+ * 
+ * 注释有无的区别
+ * @Transactional
+ * @Service("studentManager")
+ * @author 研哥哥
+ *
+ */
 public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implements StudentManager {
 	/**
 	 * Logger for this class
 	 */
 	
-	StudentDao studentdao;
+	StudentDao studentDao;
+	
+	@Autowired
+	public void setStudentDao(StudentDao studentDao) {
+		this.studentDao = studentDao;
+		this.dao = this.studentDao;
+	}
 	
 	private static FileInputStream fileInputStream;
     
@@ -81,7 +93,6 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 	                	cellNumber++;
 	                    System.out.print(cell + "\t");
 	                }
-//	                this.dao.save(student);
 	                all.add(student);
             	}
             	
@@ -95,7 +106,6 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
         } catch (IOException e) {
             e.printStackTrace();
         }
-//		this.dao.saveAll(all);
 		return all;
 	}
 

@@ -4,7 +4,6 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import edu.zut.cs.software.base.service.GenericGenerator;
-import edu.zut.cs.software.star.admin.service.RoleManager;
 import edu.zut.cs.software.star.commodity.domain.Commodity;
 import edu.zut.cs.software.star.commodity.service.CommodityManager;
 import edu.zut.cs.software.star.shop.domain.Shop;
@@ -18,8 +17,7 @@ import edu.zut.cs.software.star.shop.domain.Shop;
  */
 public class ShopEntityGenerator extends GenericGenerator {
 
-	@Autowired
-	RoleManager roleManager;
+	
 	@Autowired
 	CommodityManager commodityManager;
 	@Autowired

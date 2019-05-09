@@ -1,10 +1,9 @@
 package edu.zut.cs.software.star.commodity.dao;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -27,6 +26,7 @@ public class CommodityDaoTest extends GenericDaoTestCase<Long, Commodity, Commod
 	CommodityDao commodityDao;
 	
 	@Test
+	//@Rollback(false)
 	public void testFindAll() {
 		List<Commodity> all = this.commodityDao.findAll();
 		if (logger.isInfoEnabled()) {
