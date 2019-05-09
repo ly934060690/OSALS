@@ -14,11 +14,15 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.annotation.Rollback;
 
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import edu.zut.cs.software.star.student.domain.Student;
 
+/**
+ * 
+ * @author ç ”å“¥å“¥
+ *
+ */
 public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao> {
 	/**
 	 * Logger for this class
@@ -44,7 +48,7 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		List<Student> all = new ArrayList<Student>();
 		
 		/**
-		 * ÀûÓÃpoi¶ÁÈ¡excel
+		 * ï¿½ï¿½ï¿½ï¿½poiï¿½ï¿½È¡excel
 		 */
 		String filePath = "D:\\Java\\doc\\Software17_Student_JavaEE.xlsx";
 		try {

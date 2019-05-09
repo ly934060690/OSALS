@@ -1,0 +1,6 @@
+edu\zut\cs\software\star\admin\dao\GroupDaoTest.class
+edu\zut\cs\software\star\admin\dao\RoleDaoTest.class
+edu\zut\cs\software\star\student\dao\StudentDaoTest.class
+edu\zut\cs\software\star\commodity\dao\CommodityDaoTest.class
+edu\zut\cs\software\star\shop\dao\ShopDaoTest.class
+edu\zut\cs\software\star\admin\dao\UserDaoTest.class

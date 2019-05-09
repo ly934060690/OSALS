@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author ÑÐ¸ç¸ç
+ * @author ç ”å“¥å“¥
  *
  */
 package edu.zut.cs.software.star.shop.domain;

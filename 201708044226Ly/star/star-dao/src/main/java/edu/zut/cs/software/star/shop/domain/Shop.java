@@ -13,18 +13,17 @@ import javax.persistence.Table;
 
 import edu.zut.cs.software.base.domain.BaseTreeEntity;
 import edu.zut.cs.software.star.commodity.domain.Commodity;
-import edu.zut.cs.software.star.shop.dao.ShopDao;
 
 /**
- * ÉÌµêÀà
- * ÉÌµê¶ÔÉÌÆ·£ºOneToMany
- * @author ÑĞ¸ç¸ç
+ * å•†åº—ç±»
+ * å•†åº— -- å•†å“ï¼šOneToMany
+ * @author ç ”å“¥å“¥
  *
  */
 @Entity
 @Table(name = "T_SHOP")
 @NamedQueries({ @NamedQuery(name = "Shop.getRoot", query = "select s from Shop s where s.parent is null") })
-public class Shop extends BaseTreeEntity<Shop> implements ShopDao {
+public class Shop extends BaseTreeEntity<Shop> {
 
 	/**
 	 * 
