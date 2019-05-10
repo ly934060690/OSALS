@@ -8,6 +8,6 @@
   	<module>osals-base</module>
   	<module>osals-dao</module>
   	<module>osals-service</module>
-  	<module>sun-web</module>
+  	<module>osals-web</module>
   </modules>
 </project>
