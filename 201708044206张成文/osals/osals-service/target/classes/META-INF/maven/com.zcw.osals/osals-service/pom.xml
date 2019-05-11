@@ -6,4 +6,12 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>osals-service</artifactId>
+  
+  <dependencies>
+		<dependency>
+			<groupId>com.zcw.osals</groupId>
+			<artifactId>osals-dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>

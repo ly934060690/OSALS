@@ -1,9 +1,14 @@
 package com.zcw.osals.admin.dao;
 
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.zcw.osals.admin.domain.User;
+import com.zcw.osals.base.dao.GenericDaoTestCase;
 
 public class UserDaoTest extends GenericDaoTestCase<Long, User, UserDao> {
 	/**

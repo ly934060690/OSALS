@@ -56,4 +56,9 @@ public class User extends BaseEntity {
 		this.weight = weight;
 	}
 
+	public void setUsername(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
