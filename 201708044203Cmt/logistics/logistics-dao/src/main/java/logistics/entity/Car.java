@@ -1,11 +1,20 @@
 package logistics.entity;
 
 public class Car {
+    private Integer id;
     private String num;
     private float laod;
 
     public String getNum() {
         return num;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public void setNum(String num) {
@@ -23,7 +32,8 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "num='" + num + '\'' +
+                "id=" + id +
+                ", num='" + num + '\'' +
                 ", laod=" + laod +
                 '}';
     }

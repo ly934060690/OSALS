@@ -26,4 +26,16 @@
 
     </insert>
 
+    <select id="getStuById" parameterType="Integer" resultType="Student">
+         select id, stu_num, stu_name, stu_sex, stu_class from t_student where id=#{id}
+    </select>
+
+    <update id="updateStuById" parameterType="Student">
+        update t_Student set stu_num=#{stuNum,jdbcType=VARCHAR},stu_name=#{stuName,jdbcType=VARCHAR},
+        stu_sex=#{stuSex,jdbcType=VARCHAR},stu_class=#{stuClass,jdbcType=VARCHAR}
+        where id=#{id}
+    </update>
+    <delete id="deleteStuById" parameterType="Integer">
+        delete from t_Student where id=#{id};
+    </delete>
 </mapper>
