@@ -1,0 +1,1 @@
+package com.osals.base.domain;
