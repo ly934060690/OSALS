@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.beans.Transient"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="com.zcw.osals.osals_base.BaseAbstractTestCase"/>
 <fullyQualifiedTypeName name="com.zcw.osals.osals_base.domain.BaseEntity"/>
 <fullyQualifiedTypeName name="com.zcw.osals.osals_base.service.GenericManager"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.zcw.osals.admin.domain.User"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="java.lang.Long"/>
 </qualifiedTypeNameHistroy>

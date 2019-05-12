@@ -2,6 +2,7 @@ package com.zcw.osals.admin.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -11,6 +12,9 @@ import com.zcw.osals.base.domain.BaseEntity;
 @Table(name = "T_ADMIN_USER")
 @Entity
 public class User extends BaseEntity {
+	//////////////////////
+	@Id
+	private Long id;
 
 	@Column(name = "KIND")
 	String kind;
@@ -58,7 +62,7 @@ public class User extends BaseEntity {
 
 	public void setUsername(String string) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

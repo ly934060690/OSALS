@@ -14,6 +14,7 @@ public class GroupDaoTest extends GenericTreeDaoTestCase<Long, Group, GroupDao> 
 
 	GroupDao groupDao;
 
+	// @Autowired自动装配方式，从IoC容器中去查找到，并返回给该属性
 	@Autowired
 	public void setGroupDao(GroupDao groupDao) {
 		this.groupDao = groupDao;
@@ -25,10 +26,12 @@ public class GroupDaoTest extends GenericTreeDaoTestCase<Long, Group, GroupDao> 
 		int root_size = 10;
 		for (int i = 0; i < root_size; i++) {
 			Group group = new Group();
+			// setName???? ----JpaRepository
 			group.setName("group_" + i);
 			for (int j = 0; j < 10; j++) {
 				Group g = new Group();
 				g.setName("group_" + i + "_" + j);
+				// setParent??? ----JpaRepository
 				g.setParent(group);
 			}
 			this.groupDao.save(group);
