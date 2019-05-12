@@ -2,12 +2,8 @@ package logistics.entity;
 
 public class Car {
     private Integer id;
-    private String num;
-    private float laod;
-
-    public String getNum() {
-        return num;
-    }
+    private String carNum;
+    private float carLoad;
 
     public Integer getId() {
         return id;
@@ -17,24 +13,28 @@ public class Car {
         this.id = id;
     }
 
-    public void setNum(String num) {
-        this.num = num;
+    public String getCarNum() {
+        return carNum;
     }
 
-    public float getLaod() {
-        return laod;
+    public void setCarNum(String carNum) {
+        this.carNum = carNum;
     }
 
-    public void setLaod(float laod) {
-        this.laod = laod;
+    public float getCarLoad() {
+        return carLoad;
+    }
+
+    public void setCarLoad(float carLoad) {
+        this.carLoad = carLoad;
     }
 
     @Override
     public String toString() {
         return "Car{" +
                 "id=" + id +
-                ", num='" + num + '\'' +
-                ", laod=" + laod +
+                ", carNum='" + carNum + '\'' +
+                ", carLoad=" + carLoad +
                 '}';
     }
 }
