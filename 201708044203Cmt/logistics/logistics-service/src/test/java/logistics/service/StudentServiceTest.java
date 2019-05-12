@@ -18,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -66,6 +67,30 @@ public class StudentServiceTest {
 
     }
 
+    @Test
+    public void getStuByIdTest(){
+        Student student=studentService.getStuById(21695);
+        System.out.println(student);
+    }
+
+    @Test
+    public void deleteStuByIdTest()
+    {
+       studentService.deleteStuById(21695);
+    }
+
+    @Test
+    @Commit
+    public void updateStuTest()
+    {
+        Student student=new Student();
+        student.setId(21659);
+        student.setStuNum("201705084814");
+        student.setStuName("小明");
+        student.setStuSex(0);
+        student.setStuClass("201708001");
+        studentService.updateStuById(student);
+    }
     @Test
     public void poiWriteTest() throws IOException {
         String[] cloName = {"id", "学号", "姓名", "性别", "班级号"};
@@ -161,4 +186,6 @@ public class StudentServiceTest {
             studentService.saveAllStudent(list);
         }
     }
+
+
 }
