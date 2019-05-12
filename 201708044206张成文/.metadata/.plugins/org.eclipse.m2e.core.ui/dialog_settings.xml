@@ -3,14 +3,12 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.zcw.osals"/>
-			<item value="com.zcw.dao"/>
-			<item value="com.zcw."/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="osals-service"/>
-			<item value="osals-dao"/>
+			<item value="osals-base"/>
+			<item value="osals"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -60,8 +58,33 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="osals-base"/>
+			<item value="osals-web"/>
+			<item value="osals-service"/>
+			<item value="osals-dao"/>
+			<item value="zuy-dao"/>
+			<item value="sun-web"/>
+			<item value="osals-base1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\JAVA\仓库\OSALS\201708044206张成文"/>
+			<item value="D:\JAVA\J2EE For Ecplise\新建文件夹 (2)"/>
+			<item value="D:\JAVA\J2EE For Ecplise\project"/>
+			<item value="D:\JAVA\仓库\OSALS\201708044206张成文\zuyt"/>
+			<item value="D:\JAVA\仓库\OSALS\201708044206张成文\osals\pom.xml"/>
+			<item value="D:\JAVA\source\sun"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -74,10 +97,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="org.osals.base"/>
 		</list>
 		<list key="groupId">
+			<item value="com.zcw.osals"/>
 		</list>
 		<list key="artifactId">
+			<item value="osals-base"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32" version="1.8.0_152-release">
+<bootpath>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\resources.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\rt.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\sunrsasign.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\jsse.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\jce.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\charsets.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\jfr.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre32\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64" version="1.8.0_152-release">
+<bootpath>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\resources.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\rt.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\sunrsasign.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\jsse.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\jce.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\charsets.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\jfr.jar"/>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\JAVA\idea\IntelliJ IDEA 2018.3.4\jre64\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="D:\JAVA" version="1.8.0_91">
 <bootpath>
 <entry path="D:\JAVA\jre\lib\resources.jar"/>
@@ -17,6 +55,25 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="D:\JAVA\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\JAVA\JDK" version="1.8.0_91">
+<bootpath>
+<entry path="D:\JAVA\JDK\jre\lib\resources.jar"/>
+<entry path="D:\JAVA\JDK\jre\lib\rt.jar"/>
+<entry path="D:\JAVA\JDK\jre\lib\sunrsasign.jar"/>
+<entry path="D:\JAVA\JDK\jre\lib\jsse.jar"/>
+<entry path="D:\JAVA\JDK\jre\lib\jce.jar"/>
+<entry path="D:\JAVA\JDK\jre\lib\charsets.jar"/>
+<entry path="D:\JAVA\JDK\jre\lib\jfr.jar"/>
+<entry path="D:\JAVA\JDK\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\JAVA\JDK\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\JAVA\JDK\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 <libraryInfo home="D:\JAVA\JRE" version="1.8.0_91">
