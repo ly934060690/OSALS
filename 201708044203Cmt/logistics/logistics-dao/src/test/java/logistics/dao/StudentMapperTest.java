@@ -33,5 +33,4 @@ public class StudentMapperTest {
         studentMapper.saveOne(stu);
     }
 
-
 }

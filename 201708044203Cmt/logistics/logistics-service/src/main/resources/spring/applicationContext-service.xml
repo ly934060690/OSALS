@@ -24,6 +24,4 @@ http://www.springframework.org/schema/tx/spring-tx-3.2.xsd http://www.springfram
         <aop:pointcut id="serviceMethod" expression="(execution(* logistics.service.*..*(..)))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethod"/>
     </aop:config>
-
-
 </beans>

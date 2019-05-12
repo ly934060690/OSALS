@@ -11,7 +11,7 @@
   <dependencies>
 		<dependency>
 			<groupId>edu.zut.cs.software</groupId>
-			<artifactId>sun-service</artifactId>
+			<artifactId>star-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

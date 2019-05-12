@@ -12,6 +12,7 @@
   	<module>star-web</module>
   </modules>
   <properties>
+  
   		<!-- 文件拷贝时的编码 -->    
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>    
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>    

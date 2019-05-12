@@ -48,7 +48,7 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		List<Student> all = new ArrayList<Student>();
 		
 		/**
-		 * ����poi��ȡexcel
+		 * 利用poi解析xlsx
 		 */
 		String filePath = "D:\\Java\\doc\\Software17_Student_JavaEE.xlsx";
 		try {
@@ -109,5 +109,4 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		
 	}
 	
-
 }

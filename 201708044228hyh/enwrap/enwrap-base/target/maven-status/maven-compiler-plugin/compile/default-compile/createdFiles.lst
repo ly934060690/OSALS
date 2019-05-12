@@ -1,0 +1,14 @@
+com\osals\base\dao\GenericTreeDaoTestCase.class
+com\osals\base\dao\GenericTreeDao.class
+com\osals\base\service\GenericManager.class
+com\osals\base\service\impl\GenericManagerImpl.class
+com\osals\base\BaseAbstractTestCase.class
+com\osals\base\domain\BaseEntity.class
+com\osals\base\service\GenericTreeManagerTestCase.class
+com\osals\base\domain\BaseDomain.class
+com\osals\base\service\GenericTreeManager.class
+com\osals\base\service\impl\GenericTreeManagerImpl.class
+com\osals\base\dao\GenericDaoTestCase.class
+com\osals\base\service\GenericManagerTestCase.class
+com\osals\base\dao\GenericDao.class
+com\osals\base\domain\BaseTreeEntity.class
