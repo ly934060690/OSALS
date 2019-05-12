@@ -7,5 +7,8 @@
     <select id="getAllCar"  resultType="car">
         select id, car_num, car_load from t_car
     </select>
+    <select id="getCarById" parameterType="Integer" resultType="car">
+        select id, car_num, car_load from t_car where id=#{id}
+    </select>
 
 </mapper>

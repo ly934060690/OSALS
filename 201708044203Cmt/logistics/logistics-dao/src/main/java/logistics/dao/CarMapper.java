@@ -10,5 +10,6 @@ import java.util.List;
 public interface CarMapper {
 
     List<Car> getAllCar();
+    Car getCarById(Integer id);
 
 }
