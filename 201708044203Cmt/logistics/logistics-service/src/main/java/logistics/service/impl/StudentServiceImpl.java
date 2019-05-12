@@ -28,4 +28,16 @@ public class StudentServiceImpl implements StudentService {
         return studentMapper.saveAllStudent(studentList);
 
     }
+    @Override
+    public Student getStuById(Integer id){
+        return studentMapper.getStuById(id);
+    }
+    @Override
+    public Integer deleteStuById(Integer id) {
+        return studentMapper.deleteStuById(id);
+    }
+    @Override
+    public  Integer updateStuById(Student student){
+        return studentMapper.updateStuById(student);
+    }
 }

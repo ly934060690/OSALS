@@ -10,5 +10,8 @@ public interface StudentService {
 
     Integer saveAllStudent(List<Student> studentList);
 
+    Student getStuById(Integer id);
 
+    Integer deleteStuById(Integer id);
+    Integer updateStuById(Student student);
 }

@@ -1,30 +1,40 @@
 package logistics.entity;
 
 public class Car {
-    private String num;
-    private float laod;
+    private Integer id;
+    private String carNum;
+    private float carLoad;
 
-    public String getNum() {
-        return num;
+    public Integer getId() {
+        return id;
     }
 
-    public void setNum(String num) {
-        this.num = num;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public float getLaod() {
-        return laod;
+    public String getCarNum() {
+        return carNum;
     }
 
-    public void setLaod(float laod) {
-        this.laod = laod;
+    public void setCarNum(String carNum) {
+        this.carNum = carNum;
+    }
+
+    public float getCarLoad() {
+        return carLoad;
+    }
+
+    public void setCarLoad(float carLoad) {
+        this.carLoad = carLoad;
     }
 
     @Override
     public String toString() {
         return "Car{" +
-                "num='" + num + '\'' +
-                ", laod=" + laod +
+                "id=" + id +
+                ", carNum='" + carNum + '\'' +
+                ", carLoad=" + carLoad +
                 '}';
     }
 }
