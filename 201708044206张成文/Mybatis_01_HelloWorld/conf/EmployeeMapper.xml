@@ -5,7 +5,7 @@
 <mapper namespace="com.zcw.mybatis.dao.EmployeeMapper">
 <!-- 
 
-namespace:名称空间,指定为借口的全类名
+namespace:名称空间,指定为接口的全类名
 id:唯一标识
 resultType:返回值类型
 #{id} : 从传递过来的参数中取出id值

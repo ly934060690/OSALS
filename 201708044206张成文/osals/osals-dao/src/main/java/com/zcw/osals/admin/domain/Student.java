@@ -1,5 +1,79 @@
 package com.zcw.osals.admin.domain;
 
-public class Student {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.zcw.osals.base.domain.BaseEntity;
+
+@Entity
+@Table(name = "T_STUDENT")
+public class Student extends BaseEntity {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2701606530042387399L;
+
+	@Column(name = "GRADE")
+	String grade;
+	@Column(name = "MAJOR")
+	String major;
+	@Column(name = "CLASS")
+	String CLASS;
+	@Column(name = "SNO")
+	String sno;
+	@Column(name = "NAME")
+	String name;
+	@Column(name = "SEX")
+	String sex;
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+	public String getMajor() {
+		return major;
+	}
+
+	public void setMajor(String major) {
+		this.major = major;
+	}
+
+	public String getCLASS() {
+		return CLASS;
+	}
+
+	public void setCLASS(String cLASS) {
+		CLASS = cLASS;
+	}
+
+	public String getSno() {
+		return sno;
+	}
+
+	public void setSno(String sno) {
+		this.sno = sno;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
 
 }
