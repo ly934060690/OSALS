@@ -30,6 +30,12 @@ public class CarServiceTest {
         for (Car car : list) {
             System.out.println(car);
         }
+    }
 
+    @Test
+    public  void getCarByIdTest()
+    {
+        Car car=carService.getCarById(5);
+        System.out.println(car);
     }
 }
