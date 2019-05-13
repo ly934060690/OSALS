@@ -3,10 +3,12 @@ package com.zcw.osals.admin.service;
 import java.util.List;
 
 import com.zcw.osals.admin.domain.User;
+import com.zcw.osals.base.service.impl.GenericManager;
 
-public interface UserManager {
+public interface UserManager extends GenericManager<User, Long> {
 
-	String sayHello(String name);
+	List<User> findAll();
 
-	List<User> getAll();
+	User findbyUsername(String username);
+
 }

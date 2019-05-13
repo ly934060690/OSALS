@@ -3409,3 +3409,760 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
 	at java.security.cert.CertPathBuilder.build(Unknown Source)
 	... 31 more
+!SESSION 2019-05-13 08:35:52.595 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2019-05-13 08:36:05.470
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.dash [1134]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"] because it is exposed to package 'javax.xml.ws.handler' from resources org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"] and javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.eclipse.core.runtime)
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"]
+
+Chain 2:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.springframework.web)
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.3.0.20160611-RELEASE"; osgi.wiring.bundle="org.springframework.web"
+  org.springframework.web [osgi.identity; osgi.identity="org.springframework.web"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+    import: (&(osgi.wiring.package=javax.xml.ws.handler)(version>=0.0.0))
+     |
+    export: osgi.wiring.package: javax.xml.ws.handler
+  javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.roo.core 4 0 2019-05-13 08:36:05.609
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.roo.core [1347]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"] because it is exposed to package 'org.springframework.objenesis.instantiator' from resources org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"] and org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.core)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle: org.springframework.core
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+
+Chain 2:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.context)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.2.4.20151218-RELEASE"; osgi.wiring.bundle="org.springframework.context"
+  org.springframework.context [osgi.identity; osgi.identity="org.springframework.context"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+    import: (osgi.wiring.package=org.springframework.objenesis)
+     |
+    export: osgi.wiring.package: org.springframework.objenesis; uses:=org.springframework.objenesis.instantiator
+    export: osgi.wiring.package=org.springframework.objenesis.instantiator
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.roo.ui 4 0 2019-05-13 08:36:05.831
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.roo.ui [1348]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.roo.core
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.roo.core; bundle-version="3.7.3.201602250914-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.roo.core [1347]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"] because it is exposed to package 'org.springframework.objenesis.instantiator' from resources org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"] and org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.core)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle: org.springframework.core
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+
+Chain 2:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.context)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.2.4.20151218-RELEASE"; osgi.wiring.bundle="org.springframework.context"
+  org.springframework.context [osgi.identity; osgi.identity="org.springframework.context"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+    import: (osgi.wiring.package=org.springframework.objenesis)
+     |
+    export: osgi.wiring.package: org.springframework.objenesis; uses:=org.springframework.objenesis.instantiator
+    export: osgi.wiring.package=org.springframework.objenesis.instantiator
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-13 08:36:11.926
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon' from bundle '770'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon cannot be found by org.eclipse.ui.ide_3.11.0.v20150825-2158
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-13 08:37:01.406
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\forever'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-05-13 08:37:09.238
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 1.100.0.v20160303-1450
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:92)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:55)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:69)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 0 2019-05-13 09:01:20.272
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NoClassDefFoundError: org/springsource/ide/eclipse/commons/ui/ImageDescriptorRegistry)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: java.lang.NoClassDefFoundError: org/springsource/ide/eclipse/commons/ui/ImageDescriptorRegistry
+	at org.springframework.ide.eclipse.beans.ui.BeansUIPlugin.internalGetImageDescriptorRegistry(BeansUIPlugin.java:135)
+	at org.springframework.ide.eclipse.beans.ui.BeansUIPlugin.getImageDescriptorRegistry(BeansUIPlugin.java:130)
+	at org.springframework.ide.eclipse.beans.ui.model.BeansModelImages.getDecoratedImage(BeansModelImages.java:119)
+	at org.springframework.ide.eclipse.beans.ui.model.BeansModelImages.getImage(BeansModelImages.java:82)
+	at org.springframework.ide.eclipse.beans.ui.namespaces.DefaultNamespaceLabelProvider.getImage(DefaultNamespaceLabelProvider.java:83)
+	at org.springframework.ide.eclipse.beans.ui.model.BeansModelLabelProvider.getImage(BeansModelLabelProvider.java:66)
+	at org.springframework.ide.eclipse.ui.viewers.DecoratingWorkbenchTreePathLabelProvider.getImage(DecoratingWorkbenchTreePathLabelProvider.java:52)
+	at org.eclipse.jface.viewers.DecoratingLabelProvider.getImage(DecoratingLabelProvider.java:89)
+	at org.springframework.ide.eclipse.beans.ui.graph.figures.BeanFigure.createLabel(BeanFigure.java:113)
+	at org.springframework.ide.eclipse.beans.ui.graph.figures.BeanFigure.<init>(BeanFigure.java:63)
+	at org.springframework.ide.eclipse.beans.ui.graph.model.Graph.layout(Graph.java:146)
+	at org.springframework.ide.eclipse.beans.ui.graph.editor.GraphEditor$1$1.run(GraphEditor.java:266)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.ui.ImageDescriptorRegistry cannot be found by org.springframework.ide.eclipse.beans.ui_3.8.4.201703310634-RELEASE
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:389)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 37 more
+!SESSION 2019-05-13 10:15:48.751 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2019-05-13 10:16:00.424
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.dash [1134]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"] because it is exposed to package 'javax.xml.ws.handler' from resources org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"] and javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.eclipse.core.runtime)
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"]
+
+Chain 2:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.springframework.web)
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.3.0.20160611-RELEASE"; osgi.wiring.bundle="org.springframework.web"
+  org.springframework.web [osgi.identity; osgi.identity="org.springframework.web"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+    import: (&(osgi.wiring.package=javax.xml.ws.handler)(version>=0.0.0))
+     |
+    export: osgi.wiring.package: javax.xml.ws.handler
+  javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.roo.core 4 0 2019-05-13 10:16:00.559
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.roo.core [1347]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"] because it is exposed to package 'org.springframework.objenesis.instantiator' from resources org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"] and org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.core)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle: org.springframework.core
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+
+Chain 2:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.context)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.2.4.20151218-RELEASE"; osgi.wiring.bundle="org.springframework.context"
+  org.springframework.context [osgi.identity; osgi.identity="org.springframework.context"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+    import: (osgi.wiring.package=org.springframework.objenesis)
+     |
+    export: osgi.wiring.package: org.springframework.objenesis; uses:=org.springframework.objenesis.instantiator
+    export: osgi.wiring.package=org.springframework.objenesis.instantiator
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.roo.ui 4 0 2019-05-13 10:16:00.780
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.roo.ui [1348]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.roo.core
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.roo.core; bundle-version="3.7.3.201602250914-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.roo.core [1347]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"] because it is exposed to package 'org.springframework.objenesis.instantiator' from resources org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"] and org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.core)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle: org.springframework.core
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+
+Chain 2:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.context)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.2.4.20151218-RELEASE"; osgi.wiring.bundle="org.springframework.context"
+  org.springframework.context [osgi.identity; osgi.identity="org.springframework.context"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+    import: (osgi.wiring.package=org.springframework.objenesis)
+     |
+    export: osgi.wiring.package: org.springframework.objenesis; uses:=org.springframework.objenesis.instantiator
+    export: osgi.wiring.package=org.springframework.objenesis.instantiator
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-13 10:16:06.825
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon' from bundle '770'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon cannot be found by org.eclipse.ui.ide_3.11.0.v20150825-2158
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-13 10:16:45.868
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\forever'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-05-13 10:17:04.385
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 1.100.0.v20160303-1450
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:92)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:55)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:69)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-13 10:17:10.522
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-13 10:17:10.535
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-13 10:17:14.194
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-13 10:17:14.199
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2019-05-13 16:26:10.221 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2019-05-13 16:26:24.126
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.dash [1134]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"] because it is exposed to package 'javax.xml.ws.handler' from resources org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"] and javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.eclipse.core.runtime)
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"]
+
+Chain 2:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.springframework.web)
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.3.0.20160611-RELEASE"; osgi.wiring.bundle="org.springframework.web"
+  org.springframework.web [osgi.identity; osgi.identity="org.springframework.web"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+    import: (&(osgi.wiring.package=javax.xml.ws.handler)(version>=0.0.0))
+     |
+    export: osgi.wiring.package: javax.xml.ws.handler
+  javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.roo.core 4 0 2019-05-13 16:26:24.298
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.roo.core [1347]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"] because it is exposed to package 'org.springframework.objenesis.instantiator' from resources org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"] and org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.core)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle: org.springframework.core
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+
+Chain 2:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.context)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.2.4.20151218-RELEASE"; osgi.wiring.bundle="org.springframework.context"
+  org.springframework.context [osgi.identity; osgi.identity="org.springframework.context"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+    import: (osgi.wiring.package=org.springframework.objenesis)
+     |
+    export: osgi.wiring.package: org.springframework.objenesis; uses:=org.springframework.objenesis.instantiator
+    export: osgi.wiring.package=org.springframework.objenesis.instantiator
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.roo.ui 4 0 2019-05-13 16:26:24.638
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.roo.ui [1348]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.roo.core
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.roo.core; bundle-version="3.7.3.201602250914-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.roo.core [1347]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"] because it is exposed to package 'org.springframework.objenesis.instantiator' from resources org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"] and org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.core)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle: org.springframework.core
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+
+Chain 2:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.context)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.2.4.20151218-RELEASE"; osgi.wiring.bundle="org.springframework.context"
+  org.springframework.context [osgi.identity; osgi.identity="org.springframework.context"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+    import: (osgi.wiring.package=org.springframework.objenesis)
+     |
+    export: osgi.wiring.package: org.springframework.objenesis; uses:=org.springframework.objenesis.instantiator
+    export: osgi.wiring.package=org.springframework.objenesis.instantiator
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-13 16:26:31.724
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon' from bundle '770'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon cannot be found by org.eclipse.ui.ide_3.11.0.v20150825-2158
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-13 16:27:33.403
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\forever'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-05-13 16:27:40.532
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 1.100.0.v20160303-1450
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:92)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:55)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:69)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-13 16:48:14.810
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-13 16:48:14.824
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2019-05-13 18:12:30.632 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2019-05-13 18:12:36.036
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.dash [1134]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"] because it is exposed to package 'javax.xml.ws.handler' from resources org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"] and javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.eclipse.core.runtime)
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"]
+
+Chain 2:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.springframework.web)
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.3.0.20160611-RELEASE"; osgi.wiring.bundle="org.springframework.web"
+  org.springframework.web [osgi.identity; osgi.identity="org.springframework.web"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+    import: (&(osgi.wiring.package=javax.xml.ws.handler)(version>=0.0.0))
+     |
+    export: osgi.wiring.package: javax.xml.ws.handler
+  javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.roo.core 4 0 2019-05-13 18:12:36.136
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.roo.core [1347]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"] because it is exposed to package 'org.springframework.objenesis.instantiator' from resources org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"] and org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.core)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle: org.springframework.core
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+
+Chain 2:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.context)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.2.4.20151218-RELEASE"; osgi.wiring.bundle="org.springframework.context"
+  org.springframework.context [osgi.identity; osgi.identity="org.springframework.context"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+    import: (osgi.wiring.package=org.springframework.objenesis)
+     |
+    export: osgi.wiring.package: org.springframework.objenesis; uses:=org.springframework.objenesis.instantiator
+    export: osgi.wiring.package=org.springframework.objenesis.instantiator
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.roo.ui 4 0 2019-05-13 18:12:36.322
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.roo.ui [1348]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.roo.core
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.roo.core; bundle-version="3.7.3.201602250914-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.roo.core [1347]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"] because it is exposed to package 'org.springframework.objenesis.instantiator' from resources org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"] and org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.core)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle: org.springframework.core
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+
+Chain 2:
+  org.springframework.ide.eclipse.roo.core [osgi.identity; osgi.identity="org.springframework.ide.eclipse.roo.core"; type="osgi.bundle"; version:Version="3.7.3.201602250914-RELEASE"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.springframework.context)(&(bundle-version>=4.0.0)(!(bundle-version>=4.3.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.2.4.20151218-RELEASE"; osgi.wiring.bundle="org.springframework.context"
+  org.springframework.context [osgi.identity; osgi.identity="org.springframework.context"; type="osgi.bundle"; version:Version="4.2.4.20151218-RELEASE"]
+    import: (osgi.wiring.package=org.springframework.objenesis)
+     |
+    export: osgi.wiring.package: org.springframework.objenesis; uses:=org.springframework.objenesis.instantiator
+    export: osgi.wiring.package=org.springframework.objenesis.instantiator
+  org.springframework.core [osgi.identity; osgi.identity="org.springframework.core"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-13 18:12:40.957
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon' from bundle '770'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon cannot be found by org.eclipse.ui.ide_3.11.0.v20150825-2158
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:283)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-13 18:13:06.737
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\forever'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-05-13 18:13:16.658
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 1.100.0.v20160303-1450
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-13 18:19:59.369
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-13 18:19:59.381
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!

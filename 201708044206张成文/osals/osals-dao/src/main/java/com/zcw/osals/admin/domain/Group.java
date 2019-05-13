@@ -6,7 +6,6 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
@@ -29,8 +28,9 @@ public class Group extends BaseTreeEntity<Group> {
 	// ???怎么来的 -----
 	// private static final long serialVersionUID = -1751952224371998469L;
 
-	@Id
-	private Long id;
+	/*
+	 * @Id private Long id;
+	 */
 
 	@Column(name = "NAME")
 	String name;
@@ -40,13 +40,11 @@ public class Group extends BaseTreeEntity<Group> {
 	@OneToMany(mappedBy = "group", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	Set<User> users;
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
+	/*
+	 * public Long getId() { return id; }
+	 * 
+	 * public void setId(Long id) { this.id = id; }
+	 */
 
 	public String getName() {
 		return name;
