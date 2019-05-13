@@ -23,11 +23,11 @@ public class CarMapperTest {
     }
 
     @Test
-    public  void getAllCarTest()
-    {
-        List<Car> list =carMapper.getAllCar();
-        for (Car car: list) {
-            System.out.println(car);
-        }
-    }}
+public  void getAllCarTest()
+{
+    List<Car> list =carMapper.getAllCar();
+    for (Car car: list) {
+        System.out.println(car);
+    }
+}}
 

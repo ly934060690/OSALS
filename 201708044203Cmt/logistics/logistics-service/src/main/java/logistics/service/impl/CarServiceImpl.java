@@ -25,4 +25,10 @@ public class CarServiceImpl implements CarService {
         return list;
     }
 
+    @Override
+    public Car getCarById(Integer id)
+    {
+        return carMapper.getCarById(id);
+    }
+
 }
