@@ -11,4 +11,18 @@
         select id, car_num, car_load from t_car where id=#{id}
     </select>
 
+    <insert id="saveOne" parameterType="car">
+        insert into t_car values (
+        null,#{carNum,jdbcType=VARCHAR},#{carLoad,jdbcType=VARCHAR}
+        )
+    </insert>
+
+    <update id="updateById" parameterType="car">
+    update t_car set car_num=#{carNum,jdbcType=VARCHAR}, car_load=#{carLoad,jdbcType=VARCHAR}
+    where id=#{id}
+    </update>
+
+    <delete id="deleteById" parameterType="Integer">
+        delete  from t_car where id=#{id}
+    </delete>
 </mapper>

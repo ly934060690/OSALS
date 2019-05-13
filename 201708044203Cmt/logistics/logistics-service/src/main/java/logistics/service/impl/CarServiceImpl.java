@@ -25,4 +25,25 @@ public class CarServiceImpl implements CarService {
         return list;
     }
 
+    @Override
+    public Integer saveOne(Car car){
+      return carMapper.saveOne(car);
+    }
+
+    @Override
+    public Car getCarById(Integer id)
+    {
+        return carMapper.getCarById(id);
+    }
+
+    @Override
+    public Integer updateById(Car car){
+        return carMapper.updateById(car);
+    }
+
+    @Override
+    public   Integer deleteById(Integer id)
+    {
+        return carMapper.deleteById(id);
+    }
 }

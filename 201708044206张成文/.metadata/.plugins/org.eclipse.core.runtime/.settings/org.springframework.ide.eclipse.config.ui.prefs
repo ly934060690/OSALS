@@ -1,4 +1,7 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/osals-dao/src/main/resources/applicationContext-dao.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/osals-dao/src/main/resources/applicationContext-resources.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/osals-dao/src/main/resources/applicationContextTest-resources.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/osals-service/src/test/resources/applicationContextTest-service.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/spring-1/src/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/sun-dao/src/main/resources/applicationContext-dao.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/sun-dao/src/main/resources/applicationContextTest-resources.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>

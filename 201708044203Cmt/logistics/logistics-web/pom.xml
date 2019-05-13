@@ -51,6 +51,9 @@
             <version>2.9.7</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+
+
     </dependencies>
 
     <build>
@@ -88,5 +91,17 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+
+        <resources>
+            <resource>
+                <directory>src/main/webapp/WEB-INF/config</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*properties</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
     </build>
 </project>

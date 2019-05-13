@@ -11,6 +11,15 @@ import com.zcw.osals.base.domain.BaseEntity;
 @Table(name = "T_ADMIN_USER")
 @Entity
 public class User extends BaseEntity {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1690250287281716094L;
+
+	//////////////////////
+	/*
+	 * @Id private Long id;
+	 */
 
 	@Column(name = "KIND")
 	String kind;
@@ -58,7 +67,7 @@ public class User extends BaseEntity {
 
 	public void setUsername(String string) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
