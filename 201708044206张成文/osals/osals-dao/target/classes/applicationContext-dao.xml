@@ -12,3 +12,8 @@
 	<jpa:repositories
 		base-package="com.zcw.osals.**.dao" />
 </beans>
+
+
+
+
+

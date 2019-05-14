@@ -21,6 +21,9 @@ public class User extends BaseEntity {
 	 * @Id private Long id;
 	 */
 
+	@Column(name = "NAME")
+	String name;
+
 	@Column(name = "KIND")
 	String kind;
 
@@ -32,6 +35,14 @@ public class User extends BaseEntity {
 	String price;
 	@Column(name = "WEIGHT")
 	String weight;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public String getKind() {
 		return kind;
@@ -65,9 +76,9 @@ public class User extends BaseEntity {
 		this.weight = weight;
 	}
 
-	public void setUsername(String string) {
-		// TODO Auto-generated method stub
-
-	}
+	// public void setUsername(String string) {
+	// // TODO Auto-generated method stub
+	//
+	// }
 
 }
