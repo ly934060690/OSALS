@@ -1,8 +1,9 @@
 package zut.admin.dao;
 
 
-import zut.base.dao.GenericTreeDao;
+import org.springframework.data.jpa.repository.JpaRepository;
 import zut.admin.domain.Courier;
 
-public interface CourierDao extends GenericTreeDao<Courier,Long> {
+public interface CourierDao extends JpaRepository<Courier,String> {
+
 }

@@ -1,14 +1,13 @@
 package zut.admin.domain;
 
-import zut.base.domain.BaseTreeEntity;
 
 import javax.persistence.*;
 import java.util.Set;
 
-@Table(name="T_ADMIN_Courier")
+@Table(name="Courier")
 @Entity
 
-public class Courier extends BaseTreeEntity<Courier> {
+public class Courier <Courier> {
 
     private static final long serialVersionUID = -1751952224371998469L;
 
