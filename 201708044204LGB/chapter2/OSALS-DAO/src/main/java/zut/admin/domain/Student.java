@@ -1,26 +1,26 @@
 package zut.admin.domain;
 
-import zut.base.domain.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="Student")
 
-public class Student extends BaseEntity {
+public class Student {
 
     private static final long serialVersionUID=1L;
 
     @Column(name = "Number")
-    int Number;
+    Integer Number;
     @Column(name="Dept")
     String Dept;
     @Column(name="Profession")
     String Profession;
     @Column(name="classes")
     String classes;
+
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="Id")
     Long Id;
     @Column(name="Name")
@@ -60,15 +60,8 @@ public class Student extends BaseEntity {
         this.classes = classes;
     }
 
-    @Override
-    public Long getId() {
-        return Id;
-    }
 
-    @Override
-    public void setId(Long id) {
-        Id = id;
-    }
+
 
     public String getName() {
         return name;

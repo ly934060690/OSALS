@@ -1,12 +1,11 @@
 package zut.admin.domain;
 
-import zut.base.domain.BaseEntity;
 
 import javax.persistence.*;
 
-@Table(name="T_ADMIN_Parcel")
+@Table(name="Parcel")
 @Entity
-public class Parcel extends BaseEntity {
+public class Parcel {
     private static final long serialVersionUID = -4376674977047164142L;
 
     @Column(name="Receiver")
