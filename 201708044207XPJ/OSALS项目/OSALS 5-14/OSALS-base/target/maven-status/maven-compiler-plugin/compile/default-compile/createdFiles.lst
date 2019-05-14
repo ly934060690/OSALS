@@ -1,0 +1,15 @@
+edu\zut\cs\OSALS\base\BaseAbstractTestCase.class
+edu\zut\cs\OSALS\base\dao\GenericDaoTestCase.class
+edu\zut\cs\OSALS\base\domain\BaseEntity.class
+edu\zut\cs\OSALS\base\service\GenericTreeManagerTestCase.class
+edu\zut\cs\OSALS\base\service\GenericGenerator.class
+edu\zut\cs\OSALS\base\domain\BaseDomain.class
+edu\zut\cs\OSALS\base\service\GenericManagerTestCase.class
+edu\zut\cs\OSALS\base\service\impl\GenericManagerImpl.class
+edu\zut\cs\OSALS\base\domain\BaseTreeEntity.class
+edu\zut\cs\OSALS\base\service\GenericTreeManager.class
+edu\zut\cs\OSALS\base\dao\GenericDao.class
+edu\zut\cs\OSALS\base\dao\GenericTreeDao.class
+edu\zut\cs\OSALS\base\dao\GenericTreeDaoTestCase.class
+edu\zut\cs\OSALS\base\service\impl\GenericTreeManagerImpl.class
+edu\zut\cs\OSALS\base\service\GenericManager.class

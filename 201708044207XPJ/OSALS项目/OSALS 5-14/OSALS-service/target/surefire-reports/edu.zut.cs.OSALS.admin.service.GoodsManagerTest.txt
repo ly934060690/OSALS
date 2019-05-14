@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.zut.cs.OSALS.admin.service.GoodsManagerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.288 s <<< FAILURE! - in edu.zut.cs.OSALS.admin.service.GoodsManagerTest
+testCRUD(edu.zut.cs.OSALS.admin.service.GoodsManagerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [applicationContextTest-resources.xml]: Cannot resolve reference to bean 'jpaVendorAdapter' while setting bean property 'jpaVendorAdapter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaVendorAdapter' defined in class path resource [applicationContextTest-resources.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/hibernate/jpa/HibernatePersistenceProvider
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaVendorAdapter' defined in class path resource [applicationContextTest-resources.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/hibernate/jpa/HibernatePersistenceProvider
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/hibernate/jpa/HibernatePersistenceProvider
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/jpa/HibernatePersistenceProvider
+Caused by: java.lang.ClassNotFoundException: org.hibernate.jpa.HibernatePersistenceProvider
+

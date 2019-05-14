@@ -1,0 +1,4 @@
+edu\zut\cs\OSALS\admin\service\ShopManager.class
+edu\zut\cs\OSALS\admin\service\impl\GoodsManagerImpl.class
+edu\zut\cs\OSALS\admin\service\impl\ShopManagerImpl.class
+edu\zut\cs\OSALS\admin\service\GoodsManager.class
