@@ -7,6 +7,11 @@
   </parent>
   <artifactId>osals-dao</artifactId>
   <dependencies>
+  <dependency>
+　　　　　　<groupId>org.hibernate</groupId>
+　　　　　　<artifactId>hibernate-entitymanager</artifactId>
+　　　　　　<version>5.0.3.Final</version>
+　　　　</dependency>
 		<dependency>
 			<groupId>com.zcw.osals</groupId>
 			<artifactId>osals-base</artifactId>
@@ -56,11 +61,11 @@
 					<scriptAction>drop-and-create</scriptAction>
 					<databaseAction>drop-and-create</databaseAction>
 					<vendor>hibernate</vendor>
-					<packageToScan>edu.zut.cs.software</packageToScan>
+					<packageToScan>com.zcw</packageToScan>
 					<jdbcDriver>com.mysql.cj.jdbc.Driver</jdbcDriver>
-					<jdbcUrl>jdbc:mysql://202.196.37.168:3306/sun</jdbcUrl>
-					<jdbcUser>student</jdbcUser>
-					<jdbcPassword>Student_123456</jdbcPassword>
+					<jdbcUrl>jdbc:mysql://localhost:3306/eesy</jdbcUrl>
+					<jdbcUser>root</jdbcUser>
+					<jdbcPassword>z123</jdbcPassword>
 					<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
 					<properties>
 						<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>

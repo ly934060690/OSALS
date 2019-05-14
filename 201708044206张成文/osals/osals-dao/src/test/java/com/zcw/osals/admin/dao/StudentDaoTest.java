@@ -42,10 +42,7 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 
 		List<Student> all = new ArrayList<Student>();
 
-		/**
-		 * 利用poi解析xlsx
-		 */
-		String filePath = "D:\\Java\\Software17_Student_JavaEE.xlsx";
+		String filePath = "D:\\Software17_Student_JavaEE.xlsx";
 		try {
 			fileInputStream = new FileInputStream(filePath);
 			hssfWorkbook = new XSSFWorkbook(fileInputStream);

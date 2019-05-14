@@ -10,7 +10,7 @@
 	http://www.springframework.org/schema/context/spring-context.xsd  
 	http://www.springframework.org/schema/tx   
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
-		<context:property-placeholder
+	<context:property-placeholder
 		location="jdbc.properties" />
 
 
@@ -34,7 +34,7 @@
 		p:persistenceUnitName="ApplicationEntityManager">
 		<property name="jpaVendorAdapter" ref="jpaVendorAdapter" />
 		<property name="jpaDialect" ref="jpaDialect" />
-		<property name="packagesToScan" value="com.zcw.*" />
+		<property name="packagesToScan" value="edu.zut.cs.*" />
 		<property name="jpaProperties">
 			<props>
 				<prop key="hibernate.dialect">${hibernate.dialect}</prop>

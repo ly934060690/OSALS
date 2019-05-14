@@ -1,7 +1,8 @@
 package zut.admin.dao;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import zut.admin.domain.Courier;
 import zut.admin.domain.Parcel;
-import zut.base.dao.GenericDao;
 
-public interface ParcelDao extends GenericDao<Parcel,Long> {
+public interface ParcelDao extends JpaRepository<Parcel,String> {
 }

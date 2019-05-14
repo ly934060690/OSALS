@@ -33,7 +33,7 @@ public class UserEntityGenerator extends GenericGenerator {
 	public void gen_user(Group g) {
 		for (int i = 0; i < 10; i++) {
 			User u = new User();
-			u.setUsername("username_" + i);
+			u.setName("username_" + i);
 			u.setGroup(g);
 			this.userManager.save(u);
 		}
