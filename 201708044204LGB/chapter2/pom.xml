@@ -10,6 +10,8 @@
     <modules>
         <module>OSALS-DAO</module>
         <module>OSALS-Base</module>
+        <module>OSALS-Service</module>
+        <module>OSALS-Web</module>
     </modules>
     <packaging>pom</packaging>
 
