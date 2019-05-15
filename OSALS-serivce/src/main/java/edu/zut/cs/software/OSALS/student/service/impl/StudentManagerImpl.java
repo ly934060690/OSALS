@@ -62,7 +62,7 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 		/**
 		 * 利用poi读取excel
 		 */
-		String filePath = "D:\\Java\\doc\\Software17_Student_JavaEE.xlsx";
+		String filePath = "D:\\Java\\Software17_Student_JavaEE.xlsx";
 		try {
             fileInputStream = new FileInputStream(filePath);
             hssfWorkbook = new XSSFWorkbook(fileInputStream);

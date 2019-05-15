@@ -7,9 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="OSALS-base" />
-        <module name="OSALS-dao" />
+        <module name="OSALS-dao (1)" />
         <module name="OSALS-serivce" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="OSALS (1)" target="1.8" />
+      <module name="OSALS-base (1)" target="1.8" />
+      <module name="OSALS-dao" target="1.8" />
+      <module name="OSALS-serivce (1)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

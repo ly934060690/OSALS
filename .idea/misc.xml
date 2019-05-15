@@ -4,7 +4,10 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-base/pom.xml" />
+        <option value="$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-serivce/pom.xml" />
+        <option value="$PROJECT_DIR$/../OSALS_Object/OSALS/pom.xml" />
       </list>
     </option>
   </component>

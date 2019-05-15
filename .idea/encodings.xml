@@ -5,5 +5,9 @@
     <file url="file://$PROJECT_DIR$/OSALS-base" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/OSALS-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/OSALS-serivce" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../OSALS_Object/OSALS" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-serivce" charset="UTF-8" />
   </component>
 </project>
