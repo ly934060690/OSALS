@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.shop.dao.ShopDaoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 s - in edu.zut.cs.software.OSALS.shop.dao.ShopDaoTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.151 s <<< FAILURE! - in edu.zut.cs.software.OSALS.shop.dao.ShopDaoTest
+testGetRoot(edu.zut.cs.software.OSALS.shop.dao.ShopDaoTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in class path resource [applicationContext-resources.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.zut.cs.software.OSALS.Temporary_station.domain.Temporary_station.Post_tation in edu.zut.cs.software.OSALS.Post_station.domain.Post_station.temporary_stations
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.zut.cs.software.OSALS.Temporary_station.domain.Temporary_station.Post_tation in edu.zut.cs.software.OSALS.Post_station.domain.Post_station.temporary_stations
+

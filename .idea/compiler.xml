@@ -12,10 +12,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="OSALS" target="1.5" />
-      <module name="OSALS-base" target="1.5" />
-      <module name="OSALS-dao" target="1.5" />
-      <module name="OSALS-serivce" target="1.5" />
+      <module name="OSALS" target="1.8" />
+      <module name="OSALS-base" target="1.8" />
+      <module name="OSALS-dao" target="1.8" />
+      <module name="OSALS-serivce" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
