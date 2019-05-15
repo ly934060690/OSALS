@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\JAVA\²Ö¿â\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\commodity\service\CommodityManager.java
 D:\JAVA\²Ö¿â\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\shop\service\ShopManager.java
 D:\JAVA\²Ö¿â\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\student\service\StudentManager.java
@@ -10,3 +11,17 @@ D:\JAVA\²Ö¿â\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\s
 D:\JAVA\²Ö¿â\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\RoleManager.java
 D:\JAVA\²Ö¿â\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\UserManager.java
 D:\JAVA\²Ö¿â\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\impl\UserManagerImpl.java
+=======
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\impl\GroupManagerImpl.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\commodity\service\CommodityManager.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\UserManager.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\commodity\service\impl\CommodityManagerImpl.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\shop\service\ShopManager.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\GroupManager.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\shop\service\impl\ShopManagerImpl.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\impl\UserManagerImpl.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\RoleManager.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\student\service\impl\StudentManagerImpl.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\impl\RoleManagerImpl.java
+D:\Java\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\student\service\StudentManager.java
+>>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e

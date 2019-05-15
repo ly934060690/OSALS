@@ -1,7 +1,7 @@
 package edu.zut.cs.software.OSALS.shop.dao;
 
-import edu.zut.cs.software.base.dao.GenericTreeDaoTestCase;
 import edu.zut.cs.software.OSALS.shop.domain.Shop;
+import edu.zut.cs.software.base.dao.GenericTreeDaoTestCase;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
@@ -30,7 +30,7 @@ public class ShopDaoTest extends GenericTreeDaoTestCase<Long, Shop, ShopDao> {
 		this.shopDao = shopDao;
 		this.dao = this.shopDao;
 	}
-	
+
 	@Test
 	//@Rollback(false)
 	public void testGetRoot() {

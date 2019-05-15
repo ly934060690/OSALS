@@ -1,0 +1,16 @@
+edu\zut\cs\software\OSALS\commodity\dao\CommodityDao.class
+edu\zut\cs\software\OSALS\admin\domain\User.class
+edu\zut\cs\software\OSALS\admin\dao\RoleDao.class
+edu\zut\cs\software\OSALS\admin\dao\GroupDao.class
+edu\zut\cs\software\OSALS\Temporary_station\domain\Temporary_station.class
+edu\zut\cs\software\OSALS\Post_station\dao\Post_stationDao.class
+edu\zut\cs\software\OSALS\commodity\domain\Commodity.class
+edu\zut\cs\software\OSALS\shop\domain\Shop.class
+edu\zut\cs\software\OSALS\admin\dao\UserDao.class
+edu\zut\cs\software\OSALS\admin\domain\Role.class
+edu\zut\cs\software\OSALS\Temporary_station\dao\Temporary_stationDao.class
+edu\zut\cs\software\OSALS\student\dao\StudentDao.class
+edu\zut\cs\software\OSALS\student\domain\Student.class
+edu\zut\cs\software\OSALS\admin\domain\Group.class
+edu\zut\cs\software\OSALS\Post_station\domain\Post_station.class
+edu\zut\cs\software\OSALS\shop\dao\ShopDao.class
