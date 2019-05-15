@@ -1,2 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4" />
+<module version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="新建文件夹:201708044206张成文:hibernate-1:src:hibernate.cfg.xml" />
+          <unit-entry name="新建文件夹:201708044207XPJ:Hibernate:Hibernate实现CRUD:src:main:resources:hibernate.cfg.xml" />
+          <unit-entry name="新建文件夹:201708044207XPJ:Hibernate:Hibernate实现CRUD:target:classes:hibernate.cfg.xml" />
+          <unit-entry name="新建文件夹:201708044216LBW:Hibernate的学习:4.27_Hibernate:hibernate.cfg.xml" />
+          <unit-entry name="新建文件夹:201708044216LBW:Hibernate的学习:Hibernate2:src:main:java:hibernate.cfg.xml" />
+          <unit-entry name="新建文件夹:201708044216LBW:Hibernate的学习:hibernate.cfg.xml" />
+          <unit-entry name="新建文件夹:201708044216LBW:OSLAS项目相关:(待续)仅仅进行了简单的修改:5.6对自己的项目的修改:resources:hibernate.cfg.xml" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/新建文件夹/201708044206张成文/hibernate-1/src/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/新建文件夹/201708044207XPJ/Hibernate/Hibernate实现CRUD/src/main/resources/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/新建文件夹/201708044207XPJ/Hibernate/Hibernate实现CRUD/target/classes/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/新建文件夹/201708044216LBW/Hibernate的学习/4.27_Hibernate/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/新建文件夹/201708044216LBW/Hibernate的学习/Hibernate2/src/main/java/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/新建文件夹/201708044216LBW/Hibernate的学习/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/新建文件夹/201708044216LBW/OSLAS项目相关/(待续)仅仅进行了简单的修改/5.6对自己的项目的修改/resources/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044216LBW/gx-web/target/classes/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044216LBW/gx-web/target/classes" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/springmvc-1/WebContent/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/springmvc-1/WebContent" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/sun/sun-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/sun/sun-web/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/star/star-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/star/star-web/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web5">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044203Cmt/logistics/logistics-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044203Cmt/logistics/logistics-web/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web6">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044203Cmt/logistics/logistics-web/target/logistics/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044203Cmt/logistics/logistics-web/target/logistics" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web7">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044216LBW/gx-web/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044216LBW/gx-web/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web8">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044228hyh/chapter2/src/test/java/com/smart/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044228hyh/chapter2/src/test/java/com/smart/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web9">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044206张成文/Servers/Tomcat v8.0 Server at localhost-config/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044206张成文/Servers/Tomcat v8.0 Server at localhost-config" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web10">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/star/star-web/target/star-web-0.0.1-SNAPSHOT/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/star/star-web/target/star-web-0.0.1-SNAPSHOT" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web11">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/teacher/sun/sun-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/teacher/sun/sun-web/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web12">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044228hyh/chapter3/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044228hyh/chapter3/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web13">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/新建文件夹/201708044206张成文/WebProjct02/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/新建文件夹/201708044206张成文/WebProjct02/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <datasource-mapping>
+          <factory-entry name="ApplicationEntityManager" />
+        </datasource-mapping>
+        <naming-strategy-map />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/新建文件夹/201708044226Ly/teacher/sun/sun-dao/src/main/resources/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+  </component>
+</module>

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.zut.cs.software.star.admin.dao.RoleDaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.718 s <<< FAILURE! - in edu.zut.cs.software.star.admin.dao.RoleDaoTest
+test(edu.zut.cs.software.star.admin.dao.RoleDaoTest)  Time elapsed: 0.715 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: error performing isolated work; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: error performing isolated work
+	at edu.zut.cs.software.star.admin.dao.RoleDaoTest.test(RoleDaoTest.java:35)
+Caused by: org.hibernate.exception.SQLGrammarException: error performing isolated work
+	at edu.zut.cs.software.star.admin.dao.RoleDaoTest.test(RoleDaoTest.java:35)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'OSALS.hibernate_sequence' doesn't exist
+	at edu.zut.cs.software.star.admin.dao.RoleDaoTest.test(RoleDaoTest.java:35)
+
