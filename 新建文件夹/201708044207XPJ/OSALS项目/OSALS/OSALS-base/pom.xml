@@ -22,7 +22,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>4.1.8.Final</version><!--5.4.2&4.1.8-->
+            <version>5.4.2.Final</version><!--5.4.2&4.1.8-->
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>

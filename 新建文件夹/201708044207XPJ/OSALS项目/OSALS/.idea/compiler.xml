@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OSALSbase" />
-        <module name="OSALSdao" />
-        <module name="OSALSservice" />
-        <module name="OSALSweb" />
+        <module name="OSALS-base" />
+        <module name="OSALS-base (1) (edu.zut.cs.software)" />
+        <module name="OSALS-dao" />
+        <module name="OSALS-dao (1) (edu.zut.cs.software)" />
+        <module name="OSALS-serivce" />
+        <module name="OSALS-service" />
+        <module name="OSALS-web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="TMdao" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

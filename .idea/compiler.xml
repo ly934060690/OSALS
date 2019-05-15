@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OSALS" />
+        <module name="OSALS-base" />
+        <module name="OSALS-dao" />
+        <module name="OSALS-serivce" />
       </profile>
     </annotationProcessing>
   </component>
