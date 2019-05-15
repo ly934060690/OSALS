@@ -11,7 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 import java.util.ArrayList;
 import java.util.List;
 
-@ContextConfiguration(locations = {"classpath:applicationContext-service.xml"})
+@ContextConfiguration(locations = {"classpath:/applicationContext-service.xml"})
 public class UserManagerTest extends GenericManagerTestCase<Long, User, UserManager> {
 	/**
 	 * Logger for this class
