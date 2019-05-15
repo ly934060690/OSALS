@@ -1,6 +1,17 @@
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\student\dao\StudentDaoTest.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDaoTest.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\GroupDaoTest.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\RoleDaoTest.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\UserDaoTest.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\shop\dao\ShopDaoTest.java
+<<<<<<< HEAD
+D:\Java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\student\dao\StudentDaoTest.java
+D:\Java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDaoTest.java
+D:\Java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\shop\dao\ShopDaoTest.java
+D:\Java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\GroupDaoTest.java
+D:\Java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\UserDaoTest.java
+D:\Java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\RoleDaoTest.java
+=======
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\Post_station\dao\Post_stationDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\student\dao\StudentDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\Temporary_station\dao\Temporary_stationDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\GroupDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\RoleDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\UserDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\shop\dao\ShopDaoTest.java
+>>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589

@@ -2174,6 +2174,7 @@ DATEMODIFIED datetime,;
 
 DELETED bit,;
 
+<<<<<<< HEAD
 ENTITY_NAME varchar(;
 
 255;
@@ -2528,6 +2529,8 @@ DATEMODIFIED datetime,;
 
 DELETED bit,;
 
+=======
+>>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
 ENTITY_NAME varchar(
 	255
 ),;

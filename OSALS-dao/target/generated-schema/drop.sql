@@ -208,6 +208,7 @@ drop table if exists T_SHOP;
 
 drop table if exists T_STUDENT;
 
+<<<<<<< HEAD
 alter table T_ADMIN_GROUP;
 
 drop foreign key FKb2p0eo4g64vjc1nrnixmv2tdb;
@@ -238,6 +239,8 @@ drop table if exists T_SHOP;
 
 drop table if exists T_STUDENT;
 
+=======
+>>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
 alter table T_ADMIN_GROUP
 	drop foreign key FKb2p0eo4g64vjc1nrnixmv2tdb;
 
