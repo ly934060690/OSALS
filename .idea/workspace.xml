@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="b741804d-4001-49a2-9feb-ed8eab73e33a" name="Default Changelist" comment="" />
+=======
     <list default="true" id="0837bcc8-9a40-46e5-8c5b-2a34df0259ca" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/OSALS-serivce/target/" />
     <ignored path="$PROJECT_DIR$/OSALS-dao/target/" />
     <ignored path="$PROJECT_DIR$/OSALS-base/target/" />
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Java\repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../Maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\Java\Maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="481" />
+    <option name="y" value="90" />
+    <option name="width" value="1535" />
+    <option name="height" value="855" />
+=======
   <component name="FavoritesManager">
     <favorites_list name="OSALS" />
   </component>
@@ -196,12 +224,17 @@
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+      <pane id="ProjectPane" />
+=======
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -452,13 +485,28 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557901740173" />
+=======
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557898729172" />
+>>>>>>> ffefca37b802e8d540580347f9595fb3ede20d1d
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -478,6 +526,7 @@
       <recent name="D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java" />
       <recent name="D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\resources" />
     </key>
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -585,14 +634,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0837bcc8-9a40-46e5-8c5b-2a34df0259ca" name="Default Changelist" comment="" />
-      <created>1557884291940</created>
+      <changelist id="b741804d-4001-49a2-9feb-ed8eab73e33a" name="Default Changelist" comment="" />
+      <created>1557885951559</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+      <updated>1557885951559</updated>
+      <workItem from="1557885954680" duration="114000" />
+      <workItem from="1557886075636" duration="54000" />
+=======
       <updated>1557884291940</updated>
       <workItem from="1557884295745" duration="243000" />
       <workItem from="1557894235851" duration="3256000" />
+<<<<<<< HEAD
       <workItem from="1557897566579" duration="2211000" />
+=======
+      <workItem from="1557897566579" duration="1083000" />
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
+>>>>>>> ffefca37b802e8d540580347f9595fb3ede20d1d
     </task>
     <servers />
   </component>
@@ -629,7 +688,25 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="5710000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="168000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+=======
+    <option name="totallyTimeSpent" value="4582000" />
+>>>>>>> ffefca37b802e8d540580347f9595fb3ede20d1d
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -643,6 +720,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50057536" side_tool="true" weight="0.30863538" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Persistence" order="8" sideWeight="0.2958843" side_tool="true" weight="0.31183368" />
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6785317" />
@@ -650,6 +728,22 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+=======
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.7219132" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
@@ -667,11 +761,16 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
+  <component name="masterDetails">
+    <states>
+=======
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/software/OSALS/commodity/dao/CommodityDaoTest.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1119,6 +1218,7 @@
           </splitter-proportions>
         </settings>
       </state>
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -1132,6 +1232,8 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+<<<<<<< HEAD
+=======
           <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
@@ -1145,6 +1247,7 @@
       <state key="ModuleStructureConfigurable.UI">
         <settings>
           <last-edited>JPA|OSALS-dao</last-edited>
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1168,6 +1271,8 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+<<<<<<< HEAD
+=======
           <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
@@ -1180,6 +1285,7 @@
       </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
+>>>>>>> b8ce8ad61126e8610ab122091ebe42e8bb19f1b0
           <splitter-proportions>
             <option name="proportions">
               <list>
