@@ -64,7 +64,11 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 		 * 利用poi读取excel
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		URL url = StudentManagerImpl.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
+=======
+		String filePath = "D:\\JAVA\\仓库\\OSALS\\doc\\Software17_Student_JavaEE.xlsx";
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
 =======
 <<<<<<< HEAD
 		String filePath = "D:\\Java\\Software17_Student_JavaEE.xlsx";

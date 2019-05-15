@@ -2,7 +2,11 @@
 Test set: edu.zut.cs.software.OSALS.student.dao.StudentDaoTest
 -------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.509 s - in edu.zut.cs.software.OSALS.student.dao.StudentDaoTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.962 s - in edu.zut.cs.software.OSALS.student.dao.StudentDaoTest
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
 =======
 <<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.656 s - in edu.zut.cs.software.OSALS.student.dao.StudentDaoTest

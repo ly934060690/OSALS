@@ -2,7 +2,11 @@
 Test set: edu.zut.cs.software.OSALS.admin.service.UserManagerTest
 -------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.266 s - in edu.zut.cs.software.OSALS.admin.service.UserManagerTest
+=======
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.249 s - in edu.zut.cs.software.OSALS.admin.service.UserManagerTest
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
 =======
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.037 s - in edu.zut.cs.software.OSALS.admin.service.UserManagerTest
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e

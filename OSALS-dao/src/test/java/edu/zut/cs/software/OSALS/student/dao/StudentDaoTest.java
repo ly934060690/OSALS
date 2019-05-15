@@ -60,7 +60,11 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		 * 利用poi解析xlsx
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
         URL url = UserDaoTest.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
+=======
+		String filePath = "D:\\JAVA\\仓库\\OSALS\\doc\\Software17_Student_JavaEE.xlsx";
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
 =======
 <<<<<<< HEAD
 		String filePath = "D:\\Java\\Software17_Student_JavaEE.xlsx";

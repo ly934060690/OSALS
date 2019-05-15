@@ -2,7 +2,11 @@
 Test set: edu.zut.cs.software.OSALS.admin.dao.RoleDaoTest
 -------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 s - in edu.zut.cs.software.OSALS.admin.dao.RoleDaoTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.381 s - in edu.zut.cs.software.OSALS.admin.dao.RoleDaoTest
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
 =======
 <<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s - in edu.zut.cs.software.OSALS.admin.dao.RoleDaoTest

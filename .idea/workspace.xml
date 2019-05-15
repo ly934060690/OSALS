@@ -6,214 +6,84 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89adea31-15aa-4fb4-9415-627d943823de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/software/OSALS/Post_station/dao/Post_stationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/software/OSALS/Post_station/dao/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/software/OSALS/Post_station/domain/Post_station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/software/OSALS/Post_station/domain/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/software/OSALS/Temporary_station/dao/Temporary_stationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/software/OSALS/Temporary_station/dao/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/software/OSALS/Temporary_station/domain/Temporary_station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/main/java/edu/zut/cs/software/OSALS/Temporary_station/domain/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/software/OSALS/Post_station/dao/Post_stationDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSALS-dao/src/test/java/edu/zut/cs/software/OSALS/Temporary_station/dao/Temporary_stationDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/.idea/libraries/c3p0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/.idea/libraries/mysql_connector_java_5_1_30_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/.idea/libraries/required.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/src/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/src/main/java/zut/edu/cs/dao/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/src/main/java/zut/edu/cs/hibernate/HiberbateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/src/main/resources/hibernate.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/src/test/java/zut/edu/cs/HibernateDem1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Hibernate_study01/src/test/java/zut/edu/cs/HibernateDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/OSALSbase.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/BaseAbstractTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericDaoTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/GenericTreeDaoTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/dao/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/BaseTreeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/domain/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericManagerTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericTreeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/GenericTreeManagerTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/impl/GenericManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-base/src/main/java/edu/zut/cs/OSALS/base/service/impl/GenericTreeManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/OSALSdao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/GoodsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/ShopDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/java/edu/zut/cs/OSALS/admin/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/resources/1819计算机学院软件172班_JavaEE课程练习.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/resources/applicationContext-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/resources/applicationContextTest-resources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/GoodsDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/dao/ShopDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-dao/src/test/java/edu/zut/cs/OSALS/admin/domain/StudentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/GoodsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/ShopManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/impl/GoodsManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/main/java/edu/zut/cs/OSALS/admin/service/impl/ShopManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/main/resources/applicationContext-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/main/resources/applicationContextTest-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/test/java/edu/zut/cs/OSALS/admin/service/GoodsManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/test/java/edu/zut/cs/OSALS/admin/service/ShopGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-service/src/test/java/edu/zut/cs/OSALS/admin/service/ShopManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/OSALS-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/OSALS/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/libraries/javadocs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/libraries/mysql_connector_java_5_1_30_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/src/JDBCTest/Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/src/com/zut/edu/User.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/src/com/zut/edu/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/Test/src/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_aop_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_context_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_orm_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_test_5_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_tx_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/TM-dao/TM-dao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/TM-dao/src/main/java/edu/zut/cs/TestM/base/BaseAbstractTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/TM-dao/src/main/java/edu/zut/cs/TestM/base/dao/GenericDaoTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/TM-dao/src/main/java/edu/zut/cs/TestM/base/dao/GenericTreeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/TM-dao/src/main/java/edu/zut/cs/TestM/base/dao/GenericTreeDaoTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/TM-service/TM-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/TM-service/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/TestMaven/TestMaven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/ThreadLocalDemo/src/SequenceNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_002factury/day01_eesy_02_factury.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_01jdbc/day01_eesy_01_jdbc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_03Spring/instruction" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_03Spring/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_04_bean/instruction" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_04_bean/src/main/java/com/itheima/factory/InstanceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_04_bean/src/main/java/com/itheima/factory/staticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_05DI/src/main/java/com/itheima/service/impl/AccountServiceImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day01_eesy_05DI/src/main/java/com/itheima/service/impl/AccountServiceImpl3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_01anno_IOC/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_01anno_IOC/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_01anno_IOC/src/main/java/com/itheima/dao/impl/AccountDaoImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/src/main/java/com/itheima/dao/impl/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/src/main/java/com/itheima/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/day02_eesy_02account_xmlIOC/src/test/java/com/itheima/test/AccountServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/sun.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/sun.server/sun.server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../eclipse-workspace/sun/sun.web/sun.web.iml" afterDir="false" />
+    <list default="true" id="187fac13-4797-4004-b263-3bf8c8908cd4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5feb773f-9b54-4f07-9976-e24634f5c8b9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml~HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml~HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+<<<<<<< HEAD
     <ignored path="$PROJECT_DIR$/OSALS-dao/target/" />
     <ignored path="$PROJECT_DIR$/OSALS-serivce/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -226,12 +96,15 @@
     <ignored path="$PROJECT_DIR$/../OSALS_Object/OSALS/target/" />
     <ignored path="$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-serivce/target/" />
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
+=======
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -480,9 +353,11 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
   <component name="Git.Settings">
-<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
 =======
     <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
 >>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
@@ -563,6 +438,8 @@
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
       </list>
     </option>
+=======
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -572,25 +449,13 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-<<<<<<< HEAD
-        <option name="localRepository" value="D:\Java\apache-maven-3.6.0\repo" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="D:\Java\apache-maven-3.6.0\conf\settings.xml" />
-=======
-        <option name="localRepository" value="D:\java\maven-Repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.0\conf\settings.xml" />
->>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -616,20 +481,24 @@
     <option name="x" value="543" />
     <option name="y" value="129" />
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
->>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
+<<<<<<< HEAD
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1414,12 +1283,14 @@
       <pane id="PackagesPane" />
 =======
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
+=======
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557932923040" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java_Practice__SC/浪漫表白" />
@@ -1452,11 +1323,14 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557927005517" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OSALS/新建文件夹/201708044207XPJ/OSALS项目/OSALS" />
 >>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
+=======
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -1464,6 +1338,9 @@
       <recent name="D:\java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS" />
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
     </key>
+=======
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1477,6 +1354,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="RunManager" selected="JUnit.StudentEntityGenerator.testSaveStudent (1)">
     <configuration name="StudentDaoTest.test" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
@@ -1912,15 +1790,18 @@
       </list>
     </recent_temporary>
   </component>
+=======
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="89adea31-15aa-4fb4-9415-627d943823de" name="Default Changelist" comment="" />
-      <created>1557908316609</created>
+      <changelist id="187fac13-4797-4004-b263-3bf8c8908cd4" name="Default Changelist" comment="" />
+      <created>1557933747930</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <updated>1557884291940</updated>
       <workItem from="1557884295745" duration="243000" />
@@ -2051,13 +1932,20 @@
       <configuration name="Temporary_stationDaoTest.save" configurationId="JUnit" />
     </history-entry>
   </component>
+=======
+      <updated>1557933747930</updated>
+      <workItem from="1557933749703" duration="243000" />
+    </task>
+    <servers />
+  </component>
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14890000" />
->>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
+    <option name="totallyTimeSpent" value="243000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7041157" visible="true" weight="0.19669509" />
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
@@ -2100,41 +1988,37 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Find" order="1" weight="0.40411702" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.6923077" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.8201517" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.6923077" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" />
 =======
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12153518" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.11930586" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.7657267" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
->>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Maven" order="3" weight="0.08315565" />
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
       <window_info anchor="right" id="Palette" order="4" />
@@ -2142,11 +2026,14 @@
       <window_info anchor="right" id="Database" order="6" weight="0.17803837" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+=======
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/OSALS-dao/src/main/resources/applicationContext-dao.xml">
@@ -3163,6 +3050,10 @@
           </splitter-proportions>
         </settings>
       </state>
+=======
+  <component name="masterDetails">
+    <states>
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -3176,6 +3067,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
@@ -3193,11 +3085,12 @@
 =======
           <last-edited>OSALS</last-edited>
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
+=======
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -3205,7 +3098,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -3217,7 +3110,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

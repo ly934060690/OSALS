@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/OSALS-web" />
   </component>
 =======
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
+=======
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-base/pom.xml" />
-        <option value="$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-serivce/pom.xml" />
-        <option value="$PROJECT_DIR$/../OSALS_Object/OSALS/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/classes" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="10" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

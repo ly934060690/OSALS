@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/OSALS-base" charset="UTF-8" />
@@ -14,4 +15,7 @@
     <file url="file://$PROJECT_DIR$/../OSALS_Object/OSALS/OSALS-serivce" charset="UTF-8" />
 >>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
   </component>
+=======
+  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
+>>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
 </project>
