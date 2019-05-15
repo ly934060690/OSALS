@@ -51,7 +51,7 @@
 	
 	<build>
 		<plugins>
-			<!-- To use the plugin goals in your POM or parent POM -->
+			 <!--To use the plugin goals in your POM or parent POM-->
 			<plugin>
 				<groupId>io.github.divinespear</groupId>
 				<artifactId>jpa-schema-maven-plugin</artifactId>
@@ -66,7 +66,8 @@
 					<jdbcUrl>jdbc:mysql://202.196.37.168:3306/stars</jdbcUrl>
 					<jdbcUser>student</jdbcUser>
 					<jdbcPassword>Student_123456</jdbcPassword>
-					<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
+					<!--这里注释掉了-->
+					<!--<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>-->
 					<properties>
 						<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
 					</properties>
@@ -82,7 +83,7 @@
 					<dependency>
 						<groupId>org.hibernate</groupId>
 						<artifactId>hibernate-entitymanager</artifactId>
-						<version>5.2.16.Final</version>
+						<version>5.4.2.Final</version>
 					</dependency>
 					<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
 					<dependency>

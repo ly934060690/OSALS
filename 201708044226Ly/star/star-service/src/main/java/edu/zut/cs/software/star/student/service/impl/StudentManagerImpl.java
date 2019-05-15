@@ -17,6 +17,9 @@ import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
 import edu.zut.cs.software.star.student.dao.StudentDao;
 import edu.zut.cs.software.star.student.domain.Student;
 import edu.zut.cs.software.star.student.service.StudentManager;
+import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
 
 @Component
 //@Transactional
@@ -29,6 +32,8 @@ import edu.zut.cs.software.star.student.service.StudentManager;
  * @author 研哥哥
  *
  */
+@Service("studentManager")
+@Transactional
 public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implements StudentManager {
 	/**
 	 * Logger for this class

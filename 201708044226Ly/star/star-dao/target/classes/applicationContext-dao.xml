@@ -10,5 +10,5 @@
 
 	<!-- Activates scanning of @Repository -->
 	<jpa:repositories
-		base-package="edu.zut.cs.software.star.**.dao" />
+		base-package="edu.zut.cs.software.star.**.dao" entity-manager-factory-ref="emf"/>
 </beans>

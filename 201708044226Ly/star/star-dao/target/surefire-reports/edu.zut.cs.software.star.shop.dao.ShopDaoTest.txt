@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.star.shop.dao.ShopDaoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.094 s - in edu.zut.cs.software.star.shop.dao.ShopDaoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.288 s - in edu.zut.cs.software.star.shop.dao.ShopDaoTest

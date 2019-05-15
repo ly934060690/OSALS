@@ -12,7 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import edu.zut.cs.software.base.service.GenericManagerTestCase;
 import edu.zut.cs.software.star.admin.domain.User;
 
-@ContextConfiguration(locations = { "classpath:applicationContext-service.xml" })
+@ContextConfiguration(locations = {"classpath:applicationContext-service.xml"})
 public class UserManagerTest extends GenericManagerTestCase<Long, User, UserManager> {
 	/**
 	 * Logger for this class
