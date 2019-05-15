@@ -51,19 +51,7 @@ public class StudentEntityGenerator extends GenericGenerator {
 		/**
 		 * 利用poi读取excel
 		 */
-<<<<<<< HEAD
-<<<<<<< HEAD
 		URL url = StudentEntityGenerator.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
-=======
-		String filePath = "D:\\JAVA\\仓库\\OSALS\\doc\\Software17_Student_JavaEE.xlsx";
->>>>>>> 2af7140035cf9999cfc029137d7a871d6ab46541
-=======
-<<<<<<< HEAD
-		String filePath = "D:\\Java\\Software17_Student_JavaEE.xlsx";
-=======
-		String filePath = "D:\\java\\OSALS\\doc\\Software17_Student_JavaEE.xlsx";
->>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
->>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
 		try {
 			fileInputStream = new FileInputStream(url.getFile());
             hssfWorkbook = new XSSFWorkbook(fileInputStream);
