@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="logistics-dao" />
+        <module name="logistics-service" />
+        <module name="logistics-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="logistics" target="1.8" />
+      <module name="logistics-dao" target="1.8" />
+      <module name="logistics-service" target="1.8" />
+      <module name="logistics-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

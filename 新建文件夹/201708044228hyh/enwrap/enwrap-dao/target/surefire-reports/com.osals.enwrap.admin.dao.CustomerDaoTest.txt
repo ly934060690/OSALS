@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.osals.enwrap.admin.dao.CustomerDaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.158 s <<< FAILURE! - in com.osals.enwrap.admin.dao.CustomerDaoTest
+testGetRoot(com.osals.enwrap.admin.dao.CustomerDaoTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.osals.base.dao.GenericTreeDao.getRoot()! No property getRoot found for type Customer!
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.osals.base.dao.GenericTreeDao.getRoot()! No property getRoot found for type Customer!
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property getRoot found for type Customer!
+

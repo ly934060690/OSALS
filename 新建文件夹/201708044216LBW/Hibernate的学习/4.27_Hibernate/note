@@ -1,0 +1,11 @@
+ 在spring中使用Hibernate要什么步骤
+1.使用IOC容器来管理Hibernate的SessionFactory
+2.让Hibernate使用Spring的声明式事务
+
+(1)加入Hibernate
+   jar包
+   配置hibernate.cfg.xml配置文件
+   编写了持久化类对应的文件.hbm.xml
+
+(2)加入spring
+（3）整合

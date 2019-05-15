@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: edu.zut.cs.software.star.student.dao.StudentDaoTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.09 s - in edu.zut.cs.software.star.student.dao.StudentDaoTest
