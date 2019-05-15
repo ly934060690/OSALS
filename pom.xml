@@ -12,6 +12,7 @@
         <module>OSALS-base</module>
         <module>OSALS-dao</module>
         <module>OSALS-serivce</module>
+        <module>OSALS-web</module>
     </modules>
 
 

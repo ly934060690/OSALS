@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,9 +51,9 @@ public class StudentEntityGenerator extends GenericGenerator {
 		/**
 		 * 利用poi读取excel
 		 */
-		String filePath = "D:\\Java\\doc\\Software17_Student_JavaEE.xlsx";
+		URL url = StudentEntityGenerator.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
 		try {
-            fileInputStream = new FileInputStream(filePath);
+			fileInputStream = new FileInputStream(url.getFile());
             hssfWorkbook = new XSSFWorkbook(fileInputStream);
 
             hssfSheet = hssfWorkbook.getSheet("Sheet1");
