@@ -16,6 +16,7 @@ import javax.transaction.Transactional;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,17 +63,9 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 		/**
 		 * 利用poi读取excel
 		 */
-<<<<<<< HEAD
-		String filePath = "D:\\JAVA\\仓库\\OSALS\\doc\\Software17_Student_JavaEE.xlsx";
-=======
-<<<<<<< HEAD
-		String filePath = "D:\\Java\\Software17_Student_JavaEE.xlsx";
-=======
-		String filePath = "D:\\java\\OSALS\\doc\\Software17_Student_JavaEE.xlsx";
->>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
->>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
+		URL url = StudentManagerImpl.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
 		try {
-            fileInputStream = new FileInputStream(filePath);
+            fileInputStream = new FileInputStream(url.getFile());
             hssfWorkbook = new XSSFWorkbook(fileInputStream);
 
             hssfSheet = hssfWorkbook.getSheet("Sheet1");

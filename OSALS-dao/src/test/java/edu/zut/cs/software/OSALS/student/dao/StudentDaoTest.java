@@ -1,5 +1,8 @@
 package edu.zut.cs.software.OSALS.student.dao;
 
+import com.sun.org.apache.xml.internal.security.Init;
+import edu.zut.cs.software.OSALS.admin.dao.UserDaoTest;
+import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import edu.zut.cs.software.OSALS.student.domain.Student;
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import org.apache.logging.log4j.LogManager;
@@ -15,6 +18,8 @@ import org.springframework.test.annotation.Rollback;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +38,8 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
     StudentDao studentdao;
 	
 	private static FileInputStream fileInputStream;
-    
+	private static InputStream inputStream;
+
     private static XSSFWorkbook hssfWorkbook;
     
     private static XSSFSheet hssfSheet;
@@ -50,17 +56,9 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		/**
 		 * 利用poi解析xlsx
 		 */
-<<<<<<< HEAD
-		String filePath = "D:\\JAVA\\仓库\\OSALS\\doc\\Software17_Student_JavaEE.xlsx";
-=======
-<<<<<<< HEAD
-		String filePath = "D:\\Java\\Software17_Student_JavaEE.xlsx";
-=======
-		String filePath = "D:\\java\\OSALS\\doc\\Software17_Student_JavaEE.xlsx";
->>>>>>> 24fe0a085de6dce6c2ee2ed9910e7d4fee84b589
->>>>>>> 5af8b31b1ad6c39089c1995608547f8fb98c749e
+        URL url = UserDaoTest.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
 		try {
-            fileInputStream = new FileInputStream(filePath);
+            fileInputStream = new FileInputStream(url.getFile());
             hssfWorkbook = new XSSFWorkbook(fileInputStream);
 
             hssfSheet = hssfWorkbook.getSheet("Sheet1");
