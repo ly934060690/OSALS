@@ -1,6 +1,9 @@
 edu\zut\cs\software\OSALS\commodity\dao\CommodityDao.class
+edu\zut\cs\software\OSALS\courier\dao\CourierDao.class
 edu\zut\cs\software\OSALS\admin\dao\RoleDao.class
+edu\zut\cs\software\OSALS\courier\dao\CourierCompanyDao.class
 edu\zut\cs\software\OSALS\Goods\daomain\Goods.class
+edu\zut\cs\software\OSALS\courier\domain\Courier.class
 edu\zut\cs\software\OSALS\temporaryStation\domain\TemporaryStation.class
 edu\zut\cs\software\OSALS\temporaryStation\dao\TemporaryStationDao.class
 edu\zut\cs\software\OSALS\order\dao\OrderDao.class
@@ -15,6 +18,7 @@ edu\zut\cs\software\OSALS\postStation\dao\PostStationDao.class
 edu\zut\cs\software\OSALS\order\domain\Order.class
 edu\zut\cs\software\OSALS\postStation\domain\PostStation.class
 edu\zut\cs\software\OSALS\Goods\dao\GoodsDao.class
+edu\zut\cs\software\OSALS\courier\domain\CourierCompany.class
 edu\zut\cs\software\OSALS\admin\dao\GroupDao.class
 edu\zut\cs\software\OSALS\commodity\domain\Commodity.class
 edu\zut\cs\software\OSALS\shop\domain\Shop.class
