@@ -1,28 +1,32 @@
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\student\dao\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Temporary_station\domain\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\commodity\domain\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\student\domain\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\student\domain\Student.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\domain\Group.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\shop\dao\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\shop\domain\Shop.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDao.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\domain\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Post_station\domain\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\shop\dao\ShopDao.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Post_station\dao\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\shop\domain\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\dao\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Temporary_station\domain\Temporary_station.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\dao\RoleDao.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Temporary_station\dao\Temporary_stationDao.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\dao\UserDao.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\commodity\domain\Commodity.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Post_station\dao\Post_stationDao.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Post_station\domain\Post_station.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\dao\GroupDao.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\student\dao\StudentDao.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\commodity\dao\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Temporary_station\dao\package-info.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\domain\Role.java
-D:\Java\IdeaProjects\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\domain\User.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\dao\GroupDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\order_goods\dao\Order_goodsDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\dao\UserDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\order\domain\Order.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\commodity\domain\Commodity.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Post_station\dao\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\commodity\dao\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Temporary_station\domain\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\order_goods\domain\Order_goods.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\domain\User.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\shop\domain\Shop.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Temporary_station\dao\Temporary_stationDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\shop\dao\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\student\dao\StudentDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Temporary_station\dao\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\domain\Role.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\domain\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\order\dao\OrderDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Post_station\dao\Post_stationDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\student\dao\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\domain\Group.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\student\domain\Student.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Post_station\domain\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\student\domain\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\dao\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Temporary_station\domain\Temporary_station.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\admin\dao\RoleDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\shop\dao\ShopDao.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\shop\domain\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\commodity\domain\package-info.java
+D:\JAVA\IDEA Project\OSALS\OSALS-dao\src\main\java\edu\zut\cs\software\OSALS\Post_station\domain\Post_station.java
