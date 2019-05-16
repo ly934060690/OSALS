@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.shop.service.CommodityManagerTestCase
 -------------------------------------------------------------------------------
+<<<<<<< HEAD:OSALS-serivce/target/surefire-reports/edu.zut.cs.software.OSALS.shop.service.CommodityManagerTestCase.txt
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.037 s - in edu.zut.cs.software.OSALS.shop.service.CommodityManagerTestCase
+=======
+<<<<<<< HEAD
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in edu.zut.cs.software.OSALS.temporaryStation.dao.TemporaryStationDaoTest
+=======
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in edu.zut.cs.software.OSALS.temporaryStation.dao.TemporaryStationDaoTest
+>>>>>>> 983cde5d2cab54e3ed2e7e7bfedfde1ec36f9ce3
+>>>>>>> 876af67951b4eb09775da6063dd4498068ee218a:OSALS-dao/target/surefire-reports/edu.zut.cs.software.OSALS.temporaryStation.dao.TemporaryStationDaoTest.txt
