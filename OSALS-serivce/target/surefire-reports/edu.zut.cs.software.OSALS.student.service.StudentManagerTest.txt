@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.student.service.StudentManagerTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.287 s <<< FAILURE! - in edu.zut.cs.software.OSALS.student.service.StudentManagerTest
-testGetAll(edu.zut.cs.software.OSALS.student.service.StudentManagerTest)  Time elapsed: 0.281 s  <<< FAILURE!
-java.lang.AssertionError: expected:<71> but was:<0>
-	at edu.zut.cs.software.OSALS.student.service.StudentManagerTest.testGetAll(StudentManagerTest.java:43)
-
-=======
-<<<<<<< HEAD
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.516 s - in edu.zut.cs.software.OSALS.student.service.StudentManagerTest
-=======
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.935 s - in edu.zut.cs.software.OSALS.student.service.StudentManagerTest
->>>>>>> 0d9678a1219c3799601490d4a187c18aeff7f3c6
->>>>>>> 8869d5739348d73da98579c31a4a0764aaae55d1
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.35 s - in edu.zut.cs.software.OSALS.student.service.StudentManagerTest

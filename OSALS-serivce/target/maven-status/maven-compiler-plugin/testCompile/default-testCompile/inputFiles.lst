@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\UserManagerTest.java
-D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentManagerTest.java
-D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\shop\service\ShopEntityGenerator.java
-D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\AdminEntityGenerator.java
-D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentEntityGenerator.java
-=======
-D:\java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\AdminEntityGenerator.java
-D:\java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\UserManagerTest.java
-D:\java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\station\service\PostStationEntityGenerator.java
-D:\java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentManagerTest.java
-D:\java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\station\service\TemporaryStationManagerTest.java
-D:\java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\shop\service\ShopEntityGenerator.java
-D:\java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentEntityGenerator.java
->>>>>>> 8869d5739348d73da98579c31a4a0764aaae55d1
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\AdminEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\UserManagerTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\station\service\PostStationEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentManagerTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\station\service\TemporaryStationManagerTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\shop\service\ShopEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\warehouse\service\WarehouseEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentEntityGenerator.java

@@ -1,11 +1,7 @@
 package edu.zut.cs.software.OSALS.student.dao;
 
-<<<<<<< HEAD
-=======
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
->>>>>>> 0d9678a1219c3799601490d4a187c18aeff7f3c6
 import edu.zut.cs.software.OSALS.student.domain.Student;
-import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
