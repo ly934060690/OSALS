@@ -5,6 +5,7 @@
       <configuration />
     </facet>
   </component>
+<<<<<<< HEAD
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -40,4 +41,6 @@
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:5.1.0.RELEASE" level="project" />
   </component>
+=======
+>>>>>>> 8869d5739348d73da98579c31a4a0764aaae55d1
 </module>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\shop\service\impl\ShopManagerImpl.java
 D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\impl\GroupManagerImpl.java
 D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\student\service\StudentManager.java
@@ -10,3 +11,21 @@ D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\main\java\edu\zut\cs\software\
 D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\commodity\service\CommodityManager.java
 D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\commodity\service\impl\CommodityManagerImpl.java
 D:\Java\OSALS_Object\新建文件夹\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\student\service\impl\StudentManagerImpl.java
+=======
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\commodity\service\impl\CommodityManagerImpl.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\shop\service\ShopManager.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\commodity\service\CommodityManager.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\UserManager.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\student\service\impl\StudentManagerImpl.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\student\service\StudentManager.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\shop\service\impl\ShopManagerImpl.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\GroupManager.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\impl\UserManagerImpl.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\impl\RoleManagerImpl.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\RoleManager.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\temporaryStation\service\impl\TemporaryStationManagerImpl.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\temporaryStation\service\TemporaryStationManager.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\postStation\service\impl\PostStationManagerImpl.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\admin\service\impl\GroupManagerImpl.java
+D:\java\IdeaProjects\OSALS\OSALS-serivce\src\main\java\edu\zut\cs\software\OSALS\postStation\service\PostStationManager.java
+>>>>>>> 8869d5739348d73da98579c31a4a0764aaae55d1

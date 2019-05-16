@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Java\OSALS_Object\新建文件夹\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\Temporary_station\dao\Temporary_stationDaoTest.java
 D:\Java\OSALS_Object\新建文件夹\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDaoTest.java
 D:\Java\OSALS_Object\新建文件夹\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\student\dao\StudentDaoTest.java
@@ -8,3 +9,13 @@ D:\Java\OSALS_Object\新建文件夹\OSALS-dao\src\test\java\edu\zut\cs\software\OSAL
 D:\Java\OSALS_Object\新建文件夹\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\Post_station\dao\Post_stationDaoTest.java
 D:\Java\OSALS_Object\新建文件夹\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\GroupDaoTest.java
 D:\Java\OSALS_Object\新建文件夹\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\shop\dao\ShopDaoTest.java
+=======
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\postStation\dao\PostStationDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\student\dao\StudentDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\temporaryStation\dao\TemporaryStationDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\GroupDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\RoleDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\UserDaoTest.java
+D:\java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\shop\dao\ShopDaoTest.java
+>>>>>>> 8869d5739348d73da98579c31a4a0764aaae55d1
