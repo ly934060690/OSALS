@@ -20,7 +20,6 @@ public class Temporary_stationDaoTest extends GenericDaoTestCase<Long, Temporary
     Temporary_stationDao temporary_stationDao;
 
     @Test
-    @Rollback(false)
     public void save(){
         Temporary_station temporary_station = new Temporary_station();
         temporary_station.setName("名门豪苑");
@@ -29,7 +28,6 @@ public class Temporary_stationDaoTest extends GenericDaoTestCase<Long, Temporary
     }
 
     @Test
-    //@Rollback(false)
     public void testFindAll() {
         List<Temporary_station> all = this.temporary_stationDao.findAll();
         if (logger.isInfoEnabled()) {

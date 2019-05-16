@@ -26,7 +26,6 @@ public class Post_stationDaoTest extends GenericTreeDaoTestCase<Long , Post_stat
     }
 
     @Test
-    @Rollback(false)
     public void testGetRoot() {
         int root_size = 10;
         for (int i = 0; i < root_size; i++) {

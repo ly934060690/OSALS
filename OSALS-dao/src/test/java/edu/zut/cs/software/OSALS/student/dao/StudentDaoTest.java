@@ -1,10 +1,8 @@
 package edu.zut.cs.software.OSALS.student.dao;
 
-import com.sun.org.apache.xml.internal.security.Init;
 import edu.zut.cs.software.OSALS.admin.dao.UserDaoTest;
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import edu.zut.cs.software.OSALS.student.domain.Student;
-import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
@@ -48,7 +46,10 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
     private static Integer cellNumber = 0;
     
 	@Test
-	@Rollback(false)
+	/**
+	 * 事务回滚false这个注释别取消掉，我所写的实体都别动
+	 */
+//	@Rollback(false)
 	public void test() {
 		
 		List<Student> all = new ArrayList<Student>();
@@ -56,7 +57,7 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		/**
 		 * 利用poi解析xlsx
 		 */
-        URL url = UserDaoTest.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
+		URL url = UserDaoTest.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
 		try {
             fileInputStream = new FileInputStream(url.getFile());
             hssfWorkbook = new XSSFWorkbook(fileInputStream);
