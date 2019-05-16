@@ -1,6 +1,5 @@
 package edu.zut.cs.software.OSALS.student.dao;
 
-import edu.zut.cs.software.OSALS.admin.dao.UserDaoTest;
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import edu.zut.cs.software.OSALS.student.domain.Student;
 import org.apache.logging.log4j.LogManager;
@@ -57,7 +56,7 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		/**
 		 * 利用poi解析xlsx
 		 */
-		URL url = UserDaoTest.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
+		URL url = StudentDaoTest.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
 		try {
             fileInputStream = new FileInputStream(url.getFile());
             hssfWorkbook = new XSSFWorkbook(fileInputStream);
