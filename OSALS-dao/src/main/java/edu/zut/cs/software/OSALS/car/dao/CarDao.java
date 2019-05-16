@@ -1,8 +1,9 @@
 package edu.zut.cs.software.OSALS.car.dao;
 
 import edu.zut.cs.software.OSALS.car.domain.Car;
-import edu.zut.cs.software.base.dao.GenericDao;
+import edu.zut.cs.software.base.dao.GenericTreeDao;
+import org.springframework.stereotype.Repository;
 
-public interface CarDao extends GenericDao<Car, Long> {
-
+@Repository("carDao")
+public interface CarDao extends GenericTreeDao<Car, Long> {
 }
