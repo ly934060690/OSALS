@@ -51,6 +51,7 @@ public class StudentEntityGenerator extends GenericGenerator {
 		/**
 		 * 利用poi读取excel
 		 */
+
 		URL url = StudentEntityGenerator.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
 		try {
 			fileInputStream = new FileInputStream(url.getFile());

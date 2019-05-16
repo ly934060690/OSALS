@@ -4,7 +4,8 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <dependency>fileset==OSALS-dao</dependency>
+          <file>file://$MODULE_DIR$/../OSALS-dao/src/main/resources/applicationContext-dao.xml</file>
+          <file>file://$MODULE_DIR$/../OSALS-dao/src/main/resources/applicationContext-resources.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/applicationContext-service.xml</file>
         </fileset>
       </configuration>
@@ -17,7 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
