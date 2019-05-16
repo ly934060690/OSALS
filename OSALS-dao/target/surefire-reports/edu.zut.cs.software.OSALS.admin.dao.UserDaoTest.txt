@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.admin.dao.UserDaoTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s - in edu.zut.cs.software.OSALS.admin.dao.UserDaoTest
-=======
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 s - in edu.zut.cs.software.OSALS.admin.dao.UserDaoTest
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in edu.zut.cs.software.OSALS.admin.dao.UserDaoTest
->>>>>>> e9a04072594bd3b9556706684b093257e71540f8
->>>>>>> e004d65ec87aeeb2bbb65238ffa9ace977fc46df
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in edu.zut.cs.software.OSALS.admin.dao.UserDaoTest

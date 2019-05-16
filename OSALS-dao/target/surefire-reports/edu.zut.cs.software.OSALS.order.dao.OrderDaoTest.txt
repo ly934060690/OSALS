@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.order.dao.OrderDaoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.493 s <<< FAILURE! - in edu.zut.cs.software.OSALS.order.dao.OrderDaoTest
-testRoot(edu.zut.cs.software.OSALS.order.dao.OrderDaoTest)  Time elapsed: 8.49 s  <<< FAILURE!
-java.lang.AssertionError: expected:<10> but was:<20>
-	at edu.zut.cs.software.OSALS.order.dao.OrderDaoTest.testRoot(OrderDaoTest.java:41)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.902 s - in edu.zut.cs.software.OSALS.order.dao.OrderDaoTest
