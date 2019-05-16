@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.student.service.StudentManagerTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.516 s - in edu.zut.cs.software.OSALS.student.service.StudentManagerTest
+=======
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.935 s - in edu.zut.cs.software.OSALS.student.service.StudentManagerTest
+>>>>>>> 0d9678a1219c3799601490d4a187c18aeff7f3c6
