@@ -1,8 +1,8 @@
-edu\zut\cs\software\OSALS\Temporary_station\dao\Temporary_stationDaoTest.class
 edu\zut\cs\software\OSALS\admin\dao\UserDaoTest.class
 edu\zut\cs\software\OSALS\student\dao\StudentDaoTest.class
 edu\zut\cs\software\OSALS\admin\dao\RoleDaoTest.class
 edu\zut\cs\software\OSALS\commodity\dao\CommodityDaoTest.class
-edu\zut\cs\software\OSALS\Post_station\dao\Post_stationDaoTest.class
+edu\zut\cs\software\OSALS\postStation\dao\PostStationDaoTest.class
 edu\zut\cs\software\OSALS\shop\dao\ShopDaoTest.class
+edu\zut\cs\software\OSALS\temporaryStation\dao\TemporaryStationDaoTest.class
 edu\zut\cs\software\OSALS\admin\dao\GroupDaoTest.class
