@@ -13,7 +13,7 @@ import java.util.List;
 public interface CommodityManager extends GenericManager<Commodity, Long> {
 
 	List<Commodity> findAll();
-	
+
 	Commodity findbyCommodityname(String commodityname);
-	
+
 }

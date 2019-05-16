@@ -4,7 +4,6 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <dependency>fileset==OSALS-dao</dependency>
           <file>file://$MODULE_DIR$/src/main/resources/applicationContext-service.xml</file>
         </fileset>
       </configuration>
