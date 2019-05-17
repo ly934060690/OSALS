@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.commodity.dao.CommodityDaoTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in edu.zut.cs.software.OSALS.commodity.dao.CommodityDaoTest
-=======
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 s - in edu.zut.cs.software.OSALS.commodity.dao.CommodityDaoTest
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in edu.zut.cs.software.OSALS.commodity.dao.CommodityDaoTest
->>>>>>> 983cde5d2cab54e3ed2e7e7bfedfde1ec36f9ce3
->>>>>>> 0171a51c7ba8887dff097ec32bea3dfe188090b1
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in edu.zut.cs.software.OSALS.commodity.dao.CommodityDaoTest
