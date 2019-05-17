@@ -1,6 +1,6 @@
 package edu.zut.cs.software.OSALS.driver.service;
 
-import edu.zut.cs.software.OSALS.Driver.domain.Driver;
+import edu.zut.cs.software.OSALS.driver.domain.Driver;
 import edu.zut.cs.software.base.service.GenericManager;
 
 import java.util.List;

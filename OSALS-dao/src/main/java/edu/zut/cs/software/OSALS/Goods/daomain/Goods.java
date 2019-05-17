@@ -1,4 +1,4 @@
-package edu.zut.cs.software.OSALS.Goods.daomain;
+package edu.zut.cs.software.OSALS.goods.daomain;
 
 import edu.zut.cs.software.OSALS.warehouse.daomain.Warehouse;
 import edu.zut.cs.software.base.domain.BaseEntity;

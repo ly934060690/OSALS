@@ -1,7 +1,7 @@
 package edu.zut.cs.software.OSALS.car.service;
 
 
-import edu.zut.cs.software.OSALS.Driver.domain.Driver;
+import edu.zut.cs.software.OSALS.driver.domain.Driver;
 import edu.zut.cs.software.OSALS.car.domain.Car;
 import edu.zut.cs.software.OSALS.driver.service.DriverManager;
 import edu.zut.cs.software.base.service.GenericGenerator;

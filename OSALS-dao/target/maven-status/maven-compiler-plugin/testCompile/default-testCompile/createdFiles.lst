@@ -1,9 +1,12 @@
 edu\zut\cs\software\OSALS\goods\dao\GoodsDaoTest.class
+edu\zut\cs\software\OSALS\enwrap\dao\EnwrapDaoTest.class
 edu\zut\cs\software\OSALS\warehouse\dao\WarehouseDaoTest.class
+edu\zut\cs\software\OSALS\expresscar\dao\ExpressCarDaoTest.class
 edu\zut\cs\software\OSALS\shop\dao\ShopDaoTest.class
 edu\zut\cs\software\OSALS\temporaryStation\dao\TemporaryStationDaoTest.class
 edu\zut\cs\software\OSALS\admin\dao\GroupDaoTest.class
 edu\zut\cs\software\OSALS\order\dao\OrderDaoTest.class
+edu\zut\cs\software\OSALS\driver\dao\DriverDaoTest.class
 edu\zut\cs\software\OSALS\courier\dao\CourierCompanyDaoTest.class
 edu\zut\cs\software\OSALS\order_goods\dao\Order_goodsDaoTest.class
 edu\zut\cs\software\OSALS\admin\dao\UserDaoTest.class

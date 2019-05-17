@@ -1,8 +1,7 @@
 package edu.zut.cs.software.OSALS.driver.dao;
 
 
-import edu.zut.cs.software.OSALS.Driver.dao.DriverDao;
-import edu.zut.cs.software.OSALS.Driver.domain.Driver;
+import edu.zut.cs.software.OSALS.driver.domain.Driver;
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

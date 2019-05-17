@@ -1,7 +1,7 @@
 package edu.zut.cs.software.OSALS.driver.service.impl;
 
-import edu.zut.cs.software.OSALS.Driver.dao.DriverDao;
-import edu.zut.cs.software.OSALS.Driver.domain.Driver;
+import edu.zut.cs.software.OSALS.driver.dao.DriverDao;
+import edu.zut.cs.software.OSALS.driver.domain.Driver;
 import edu.zut.cs.software.OSALS.driver.service.DriverManager;
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
