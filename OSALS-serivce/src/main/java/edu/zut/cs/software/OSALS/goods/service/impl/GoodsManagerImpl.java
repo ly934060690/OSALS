@@ -1,10 +1,7 @@
 package edu.zut.cs.software.OSALS.goods.service.impl;
 
-import edu.zut.cs.software.OSALS.Goods.dao.GoodsDao;
-import edu.zut.cs.software.OSALS.Goods.daomain.Goods;
-import edu.zut.cs.software.OSALS.commodity.dao.CommodityDao;
-import edu.zut.cs.software.OSALS.commodity.domain.Commodity;
-import edu.zut.cs.software.OSALS.commodity.service.CommodityManager;
+import edu.zut.cs.software.OSALS.goods.dao.GoodsDao;
+import edu.zut.cs.software.OSALS.goods.daomain.Goods;
 import edu.zut.cs.software.OSALS.goods.service.GoodsManager;
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
 import org.springframework.beans.factory.annotation.Autowired;

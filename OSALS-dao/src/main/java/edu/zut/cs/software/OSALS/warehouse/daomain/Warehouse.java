@@ -1,6 +1,6 @@
 package edu.zut.cs.software.OSALS.warehouse.daomain;
 
-import edu.zut.cs.software.OSALS.Goods.daomain.Goods;
+import edu.zut.cs.software.OSALS.goods.daomain.Goods;
 import edu.zut.cs.software.base.domain.BaseTreeEntity;
 
 import javax.persistence.*;

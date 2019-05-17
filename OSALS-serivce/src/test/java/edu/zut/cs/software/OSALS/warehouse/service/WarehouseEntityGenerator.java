@@ -1,10 +1,8 @@
 package edu.zut.cs.software.OSALS.warehouse.service;
 
 
-import edu.zut.cs.software.OSALS.Goods.daomain.Goods;
-import edu.zut.cs.software.OSALS.commodity.domain.Commodity;
+import edu.zut.cs.software.OSALS.goods.daomain.Goods;
 import edu.zut.cs.software.OSALS.goods.service.GoodsManager;
-import edu.zut.cs.software.OSALS.shop.domain.Shop;
 import edu.zut.cs.software.OSALS.warehouse.daomain.Warehouse;
 import edu.zut.cs.software.base.service.GenericGenerator;
 import org.junit.Test;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\java\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\shop\service\ShopEntityGenerator.java
 D:\java\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\order\service\OrderEntityGenerator.java
 D:\java\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\station\service\TemporaryStationManagerTest.java
@@ -7,3 +8,19 @@ D:\java\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\servic
 D:\java\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\UserManagerTest.java
 D:\java\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\station\service\PostStationEntityGenerator.java
 D:\java\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\warehouse\service\WarehouseEntityGenerator.java
+=======
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\station\service\PostStationEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\courier\service\CourierEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\shop\service\CommodityManagerTestCase.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\AdminEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\UserManagerTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\order\service\OrderEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentManagerTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\shop\service\ShopManagerTestCase.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\station\service\TemporaryStationManagerTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\expresscar\service\ExpressCarEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\shop\service\ShopEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\car\service\CarEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\warehouse\service\WarehouseEntityGenerator.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentEntityGenerator.java
+>>>>>>> 6efe20cd57dbbef407502fdbcbf6047eb60a71be

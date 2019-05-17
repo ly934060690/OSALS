@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\postStation\dao\PostStationDaoTest.java
 D:\java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\temporaryStation\dao\TemporaryStationDaoTest.java
 D:\java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\order\dao\OrderDaoTest.java
@@ -11,3 +12,23 @@ D:\java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\student\dao\Stud
 D:\java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDaoTest.java
 D:\java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\order_goods\dao\Order_goodsDaoTest.java
 D:\java\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\RoleDaoTest.java
+=======
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\student\dao\StudentDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\commodity\dao\CommodityDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\courier\dao\CourierDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\temporaryStation\dao\TemporaryStationDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\GroupDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\enwrap\dao\EnwrapDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\order_goods\dao\Order_goodsDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\RoleDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\goods\dao\GoodsDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\driver\dao\DriverDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\postStation\dao\PostStationDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\courier\dao\CourierCompanyDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\warehouse\dao\WarehouseDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\car\dao\CarDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\expresscar\dao\ExpressCarDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\admin\dao\UserDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\order\dao\OrderDaoTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-dao\src\test\java\edu\zut\cs\software\OSALS\shop\dao\ShopDaoTest.java
+>>>>>>> 6efe20cd57dbbef407502fdbcbf6047eb60a71be
