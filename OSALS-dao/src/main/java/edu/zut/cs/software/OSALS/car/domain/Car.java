@@ -12,6 +12,8 @@ import java.util.Set;
 @NamedQueries({@NamedQuery(name="Car.getRoot",query = "select c from Car c where c.parent is null")})
 public class Car  extends BaseTreeEntity<Car>{
 
+    private static final long serialVersionUID = -3682925872173908127L;
+
     @Column(name = "car_num")
     String carNum;
     @Column(name = "car_load")

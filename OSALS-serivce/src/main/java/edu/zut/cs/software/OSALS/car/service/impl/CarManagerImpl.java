@@ -14,15 +14,10 @@ import javax.transaction.Transactional;
 public class CarManagerImpl extends GenericTreeManagerImpl<Car, Long> implements CarManager {
     CarDao carDao;
 
-    @Override
-    public Car findByCarName(String name) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
     @Autowired
     public void setCarDao(CarDao carDao) {
         this.carDao = carDao;
-        this.dao = this.carDao;
+        this.treeDao = this.carDao;
+        this.dao = this.treeDao;
     }
 }
