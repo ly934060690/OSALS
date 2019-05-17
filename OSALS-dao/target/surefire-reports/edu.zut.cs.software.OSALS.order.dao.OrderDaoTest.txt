@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: edu.zut.cs.software.OSALS.order.dao.OrderDaoTest
--------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.549 s - in edu.zut.cs.software.OSALS.order.dao.OrderDaoTest
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.986 s - in edu.zut.cs.software.OSALS.order.dao.OrderDaoTest
->>>>>>> 6efe20cd57dbbef407502fdbcbf6047eb60a71be

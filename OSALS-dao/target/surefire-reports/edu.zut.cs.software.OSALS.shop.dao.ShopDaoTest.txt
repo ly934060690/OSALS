@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: edu.zut.cs.software.OSALS.shop.dao.ShopDaoTest
--------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 s - in edu.zut.cs.software.OSALS.shop.dao.ShopDaoTest
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.222 s - in edu.zut.cs.software.OSALS.shop.dao.ShopDaoTest
->>>>>>> 6efe20cd57dbbef407502fdbcbf6047eb60a71be
