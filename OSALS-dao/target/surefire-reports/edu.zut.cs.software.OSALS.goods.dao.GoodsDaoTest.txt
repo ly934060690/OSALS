@@ -2,11 +2,7 @@
 Test set: edu.zut.cs.software.OSALS.goods.dao.GoodsDaoTest
 -------------------------------------------------------------------------------
 <<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in edu.zut.cs.software.OSALS.goods.dao.GoodsDaoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in edu.zut.cs.software.OSALS.goods.dao.GoodsDaoTest
 =======
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 s - in edu.zut.cs.software.OSALS.goods.dao.GoodsDaoTest
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in edu.zut.cs.software.OSALS.goods.dao.GoodsDaoTest
->>>>>>> 983cde5d2cab54e3ed2e7e7bfedfde1ec36f9ce3
->>>>>>> 0171a51c7ba8887dff097ec32bea3dfe188090b1
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 s - in edu.zut.cs.software.OSALS.goods.dao.GoodsDaoTest
+>>>>>>> 6efe20cd57dbbef407502fdbcbf6047eb60a71be

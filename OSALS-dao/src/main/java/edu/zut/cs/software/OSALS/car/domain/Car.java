@@ -1,6 +1,6 @@
 package edu.zut.cs.software.OSALS.car.domain;
 
-import edu.zut.cs.software.OSALS.Driver.domain.Driver;
+import edu.zut.cs.software.OSALS.driver.domain.Driver;
 import edu.zut.cs.software.base.domain.BaseTreeEntity;
 
 import javax.persistence.*;

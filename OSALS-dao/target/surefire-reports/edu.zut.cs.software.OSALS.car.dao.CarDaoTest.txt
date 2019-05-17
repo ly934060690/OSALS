@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.car.dao.CarDaoTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in edu.zut.cs.software.OSALS.car.dao.CarDaoTest
+=======
+<<<<<<< HEAD
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in edu.zut.cs.software.OSALS.car.dao.CarDaoTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s - in edu.zut.cs.software.OSALS.car.dao.CarDaoTest
+>>>>>>> 6efe20cd57dbbef407502fdbcbf6047eb60a71be
+>>>>>>> 5cc0bdf94aafa2b9b8176f35992754188ba1db4f

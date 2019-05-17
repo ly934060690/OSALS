@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.courier.dao.CourierCompanyDaoTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.467 s - in edu.zut.cs.software.OSALS.courier.dao.CourierCompanyDaoTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.272 s - in edu.zut.cs.software.OSALS.courier.dao.CourierCompanyDaoTest
+>>>>>>> 5cc0bdf94aafa2b9b8176f35992754188ba1db4f

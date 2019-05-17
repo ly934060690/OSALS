@@ -2,11 +2,7 @@
 Test set: edu.zut.cs.software.OSALS.postStation.dao.PostStationDaoTest
 -------------------------------------------------------------------------------
 <<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.532 s - in edu.zut.cs.software.OSALS.postStation.dao.PostStationDaoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.778 s - in edu.zut.cs.software.OSALS.postStation.dao.PostStationDaoTest
 =======
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.67 s - in edu.zut.cs.software.OSALS.postStation.dao.PostStationDaoTest
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.588 s - in edu.zut.cs.software.OSALS.postStation.dao.PostStationDaoTest
->>>>>>> 983cde5d2cab54e3ed2e7e7bfedfde1ec36f9ce3
->>>>>>> 0171a51c7ba8887dff097ec32bea3dfe188090b1
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.335 s - in edu.zut.cs.software.OSALS.postStation.dao.PostStationDaoTest
+>>>>>>> 6efe20cd57dbbef407502fdbcbf6047eb60a71be

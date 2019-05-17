@@ -1,7 +1,7 @@
 package edu.zut.cs.software.OSALS.goods.dao;
 
-import edu.zut.cs.software.OSALS.Goods.dao.GoodsDao;
-import edu.zut.cs.software.OSALS.Goods.daomain.Goods;
+import edu.zut.cs.software.OSALS.goods.dao.GoodsDao;
+import edu.zut.cs.software.OSALS.goods.daomain.Goods;
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
