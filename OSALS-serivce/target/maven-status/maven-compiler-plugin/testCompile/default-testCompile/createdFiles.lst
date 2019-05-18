@@ -1,8 +1,8 @@
 edu\zut\cs\software\OSALS\station\service\TemporaryStationManagerTest.class
 edu\zut\cs\software\OSALS\order\service\OrderEntityGenerator.class
+edu\zut\cs\software\OSALS\student\service\StudentManagerTestCase.class
 edu\zut\cs\software\OSALS\shop\service\CommodityManagerTestCase.class
 edu\zut\cs\software\OSALS\car\service\CarEntityGenerator.class
-edu\zut\cs\software\OSALS\student\service\StudentManagerTest.class
 edu\zut\cs\software\OSALS\shop\service\ShopEntityGenerator.class
 edu\zut\cs\software\OSALS\courier\service\CourierEntityGenerator.class
 edu\zut\cs\software\OSALS\admin\service\AdminEntityGenerator.class

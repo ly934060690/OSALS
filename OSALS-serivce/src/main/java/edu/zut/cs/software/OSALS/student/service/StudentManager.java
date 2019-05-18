@@ -9,5 +9,8 @@ public interface StudentManager extends GenericManager<Student, Long> {
 	
 	List<Student> getAll();
 
-	Student findByStudentname(String studentname);
+	List<Student> findBySno(String sno);
+
+	List<Student> findByName(String name);
+
 }

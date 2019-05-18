@@ -20,15 +20,24 @@ public class Commodity extends BaseEntity {
 	 */
 	private static final long serialVersionUID = -2393699715680994416L;
 
+	@Column(name = "CODE")
+	String code;
 	@Column(name = "NAME")
 	String name;
-	
 	@Column(name = "PRICE")
 	float price;
 	
 	@ManyToOne
 	@JoinColumn(name = "SHOP_ID")
 	Shop shop;
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
 
 	public String getName() {
 		return name;
@@ -53,6 +62,4 @@ public class Commodity extends BaseEntity {
 	public void setShop(Shop shop) {
 		this.shop = shop;
 	}
-	
-	
 }

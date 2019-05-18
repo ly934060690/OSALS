@@ -9,6 +9,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -114,9 +116,25 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 	}
 
 	@Override
-	public Student findByStudentname(String studentname) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Student> findBySno(String sno) {
+		Student queryObject = new Student();
+		queryObject.setDateCreated(null);
+		queryObject.setDateModified(null);
+		queryObject.setSno(sno);
+		ExampleMatcher exampleMatcher = ExampleMatcher.matching().withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING).withIgnoreCase(true).withMatcher("sno", ExampleMatcher.GenericPropertyMatchers.startsWith());
+		Example<Student> example = Example.of(queryObject, exampleMatcher);
+		List<Student> result = this.dao.findAll(example);
+		return result;
+	}
+
+	@Override
+	public List<Student> findByName(String name) {
+		Student queryObject = new Student();
+		queryObject.setName(name);
+		ExampleMatcher exampleMatcher = ExampleMatcher.matching().withMatcher("name", ExampleMatcher.GenericPropertyMatchers.startsWith()).withIgnorePaths("dateCreated", "dateModified");
+		Example<Student> example = Example.of(queryObject, exampleMatcher);
+		List<Student> result = this.dao.findAll(example);
+		return result;
 	}
 
 }

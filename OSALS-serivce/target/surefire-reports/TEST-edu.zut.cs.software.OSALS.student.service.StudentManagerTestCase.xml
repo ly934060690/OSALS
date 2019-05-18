@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.zut.cs.software.OSALS.station.service.TemporaryStationManagerTest" time="0.409" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase" time="1.498" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,6 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testSave" classname="edu.zut.cs.software.OSALS.station.service.TemporaryStationManagerTest" time="0.377"/>
-  <testcase name="testCRUD" classname="edu.zut.cs.software.OSALS.station.service.TemporaryStationManagerTest" time="0.029"/>
+  <testcase name="testFindByName" classname="edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase" time="0.092"/>
+  <testcase name="testFindBySno" classname="edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase" time="0.088"/>
+  <testcase name="testGetAll" classname="edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase" time="1.303"/>
+  <testcase name="testCRUD" classname="edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase" time="0.012"/>
 </testsuite>

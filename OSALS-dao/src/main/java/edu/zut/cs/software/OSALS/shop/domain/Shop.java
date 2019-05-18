@@ -21,13 +21,23 @@ public class Shop extends BaseTreeEntity<Shop> {
 	 * 
 	 */
 	private static final long serialVersionUID = 1017387340500414123L;
-	
+
+	@Column(name = "CODE")
+	String code;
 	@Column(name = "NAME")
 	String name;
-	
+
 	@OneToMany(mappedBy = "shop", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	Set<Commodity> commodities;
-	
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -36,6 +46,12 @@ public class Shop extends BaseTreeEntity<Shop> {
 		this.name = name;
 	}
 
-	
+	public Set<Commodity> getCommodities() {
+		return commodities;
+	}
+
+	public void setCommodities(Set<Commodity> commodities) {
+		this.commodities = commodities;
+	}
 
 }

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.order_goods.dao.Order_goodsDaoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in edu.zut.cs.software.OSALS.order_goods.dao.Order_goodsDaoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in edu.zut.cs.software.OSALS.order_goods.dao.Order_goodsDaoTest
