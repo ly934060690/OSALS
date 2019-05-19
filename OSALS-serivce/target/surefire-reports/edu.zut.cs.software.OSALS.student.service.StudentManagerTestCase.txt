@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.12 s <<< FAILURE! - in edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase
+testGetAll(edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase)  Time elapsed: 0.729 s  <<< FAILURE!
+java.lang.AssertionError: expected:<71> but was:<0>
+	at edu.zut.cs.software.OSALS.student.service.StudentManagerTestCase.testGetAll(StudentManagerTestCase.java:55)
+
