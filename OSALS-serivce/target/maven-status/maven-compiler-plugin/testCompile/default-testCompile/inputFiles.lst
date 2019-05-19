@@ -6,8 +6,10 @@ D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS
 D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\expresscar\service\ExpressCarManagerTestCase.java
 D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\AdminEntityGenerator.java
 D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\admin\service\UserManagerTest.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\courier\service\CourierManagerTestCase.java
 D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\order\service\OrderEntityGenerator.java
 D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\warehouse\service\WarehouseManagerTestCase.java
+D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\courier\service\CourierCompanyManagerTestCase.java
 D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\shop\service\ShopManagerTestCase.java
 D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\student\service\StudentManagerTestCase.java
 D:\Java\IdeaProjects\OSALS\OSALS-serivce\src\test\java\edu\zut\cs\software\OSALS\car\service\CarManagerTestCase.java

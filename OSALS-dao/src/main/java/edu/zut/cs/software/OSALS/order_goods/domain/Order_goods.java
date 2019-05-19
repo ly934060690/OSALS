@@ -20,9 +20,6 @@ public class Order_goods extends BaseEntity {
     @Column(name = "PRICE")
     float price;
 
-    @Column(name = "NUMBER")
-    int number;
-
     @ManyToOne
     @JoinColumn(name = "ORDER_ID")
 
@@ -46,14 +43,6 @@ public class Order_goods extends BaseEntity {
 
     public Order getOrder() {
         return order;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
     }
 
     public void setOrder(Order order) {
