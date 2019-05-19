@@ -51,9 +51,6 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 			logger.info("testGetAll() - List<Student> all={}", all); //$NON-NLS-1$
 		}
 
-		if (logger.isInfoEnabled()) {
-		    logger.info("testGetAll() - List<Student> all.size={}", all.size()); //$NON-NLS-1$
-		}
 		assertNotNull(all);
 		assertEquals(71, all.size());
 
@@ -64,9 +61,6 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 		String sno = this.entity.getSno();
 		List<Student> result = this.studentManager.findBySno(sno);
 		assertEquals(sno, result.get(0).getSno());
-		if (logger.isInfoEnabled()) {
-		    logger.info("testFindBySno() - List<Student> result={}", result); //$NON-NLS-1$
-		}
 	}
 
 	@Test
@@ -75,8 +69,5 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 		assertNotNull(result);
 		assertEquals(1, result.size());
 		assertEquals("刘研", result.get(0).getName());
-		if (logger.isInfoEnabled()) {
-			logger.info("testFindByName() - List<Student> result={}", result); //$NON-NLS-1$
-		}
 	}
 }

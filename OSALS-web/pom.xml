@@ -51,9 +51,6 @@
             <version>2.9.7</version>
         </dependency>
     </dependencies>
-
-    <!--jetty插件-->
-    <!--
     <build>
         <plugins>
             <plugin>
@@ -63,12 +60,11 @@
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webApp>
-                        <contextPath>/OSALS-web</contextPath>
+                        <contextPath>/dream-web</contextPath>
                     </webApp>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-    -->
 
 </project>

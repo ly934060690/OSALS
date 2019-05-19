@@ -50,7 +50,6 @@ public class ShopManagerTestCase extends GenericTreeManagerTestCase<Long, Shop, 
             logger.info("findByCode() - List<Shop> result={}", result); //$NON-NLS-1$
         }
     }
-
     @Test
     public void findByName() {
         List<Shop> result = this.shopManager.findByName("研哥哥");

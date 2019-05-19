@@ -61,7 +61,6 @@ public class CommodityManagerTestCase extends GenericManagerTestCase<Long, Commo
             logger.info("testFindByCode() - List<Commodity> result={}", result); //$NON-NLS-1$
         }
     }
-
     @Test
     public void testFindByName() {
         List<Commodity> result = this.commodityManager.findByName("旺仔");
