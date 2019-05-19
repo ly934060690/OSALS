@@ -9,5 +9,5 @@ public interface CourierManager extends GenericManager<Courier,Long> {
 
     List<Courier> findAll();
 
-    List<Courier> findbyCouriername(String couriername);
+    Courier findbyCouriername(String couriername);
 }
