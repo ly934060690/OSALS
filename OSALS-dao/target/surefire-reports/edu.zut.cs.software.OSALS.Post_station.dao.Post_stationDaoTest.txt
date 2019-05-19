@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.OSALS.Post_station.dao.Post_stationDaoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.719 s - in edu.zut.cs.software.OSALS.Post_station.dao.Post_stationDaoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.256 s - in edu.zut.cs.software.OSALS.Post_station.dao.Post_stationDaoTest
