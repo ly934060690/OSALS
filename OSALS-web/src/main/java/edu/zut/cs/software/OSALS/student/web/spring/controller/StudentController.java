@@ -33,7 +33,11 @@ public class StudentController extends GenericController<Student, Long, StudentM
 		this.studentManager = studentManager;
 		this.manager = this.studentManager;
 	}
-	
+
+	/**
+	 * /stu/main
+	 * @return
+	 */
 	@RequestMapping(method = RequestMethod.GET, value = "/main")
 	public String index() {
 		String result = "index";
@@ -43,9 +47,14 @@ public class StudentController extends GenericController<Student, Long, StudentM
 
 	@ResponseBody//标识转换成JSON处理
 	@GetMapping(value = "all",produces = "application/json;charset=utf-8")
-	public List<Student> getAllStudent(){
-//		return studentManager.getAll();
+	public List<Student> findAllStudent(){
 		return this.manager.findAll();
+	}
+
+	@ResponseBody
+	@GetMapping(value = "ly", produces = "application/json;charset=utf-8")
+	public String ly() {
+		return "Hello, Ly";
 	}
 
 	

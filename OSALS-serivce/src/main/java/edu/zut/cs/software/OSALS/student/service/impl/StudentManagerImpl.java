@@ -22,7 +22,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+
 //@Transactional
 //@Service("studentManager")
 /**
@@ -33,8 +33,9 @@ import java.util.List;
  * @author 研哥哥
  *
  */
-@Service("studentManager")
+@Component
 @Transactional
+@Service("studentManager")
 public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implements StudentManager {
 	/**
 	 * Logger for this class

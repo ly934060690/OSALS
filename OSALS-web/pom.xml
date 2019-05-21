@@ -60,7 +60,7 @@
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webApp>
-                        <contextPath>/dream-web</contextPath>
+                        <contextPath>/OSALS-web</contextPath>
                     </webApp>
                 </configuration>
             </plugin>
