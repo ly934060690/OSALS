@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OSALS.iml" filepath="$PROJECT_DIR$/OSALS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OSALS-base/OSALS-base.iml" filepath="$PROJECT_DIR$/OSALS-base/OSALS-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OSALS-dao/OSALS-dao.iml" filepath="$PROJECT_DIR$/OSALS-dao/OSALS-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OSALS-serivce/OSALS-serivce.iml" filepath="$PROJECT_DIR$/OSALS-serivce/OSALS-serivce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OSALS-web/OSALS-web.iml" filepath="$PROJECT_DIR$/OSALS-web/OSALS-web.iml" />
+    </modules>
+  </component>
+</project>

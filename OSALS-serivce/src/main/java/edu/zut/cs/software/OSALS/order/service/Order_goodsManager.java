@@ -1,4 +1,4 @@
-package edu.zut.cs.software.OSALS.order_goods;
+package edu.zut.cs.software.OSALS.order.service;
 
 import edu.zut.cs.software.OSALS.order.domain.Order_goods;
 import edu.zut.cs.software.base.service.GenericManager;

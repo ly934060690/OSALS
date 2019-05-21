@@ -1,7 +1,6 @@
 package edu.zut.cs.software.OSALS.order.service;
 
 import edu.zut.cs.software.OSALS.order.domain.Order;
-import edu.zut.cs.software.OSALS.order_goods.Order_goodsManager;
 import edu.zut.cs.software.OSALS.order.domain.Order_goods;
 import edu.zut.cs.software.base.service.GenericGenerator;
 import org.junit.Test;

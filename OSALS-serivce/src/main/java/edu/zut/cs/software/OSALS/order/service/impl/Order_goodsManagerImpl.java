@@ -1,6 +1,6 @@
-package edu.zut.cs.software.OSALS.order_goods.service.impl;
+package edu.zut.cs.software.OSALS.order.service.impl;
 
-import edu.zut.cs.software.OSALS.order_goods.Order_goodsManager;
+import edu.zut.cs.software.OSALS.order.service.Order_goodsManager;
 import edu.zut.cs.software.OSALS.order.dao.Order_goodsDao;
 import edu.zut.cs.software.OSALS.order.domain.Order_goods;
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
