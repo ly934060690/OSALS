@@ -1,7 +1,6 @@
 package edu.zut.cs.software.OSALS.goods.service;
 
 import edu.zut.cs.software.OSALS.goods.daomain.Goods;
-import edu.zut.cs.software.OSALS.commodity.domain.Commodity;
 import edu.zut.cs.software.base.service.GenericManager;
 
 import java.util.List;

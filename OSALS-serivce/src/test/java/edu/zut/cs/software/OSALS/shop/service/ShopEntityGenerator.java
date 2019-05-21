@@ -1,10 +1,8 @@
 package edu.zut.cs.software.OSALS.shop.service;
 
-import edu.zut.cs.software.OSALS.commodity.domain.Commodity;
+import edu.zut.cs.software.OSALS.shop.domain.Commodity;
 import edu.zut.cs.software.OSALS.shop.domain.Shop;
-import edu.zut.cs.software.OSALS.shop.service.ShopManager;
 import edu.zut.cs.software.base.service.GenericGenerator;
-import edu.zut.cs.software.OSALS.commodity.service.CommodityManager;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

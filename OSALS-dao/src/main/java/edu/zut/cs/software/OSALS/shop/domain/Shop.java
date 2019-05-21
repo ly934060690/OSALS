@@ -1,6 +1,5 @@
 package edu.zut.cs.software.OSALS.shop.domain;
 
-import edu.zut.cs.software.OSALS.commodity.domain.Commodity;
 import edu.zut.cs.software.base.domain.BaseTreeEntity;
 
 import javax.persistence.*;

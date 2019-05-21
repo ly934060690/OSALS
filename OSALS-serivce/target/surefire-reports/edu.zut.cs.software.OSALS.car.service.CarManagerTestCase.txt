@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: edu.zut.cs.software.OSALS.car.service.CarManagerTestCase
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 43.271 s <<< FAILURE! - in edu.zut.cs.software.OSALS.car.service.CarManagerTestCase
-testFindAll(edu.zut.cs.software.OSALS.car.service.CarManagerTestCase)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 18 in XML document from class path resource [applicationContext-dao.xml] is invalid; nested exception is org.xml.sax.SAXParseException; systemId: http://www.springframework.org/schema/data/jpa/spring-jpa.xsd; lineNumber: 18; columnNumber: 51; src-resolve: 无法将名称 'repository:repositories' 解析为 'type definition' 组件。
-Caused by: org.xml.sax.SAXParseException: src-resolve: 无法将名称 'repository:repositories' 解析为 'type definition' 组件。
-

@@ -1,6 +1,6 @@
 package edu.zut.cs.software.OSALS.temporaryStation.service.impl;
 
-import edu.zut.cs.software.OSALS.commodity.domain.Commodity;
+import edu.zut.cs.software.OSALS.shop.domain.Commodity;
 import edu.zut.cs.software.OSALS.temporaryStation.dao.TemporaryStationDao;
 import edu.zut.cs.software.OSALS.temporaryStation.domain.TemporaryStation;
 import edu.zut.cs.software.OSALS.temporaryStation.service.TemporaryStationManager;

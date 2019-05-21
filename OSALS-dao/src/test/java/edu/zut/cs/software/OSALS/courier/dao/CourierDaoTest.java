@@ -1,6 +1,6 @@
 package edu.zut.cs.software.OSALS.courier.dao;
 
-import edu.zut.cs.software.OSALS.commodity.dao.CommodityDaoTest;
+import edu.zut.cs.software.OSALS.shop.dao.CommodityDaoTest;
 import edu.zut.cs.software.OSALS.courier.domain.Courier;
 import edu.zut.cs.software.base.dao.GenericDaoTestCase;
 import org.apache.logging.log4j.LogManager;
