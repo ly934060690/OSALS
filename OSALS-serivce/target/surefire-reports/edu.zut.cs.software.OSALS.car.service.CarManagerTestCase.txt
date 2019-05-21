@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: edu.zut.cs.software.OSALS.car.service.CarManagerTestCase
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.489 s - in edu.zut.cs.software.OSALS.car.service.CarManagerTestCase
