@@ -1,4 +1,4 @@
-package edu.zut.cs.software.OSALS.driver.domain;
+package edu.zut.cs.software.OSALS.car.domain;
 
 import edu.zut.cs.software.OSALS.car.domain.Car;
 import edu.zut.cs.software.base.domain.BaseEntity;
