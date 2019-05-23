@@ -25,11 +25,11 @@ public class OrderDaoTest extends GenericTreeDaoTestCase<Long, Order, OrderDao> 
 
     @Test
     public void testRoot() {
-        int root_size = 10;
+        int root_size = 2;
         for(int i = 0; i < root_size; i++) {
             Order order = new Order();
             order.setName("order_" + i);
-            for(int j = 0; j < 10; j++) {
+            for(int j = 0; j < 2; j++) {
                 Order s = new Order();
                 s.setName("order_" + i + "_" + j);
                 s.setParent(order);

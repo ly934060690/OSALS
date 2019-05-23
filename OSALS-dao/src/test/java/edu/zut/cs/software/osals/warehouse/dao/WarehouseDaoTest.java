@@ -1,6 +1,9 @@
 package edu.zut.cs.software.osals.warehouse.dao;
 
+
 import edu.zut.cs.software.base.dao.GenericTreeDaoTestCase;
+import edu.zut.cs.software.osals.shop.dao.ShopDaoTest;
+import edu.zut.cs.software.osals.warehouse.dao.WarehouseDao;
 import edu.zut.cs.software.osals.warehouse.daomain.Warehouse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,7 +23,7 @@ import static org.junit.Assert.assertEquals;
 public class WarehouseDaoTest extends GenericTreeDaoTestCase<Long, Warehouse, WarehouseDao> {
 
     //打印错误信息
-    private static final Logger logger = LogManager.getLogger(WarehouseDaoTest.class.getName());
+    private static final Logger logger = LogManager.getLogger(ShopDaoTest.class.getName());
 
 
     WarehouseDao warehouseDao;
@@ -34,11 +37,11 @@ public class WarehouseDaoTest extends GenericTreeDaoTestCase<Long, Warehouse, Wa
     //@Rollback(false) 无事务回滚
     @Test
     public void testGetRoot() {
-        int root_size = 10;
+        int root_size = 2;
         for(int i = 0; i < root_size; i++) {
             Warehouse warehouse = new Warehouse();
             warehouse.setHousename("warehouse_" + i);
-            for(int j = 0; j < 10; j++) {
+            for(int j = 0; j < 2; j++) {
                 Warehouse w = new Warehouse();
                 w.setHousename("warehouse_" + i + "_" + j);
                 w.setParent(warehouse);

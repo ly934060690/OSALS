@@ -1,7 +1,6 @@
-package edu.zut.cs.software.osals.postStation.domain;
+package edu.zut.cs.software.osals.poststation.domain;
 
 import edu.zut.cs.software.base.domain.BaseTreeEntity;
-import edu.zut.cs.software.osals.temporaryStation.domain.TemporaryStation;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -16,27 +15,22 @@ import java.util.Set;
 public class PostStation extends BaseTreeEntity<PostStation> {
 
     private static final long serialVersionUID = 1048201139754335120L;
-    /**
-     *
-     */
-    @Column(name = "NAME")
-    String name;
 
     @Column(name = "ADRESS")
     String address;
 
-    @Column(name = "NUMBER")
-    String number;
+    @Column(name = "IDNUMBER")
+    String idnumber;
 
     @OneToMany(mappedBy = "postStation", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     Set<TemporaryStation> temporaryStations;
 
-    public String getName() {
-        return name;
+    public String getIdnumber() {
+        return idnumber;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setIdnumber(String idnumber) {
+        this.idnumber = idnumber;
     }
 
     public String getAddress() {
@@ -45,14 +39,6 @@ public class PostStation extends BaseTreeEntity<PostStation> {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
     }
 
 }

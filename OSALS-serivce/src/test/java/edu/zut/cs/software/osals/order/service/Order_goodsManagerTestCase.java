@@ -1,27 +1,27 @@
 package edu.zut.cs.software.osals.order.service;
 
 import edu.zut.cs.software.base.service.GenericManagerTestCase;
-import edu.zut.cs.software.osals.order.domain.Order_goods;
+import edu.zut.cs.software.osals.order.domain.OrderGoods;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Order_goodsManagerTestCase extends GenericManagerTestCase<Long, Order_goods, Order_goodsManager> {
+public class Order_goodsManagerTestCase extends GenericManagerTestCase<Long, OrderGoods, OrderGoodsManager> {
 
-    Order_goodsManager order_goodsManager;
+    OrderGoodsManager orderGoodsManager;
 
     public Order_goodsManagerTestCase() {
-        super(Order_goods.class);
+        super(OrderGoods.class);
     }
 
     @Autowired
-    public void setOrder_goodsManager(Order_goodsManager order_goodsManager) {
-        this.order_goodsManager = order_goodsManager;
-        this.manager = this.order_goodsManager;
+    public void setOrder_goodsManager(OrderGoodsManager orderGoodsManager) {
+        this.orderGoodsManager = orderGoodsManager;
+        this.manager = this.orderGoodsManager;
     }
 
     @Test
     public void testSave(){
-        Order_goods order_goods = new Order_goods();
-        this.order_goodsManager.save(order_goods);
+        OrderGoods order_goods = new OrderGoods();
+        this.orderGoodsManager.save(order_goods);
     }
 }

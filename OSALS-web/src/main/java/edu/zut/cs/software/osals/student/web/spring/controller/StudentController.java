@@ -1,12 +1,14 @@
 package edu.zut.cs.software.osals.student.web.spring.controller;
 
-import com.alibaba.fastjson.JSON;
 import edu.zut.cs.software.base.web.spring.controller.GenericController;
 import edu.zut.cs.software.osals.student.domain.Student;
 import edu.zut.cs.software.osals.student.service.StudentManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -55,40 +57,5 @@ public class StudentController extends GenericController<Student, Long, StudentM
 		return "Hello, Ly";
 	}
 
-	/**
-	 * 传统方式  getBySno.action?sno=201708044226
-	 * @param sno
-	 * @return
-	 */
-	@ResponseBody
-	@GetMapping(value = "getBySno",produces = "application/json;charset=utf-8")
-	public String getStudentDemo(@RequestParam("sno") String sno) {
-
-		return JSON.toJSONString(this.manager.findBySno(sno));
-	}
-
-	/**
-	 * restful 风格  sno/201708044226
-	 * @param sno
-	 * @return
-	 */
-	@ResponseBody
-//	@RequestMapping(value = "sno/{sno}", method = RequestMethod.GET, produces = "application/json")
-	@GetMapping(value = "sno/{sno}",produces = "application/json;charset=utf-8")
-	public String getStudent(@PathVariable String sno) {
-		return JSON.toJSONString(this.studentManager.findBySno(sno));
-	}
-
-	/**
-	 * restful 风格  id/1l
-	 * @param id
-	 * @return
-	 */
-	@ResponseBody
-	@GetMapping(value = "id/{id}",produces = "application/json;charset=utf-8")
-	public String getStudent(@PathVariable("id") Long id) {
-		return "id";
-//		return JSON.toJSONString(this.studentManager.findById(id));
-	}
 	
 }

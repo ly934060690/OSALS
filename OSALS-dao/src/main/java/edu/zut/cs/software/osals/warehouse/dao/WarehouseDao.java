@@ -1,5 +1,6 @@
 package edu.zut.cs.software.osals.warehouse.dao;
 
+
 import edu.zut.cs.software.base.dao.GenericTreeDao;
 import edu.zut.cs.software.osals.warehouse.daomain.Warehouse;
 

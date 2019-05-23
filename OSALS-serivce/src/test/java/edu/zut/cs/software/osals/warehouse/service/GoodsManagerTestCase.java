@@ -1,8 +1,7 @@
 package edu.zut.cs.software.osals.warehouse.service;
 
 import edu.zut.cs.software.base.service.GenericManagerTestCase;
-import edu.zut.cs.software.osals.goods.daomain.Goods;
-import edu.zut.cs.software.osals.goods.service.GoodsManager;
+import edu.zut.cs.software.osals.warehouse.daomain.Goods;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

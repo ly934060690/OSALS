@@ -30,7 +30,7 @@ import java.util.List;
  * 注释有无的区别
  * @Transactional
  * @Service("studentManager")
- * @author 研哥哥
+ *
  *
  */
 @Component

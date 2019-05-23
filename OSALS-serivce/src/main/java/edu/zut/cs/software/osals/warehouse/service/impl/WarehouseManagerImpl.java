@@ -1,5 +1,6 @@
 package edu.zut.cs.software.osals.warehouse.service.impl;
 
+
 import edu.zut.cs.software.base.service.impl.GenericTreeManagerImpl;
 import edu.zut.cs.software.osals.warehouse.dao.WarehouseDao;
 import edu.zut.cs.software.osals.warehouse.daomain.Warehouse;

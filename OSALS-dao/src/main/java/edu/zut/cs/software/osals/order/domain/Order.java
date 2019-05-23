@@ -19,7 +19,7 @@ public class Order extends BaseTreeEntity<Order> {
     float price;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
-    Set<Order_goods> order_goods;
+    Set<OrderGoods> order_goods;
 
     public String getName() {
         return name;
