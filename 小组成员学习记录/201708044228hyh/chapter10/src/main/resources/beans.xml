@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:j2ee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-j2ee.xsd">
+
+    <context:property-placeholder location="jdbc.properties"/>
+
+    <!-- -1 DBCP数据源 -2 c3p0数据源（略）-->
+
+    <!-- -1 DBCP配置数据源-->
+     <bean id="dataSource1" class="org.apache.commons.dbcp2.BasicDataSource"
+           destroy-method="close"
+           p:driverClassName="com.mysql.jdbc.Driver"
+           p:url="jdbc:mysql://localhost:3306/sampledb"
+           p:username="root"
+           p:password="11q22q33q"/>
+-->
+    <!-- -2 DBCP配置数据源-->
+    <bean id="dataSource2" class="org.apache.commons.dbcp2.BasicDataSource"
+          destroy-method="close"
+          p:driverClassName="{$driverClassName}"
+          p:url="{$url}"
+          p:username="{$userName}"
+          p:password="{$password}"/>
+
+    <!-- -1 获取JNDI数据源 使用应用服务器提供的数据源-->
+    <bean id="dataSource3" class="org.springframework.jndi.JndiObjectFactoryBean"
+          p:jndiName="java:comp/env/jdbc/bbt"/>
+
+    <!-- -2 获取JNDI数据源 使用应用服务器提供的数据源-->
+    <j2ee:jndi-lookup jndi-name="java:comp/env/jdbc/bbt" id="dataSource4"/>
+
+</beans>
