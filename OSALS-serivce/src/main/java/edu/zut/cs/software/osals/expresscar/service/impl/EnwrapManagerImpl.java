@@ -1,9 +1,9 @@
-package edu.zut.cs.software.osals.enwrap.service.impl;
+package edu.zut.cs.software.osals.expresscar.service.impl;
 
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
-import edu.zut.cs.software.osals.enwrap.dao.EnwrapDao;
-import edu.zut.cs.software.osals.enwrap.domain.Enwrap;
-import edu.zut.cs.software.osals.enwrap.service.EnwrapManager;
+import edu.zut.cs.software.osals.expresscar.dao.EnwrapDao;
+import edu.zut.cs.software.osals.expresscar.domain.Enwrap;
+import edu.zut.cs.software.osals.expresscar.service.EnwrapManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,6 @@
 package edu.zut.cs.software.osals.expresscar.domain;
 
 import edu.zut.cs.software.base.domain.BaseTreeEntity;
-import edu.zut.cs.software.osals.enwrap.domain.Enwrap;
 
 import javax.persistence.*;
 import java.util.Set;

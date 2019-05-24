@@ -1,4 +1,4 @@
-package edu.zut.cs.software.osals.enwrap.domain;
+package edu.zut.cs.software.osals.expresscar.domain;
 
 import edu.zut.cs.software.base.domain.BaseEntity;
 import edu.zut.cs.software.osals.expresscar.domain.ExpressCar;

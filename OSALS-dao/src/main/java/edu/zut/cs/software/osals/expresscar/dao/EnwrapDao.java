@@ -1,7 +1,7 @@
-package edu.zut.cs.software.osals.enwrap.dao;
+package edu.zut.cs.software.osals.expresscar.dao;
 
 import edu.zut.cs.software.base.dao.GenericDao;
-import edu.zut.cs.software.osals.enwrap.domain.Enwrap;
+import edu.zut.cs.software.osals.expresscar.domain.Enwrap;
 import org.springframework.stereotype.Repository;
 
 /**

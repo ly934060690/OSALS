@@ -1,7 +1,7 @@
-package edu.zut.cs.software.osals.enwrap.service;
+package edu.zut.cs.software.osals.expresscar.service;
 
 import edu.zut.cs.software.base.service.GenericManager;
-import edu.zut.cs.software.osals.enwrap.domain.Enwrap;
+import edu.zut.cs.software.osals.expresscar.domain.Enwrap;
 
 import java.util.List;
 
