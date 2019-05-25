@@ -1,0 +1,6 @@
+edu\zut\cs\software\osals\admin\web\spring\comtroller\UserController.class
+edu\zut\cs\software\osals\order\web\spring\controller\OrderGoodsController.class
+edu\zut\cs\software\osals\order\web\spring\controller\OrderController.class
+edu\zut\cs\software\osals\shop\web\spring\controller\ShopController.class
+edu\zut\cs\software\osals\shop\web\spring\controller\CommodityController.class
+edu\zut\cs\software\osals\student\web\spring\controller\StudentController.class
