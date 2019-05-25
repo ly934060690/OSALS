@@ -1,10 +1,8 @@
 package edu.zut.cs.software.osals.expresscar.service;
 
 import edu.zut.cs.software.base.service.GenericGenerator;
-import edu.zut.cs.software.osals.enwrap.domain.Enwrap;
-import edu.zut.cs.software.osals.enwrap.service.EnwrapManager;
+import edu.zut.cs.software.osals.expresscar.domain.Enwrap;
 import edu.zut.cs.software.osals.expresscar.domain.ExpressCar;
-import edu.zut.cs.software.osals.expresscar.service.ExpressCarManager;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

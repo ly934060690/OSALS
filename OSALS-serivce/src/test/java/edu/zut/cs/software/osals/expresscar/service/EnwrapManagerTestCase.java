@@ -1,8 +1,7 @@
 package edu.zut.cs.software.osals.expresscar.service;
 
 import edu.zut.cs.software.base.service.GenericManagerTestCase;
-import edu.zut.cs.software.osals.enwrap.domain.Enwrap;
-import edu.zut.cs.software.osals.enwrap.service.EnwrapManager;
+import edu.zut.cs.software.osals.expresscar.domain.Enwrap;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
