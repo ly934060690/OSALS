@@ -70,4 +70,12 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 		assertEquals(1, result.size());
 		assertEquals("刘研", result.get(0).getName());
 	}
+
+	@Test
+	public void testFindById() {
+		Student result = this.studentManager.findById(128l);
+		if (logger.isInfoEnabled()) {
+		    logger.info("testFindById() - Student result={}", result); //$NON-NLS-1$
+		}
+	}
 }

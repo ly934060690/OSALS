@@ -1,6 +1,7 @@
 package edu.zut.cs.software.osals.student.domain;
 
 import edu.zut.cs.software.base.domain.BaseEntity;
+import org.hibernate.annotations.Proxy;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +15,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "T_STUDENT")
+@Proxy(lazy = false)
 public class Student extends BaseEntity {
 
 	/**
