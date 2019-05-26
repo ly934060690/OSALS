@@ -1,6 +1,7 @@
 package edu.zut.cs.software.osals.shop.domain;
 
 import edu.zut.cs.software.base.domain.BaseTreeEntity;
+import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -13,6 +14,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "T_SHOP")
+@Proxy(lazy = false)
 @NamedQueries({ @NamedQuery(name = "Shop.getRoot", query = "select s from Shop s where s.parent is null") })
 public class Shop extends BaseTreeEntity<Shop> {
 

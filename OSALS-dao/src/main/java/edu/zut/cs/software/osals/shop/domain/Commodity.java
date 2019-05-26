@@ -1,6 +1,7 @@
 package edu.zut.cs.software.osals.shop.domain;
 
 import edu.zut.cs.software.base.domain.BaseEntity;
+import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
 
@@ -12,6 +13,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "T_COMMODITY")
+@Proxy(lazy = false)
 public class Commodity extends BaseEntity {
 
 	/**

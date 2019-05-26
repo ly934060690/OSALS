@@ -24,6 +24,7 @@ public class ShopController extends GenericController<Shop, Long, ShopManager> {
     @Autowired
     public void setShopManager(ShopManager shopManager) {
         this.shopManager = shopManager;
+        this.manager = this.shopManager;
     }
 
     @RequestMapping("/index")
@@ -36,4 +37,5 @@ public class ShopController extends GenericController<Shop, Long, ShopManager> {
     public String hello() {
         return "Hello, This is Shop!";
     }
+
 }
