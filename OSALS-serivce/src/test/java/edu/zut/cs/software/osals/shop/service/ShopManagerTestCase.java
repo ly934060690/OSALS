@@ -68,4 +68,5 @@ public class ShopManagerTestCase extends GenericTreeManagerTestCase<Long, Shop, 
             logger.info("testFindAll() - List<Shop> result={}", result); //$NON-NLS-1$
         }
     }
+
 }

@@ -37,4 +37,5 @@ public class CommodityController extends GenericController<Commodity, Long, Comm
     public String hello() {
         return "Hello, This is Commodity!";
     }
+
 }
