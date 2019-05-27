@@ -70,4 +70,5 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 		assertEquals(1, result.size());
 		assertEquals("刘研", result.get(0).getName());
 	}
+
 }

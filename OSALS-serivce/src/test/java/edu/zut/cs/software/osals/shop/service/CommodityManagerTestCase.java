@@ -77,4 +77,5 @@ public class CommodityManagerTestCase extends GenericManagerTestCase<Long, Commo
             logger.info("testFindAll() - List<Commodity> result={}", result); //$NON-NLS-1$
         }
     }
+
 }
