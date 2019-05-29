@@ -47,8 +47,4 @@ public class ShopEntityGenerator extends GenericGenerator {
 		}
 	}
 
-	@Test
-	public void test() {
-		this.shopManager.findAll();
-	}
 }

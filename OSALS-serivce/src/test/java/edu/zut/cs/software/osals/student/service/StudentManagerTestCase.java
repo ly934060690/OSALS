@@ -39,7 +39,7 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 		student.setName("刘研");
 		student.setMajor("软件工程");
 		student.setGrade("2017");
-		student.setCLASS("软件172");
+		student.setSclass("软件172");
 		student.setSex("男");
 		this.entity = this.manager.save(student);
 	}

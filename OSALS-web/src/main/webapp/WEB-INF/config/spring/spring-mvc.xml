@@ -32,6 +32,7 @@
     <mvc:resources mapping="/css/**" location="/WEB-INF/resources/css/"/>
     <mvc:resources mapping="/lib/**" location="/WEB-INF/resources/lib/"/>
     <mvc:resources mapping="/img/**" location="/WEB-INF/resources/img/"/>
+    <mvc:resources mapping="/error/**" location="/WEB-INF/pages/error/"/>
     <mvc:resources mapping="/fonts/**" location="/WEB-INF/resources/fonts/"/>
 
     <!-- 配置无Controller的URL 返回视图名字 -->

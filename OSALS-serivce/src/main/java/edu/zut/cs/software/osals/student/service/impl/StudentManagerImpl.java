@@ -89,7 +89,7 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 	                	} else if(cellNumber == 2) {
 	                		student.setMajor(String.valueOf(cell));
 	                	} else if(cellNumber == 3) {
-	                		student.setCLASS(String.valueOf(cell));
+	                		student.setSclass(String.valueOf(cell));
 	                	} else if(cellNumber == 5) {
 	                		student.setSno(String.valueOf(cell));
 	                	} else if(cellNumber == 6) {

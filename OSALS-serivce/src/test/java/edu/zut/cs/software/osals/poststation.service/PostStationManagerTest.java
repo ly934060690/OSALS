@@ -47,6 +47,7 @@ public class PostStationManagerTest extends GenericTreeManagerTestCase<Long, Pos
             logger.info("findByIdnumber() - PostStation poststation={}"); //输出的结果较多
         }
     }
+
 /*
     @Test
     //@Rollback(false)
@@ -56,4 +57,5 @@ public class PostStationManagerTest extends GenericTreeManagerTestCase<Long, Pos
         System.out.println(postStation.getId());
     }
 */
+
 }

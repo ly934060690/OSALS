@@ -27,53 +27,60 @@ public class Student extends BaseEntity {
 	String grade;
 	@Column(name = "MAJOR")
 	String major;
-	@Column(name = "CLASS")
-	String CLASS;
+	@Column(name = "SCLASS")
+	String sclass;
 	@Column(name = "SNO")
 	String sno;
 	@Column(name = "NAME")
 	String name;
 	@Column(name = "SEX")
 	String sex;
-	
+
 	public String getGrade() {
 		return grade;
 	}
+
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
+
 	public String getMajor() {
 		return major;
 	}
+
 	public void setMajor(String major) {
 		this.major = major;
 	}
-	public String getCLASS() {
-		return CLASS;
+
+	public String getSclass() {
+		return sclass;
 	}
-	public void setCLASS(String cLASS) {
-		CLASS = cLASS;
+
+	public void setSclass(String sclass) {
+		this.sclass = sclass;
 	}
+
 	public String getSno() {
 		return sno;
 	}
+
 	public void setSno(String sno) {
 		this.sno = sno;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getSex() {
 		return sex;
 	}
+
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
-	
-	
-	
-	
 }

@@ -5,4 +5,4 @@
  * @author 研哥哥
  *
  */
-package edu.zut.cs.software.OSALS.admin.domain;
+package edu.zut.cs.software.osals.admin.domain;

@@ -1,6 +1,7 @@
 package edu.zut.cs.software.osals.student.web.spring.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.github.pagehelper.PageInfo;
 import edu.zut.cs.software.base.web.spring.controller.GenericController;
 import edu.zut.cs.software.osals.student.domain.Student;
 import edu.zut.cs.software.osals.student.service.StudentManager;
@@ -47,6 +48,14 @@ public class StudentController extends GenericController<Student, Long, StudentM
 	@GetMapping(value = "all",produces = "application/json;charset=utf-8")
 	public List<Student> findAllStudent(){
 		return this.manager.findAll();
+	}
+
+	@ResponseBody//标识转换成JSON处理
+	@GetMapping(value = "allToString",produces = "application/json;charset=utf-8")
+	public String findAllStudentToString(){
+		List<Student> studentList = this.manager.findAll();
+		PageInfo pageInfo = new PageInfo(studentList);
+		return JSON.toJSONString(pageInfo);
 	}
 
 	@ResponseBody
