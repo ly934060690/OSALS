@@ -71,4 +71,10 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 		assertEquals("刘研", result.get(0).getName());
 	}
 
+	@Test
+	public void testDeleteBySno() {
+		Boolean delete = this.manager.deleteBySno("201708044226");
+		assertEquals(true, delete);
+	}
+
 }

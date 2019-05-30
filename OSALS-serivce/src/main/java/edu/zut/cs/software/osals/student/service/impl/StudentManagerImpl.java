@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 
 //@Transactional
@@ -137,5 +138,20 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 		List<Student> result = this.dao.findAll(example);
 		return result;
 	}
+
+	@Override
+	public Boolean deleteBySno(String sno) {
+		List<Student> studentList = this.findBySno(sno);
+		if(studentList.size() == 0) {
+			return false;
+		}
+		else {
+			for(int i = 0; i < studentList.size(); i++) {
+				this.dao.delete(studentList.get(i));
+			}
+			return true;
+		}
+	}
+
 
 }
