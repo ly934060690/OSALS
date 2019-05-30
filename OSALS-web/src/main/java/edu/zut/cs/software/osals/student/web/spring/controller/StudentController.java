@@ -1,6 +1,7 @@
 package edu.zut.cs.software.osals.student.web.spring.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageInfo;
 import edu.zut.cs.software.base.web.spring.controller.GenericController;
 import edu.zut.cs.software.osals.student.domain.Student;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 
@@ -100,6 +102,14 @@ public class StudentController extends GenericController<Student, Long, StudentM
 		Student result = this.studentManager.findById(id);
 //		System.out.println(result);
 		return result;
+	}
+
+	@ResponseBody
+	@DeleteMapping(value = "delete", produces = "application/json;charset=utf-8")
+	public Boolean deleteBySno(@RequestBody String msg) {
+		Map map = (Map) JSONObject.parse(msg);
+		String sno = String.valueOf(map.get("sno"));
+		return this.manager.deleteBySno(sno);
 	}
 	
 }

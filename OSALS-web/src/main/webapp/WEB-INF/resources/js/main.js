@@ -34,10 +34,36 @@ function fillTable(data) {
             "<tr><th>" + studentList[i].sno + "</th><th>" + studentList[i].name + "</th><th>"
             + studentList[i].sex + "</th><th>" + studentList[i].major + "</th><th>"
             + studentList[i].grade + "</th><th>" + studentList[i].sclass + "</th><th>"
-            + "<button class='btn btn-primary btn-sm car-edit' data-toggle='modal' data-target='#myModal'> 编辑 " +
+            + "<button class='btn btn-primary btn-sm stu-edit' data-toggle='modal' data-target='#myModal'> 编辑 " +
             "<span class='glyphicon glyphicon-pencil' aria-hidden='true'></span></button>"
-            + " " + "<button class='btn btn-danger btn-sm car-delete'><span class='glyphicon glyphicon-trash'" +
+            + " " + "<button class='btn btn-danger btn-sm stu-delete'><span class='glyphicon glyphicon-trash'" +
             " aria-hidden='true'></span>删除</button></th></tr>"
         );
     }
+}
+
+function addListener() {
+    $(document).on("click", ".stu-delete", function () {
+        var id = $(this).parents("tr").find("th").eq(0).attr("sno");
+        $.ajax({
+            url: '/oslas/stu/delete',
+            type: 'DELETE',
+            data: JSON.stringify({
+                "sno":sno
+            }),
+            async: false,
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                if(data === true) {
+                    alert("删除成功！");
+                    location.reload();
+                } else {
+                    alert("删除失败！");
+                }
+            },
+            error: function () {
+                alert('异常');
+            }
+        });
+    });
 }

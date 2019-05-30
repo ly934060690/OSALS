@@ -13,4 +13,6 @@ public interface StudentManager extends GenericManager<Student, Long> {
 
 	List<Student> findByName(String name);
 
+	Boolean deleteBySno(String sno);
+
 }
