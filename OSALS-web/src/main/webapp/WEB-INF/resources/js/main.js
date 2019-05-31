@@ -31,7 +31,7 @@ function fillTable(data) {
     $("#my-tbody").html("");
     for (var i = 0; i < studentSize; i++) {
         $("#my-tbody").append(
-            "<tr><th>" + studentList[i].sno + "</th><th>" + studentList[i].name + "</th><th>"
+            "<tr><th scope='row' sno='" + studentList[i].sno + "'></th><th>" + studentList[i].name + "</th><th>"
             + studentList[i].sex + "</th><th>" + studentList[i].major + "</th><th>"
             + studentList[i].grade + "</th><th>" + studentList[i].sclass + "</th><th>"
             + "<button class='btn btn-primary btn-sm stu-edit' data-toggle='modal' data-target='#myModal'> 编辑 " +
@@ -44,9 +44,9 @@ function fillTable(data) {
 
 function addListener() {
     $(document).on("click", ".stu-delete", function () {
-        var id = $(this).parents("tr").find("th").eq(0).attr("sno");
+        var sno = $(this).parents("tr").find("th").eq(0).attr("sno");
         $.ajax({
-            url: '/oslas/stu/delete',
+            url: '/osals/stu/delete',
             type: 'DELETE',
             data: JSON.stringify({
                 "sno":sno
