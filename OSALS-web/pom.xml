@@ -75,7 +75,7 @@
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webApp>
-                        <contextPath>/OSALS-web</contextPath>
+                        <contextPath>/osals</contextPath>
                     </webApp>
                 </configuration>
             </plugin>

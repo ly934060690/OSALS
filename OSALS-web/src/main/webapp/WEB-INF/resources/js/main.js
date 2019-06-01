@@ -31,7 +31,8 @@ function fillTable(data) {
     $("#my-tbody").html("");
     for (var i = 0; i < studentSize; i++) {
         $("#my-tbody").append(
-            "<tr><th scope='row' sno='" + studentList[i].sno + "'></th><th>" + studentList[i].name + "</th><th>"
+            "<tr><th scope='row' sno='" + studentList[i].sno + "'>" + studentList[i].sno + "</th><th>"
+            + studentList[i].name + "</th><th>"
             + studentList[i].sex + "</th><th>" + studentList[i].major + "</th><th>"
             + studentList[i].grade + "</th><th>" + studentList[i].sclass + "</th><th>"
             + "<button class='btn btn-primary btn-sm stu-edit' data-toggle='modal' data-target='#myModal'> 编辑 " +
