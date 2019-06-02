@@ -77,4 +77,11 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 		assertEquals(true, delete);
 	}
 
+	@Test
+	public void testDeleteById() {
+		Long id = this.entity.getId();
+		Boolean delete = this.manager.deleteById(id);
+		assertEquals(true, delete);
+	}
+
 }

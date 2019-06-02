@@ -51,7 +51,6 @@ public class StudentEntityGenerator extends GenericGenerator {
 		/**
 		 * 利用poi读取excel
 		 */
-
 		URL url = StudentEntityGenerator.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
 		try {
 			fileInputStream = new FileInputStream(url.getFile());
@@ -108,18 +107,14 @@ public class StudentEntityGenerator extends GenericGenerator {
 	
 	@Test
 	public void testSaveAllStudent() {
-		
 //		this.studentManager.save(all);
-
 	}
 	
 	@Test
 	public void testFindAll() {
-		
 		List<Student> allStudent = this.studentManager.findAll();
 		if (logger.isInfoEnabled()) {
 			logger.info("test() - List<Student> allStudent={}", allStudent); //$NON-NLS-1$
 		}
-		
 	}
 }

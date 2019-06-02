@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -105,11 +106,40 @@ public class StudentController extends GenericController<Student, Long, StudentM
 	}
 
 	@ResponseBody
-	@DeleteMapping(value = "delete", produces = "application/json;charset=utf-8")
+	@PostMapping(value = "save", produces = "application/json;charset=utf-8")
+	public Boolean save(@RequestBody String msg) {
+		Student student = JSONObject.parseObject(msg, Student.class);
+		System.out.println(student);
+		this.manager.save(student);
+		return true;
+	}
+
+	@ResponseBody
+	@PostMapping(value = "update", produces = "application/json;charset=utf-8")
+	public Boolean update(@RequestBody String msg) {
+		Map map = (Map) JSONObject.parse(msg);
+		Student student = JSONObject.parseObject(msg, Student.class);
+		Long id = Long.valueOf((String) map.get("id"));
+		student.setId(id);
+		student.setDateModified(new Date());
+		this.manager.save(student);
+		return true;
+	}
+
+	@ResponseBody
+	@DeleteMapping(value = "deleteBySno", produces = "application/json;charset=utf-8")
 	public Boolean deleteBySno(@RequestBody String msg) {
 		Map map = (Map) JSONObject.parse(msg);
 		String sno = String.valueOf(map.get("sno"));
 		return this.manager.deleteBySno(sno);
+	}
+
+	@ResponseBody
+	@DeleteMapping(value = "deleteById", produces = "application/json;charset=utf-8")
+	public Boolean deleteById(@RequestBody String msg) {
+		Map map = (Map) JSONObject.parse(msg);
+		Long id = Long.valueOf((String) map.get("id"));
+		return this.manager.deleteById(id);
 	}
 	
 }

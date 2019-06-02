@@ -18,6 +18,7 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 
@@ -29,10 +30,15 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 	 * Logger for this class
 	 */
 	private static final Logger logger = LogManager.getLogger(StudentDaoTest.class.getName());
-	
+
+	StudentDao studentdao;
+
 	@Autowired
-    StudentDao studentdao;
-	
+	public void setStudentdao(StudentDao studentdao) {
+		this.studentdao = studentdao;
+		this.dao = this.studentdao;
+	}
+
 	private static FileInputStream fileInputStream;
 	private static InputStream inputStream;
 
@@ -113,5 +119,13 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		}
 		
 	}
-	
+
+	@Test
+	public void testfindById() {
+		Optional<Student> student = this.dao.findById(1l);
+
+		if (logger.isInfoEnabled()) {
+		    logger.info("$() - $ $={}", student); //$NON-NLS-1$
+		}
+	}
 }

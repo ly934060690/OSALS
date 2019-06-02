@@ -13,6 +13,10 @@ public interface StudentManager extends GenericManager<Student, Long> {
 
 	List<Student> findByName(String name);
 
+//	Boolean save(Student student);
+
+	Boolean deleteById(Long id);
+
 	Boolean deleteBySno(String sno);
 
 }

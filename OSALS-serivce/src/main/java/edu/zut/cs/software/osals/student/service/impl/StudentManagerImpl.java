@@ -140,6 +140,22 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 	}
 
 	@Override
+	public Boolean deleteById(Long id) {
+		Optional<Student> student = this.dao.findById(id);
+		/**
+		 * Problem:
+		 * Judge is null
+		 * return false
+		 */
+		if(student.equals(null)) {
+			return false;
+		} else {
+			this.dao.delete(student.get());
+			return true;
+		}
+	}
+
+	@Override
 	public Boolean deleteBySno(String sno) {
 		List<Student> studentList = this.findBySno(sno);
 		if(studentList.size() == 0) {
