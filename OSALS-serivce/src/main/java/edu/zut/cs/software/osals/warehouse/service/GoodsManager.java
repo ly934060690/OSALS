@@ -16,6 +16,7 @@ public interface GoodsManager extends GenericManager<Goods, Long> {
 
     List<Goods> findAll();
 
-    Goods findByGoodNames(String GoodNames);
+    List<Goods> findByGoodNames(String GoodNames);
 
+    List<Goods> findByNumbers(String Numbers);
 }
