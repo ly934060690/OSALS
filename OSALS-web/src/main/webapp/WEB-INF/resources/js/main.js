@@ -123,6 +123,8 @@ function addStudent() {
     });
 }
 function updateStudent() {
+    var id = $(this).parents("tr").find("th").eq(0).attr("id");
+    alert(id);
     var properties = $("#myModalBody").children("div").find("input");
     var student = {};
     // student.id = $("#myModalBody").attr("id");

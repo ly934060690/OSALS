@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -82,6 +83,24 @@ public class StudentManagerTestCase extends GenericManagerTestCase<Long, Student
 		Long id = this.entity.getId();
 		Boolean delete = this.manager.deleteById(id);
 		assertEquals(true, delete);
+	}
+
+	@Test
+	public void testUpdate() {
+		Long id = this.entity.getId();
+		Student student = this.manager.findById(id);
+		student.setSno("201808064724");
+		student.setName("梁颖");
+		student.setMajor("计算机");
+		student.setGrade("2018");
+		student.setSclass("计算机187");
+		student.setSex("女");
+		student.setDateModified(new Date());
+		this.manager.save(student);
+		Student student1 = this.manager.findById(id);
+		if (logger.isInfoEnabled()) {
+		    logger.info("testUpdate() - Student student1={}", student1); //$NON-NLS-1$
+		}
 	}
 
 }
