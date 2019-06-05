@@ -79,13 +79,14 @@ function addListener() {
 
     $(document).on("click", ".stu-update", function () {
         clearModal();
+        var id = $(this).parents("tr").find("th").eq(0).attr("id");
         var data = $(this).parents("tr").find("th");
         var properties = $("#myModalBody").children("div").find("input");
         for (var i = 0, j = 0; i < 6; i++, j++) {
             properties.eq(i).val(data.eq(j).text());
         }
-        // $("#myModalBody").attr("id", data.eq(0).attr("id"));
-        $("#myModalLabel").append("基本信息修改");
+        $("#myModalLabel").append(
+            "<th scope='row' id='" + id + "'>基本信息修改</th>");
         $("#modal-submit").append("确认修改");
         $("#modal-submit").attr("onclick", "updateStudent()");
 
@@ -123,12 +124,9 @@ function addStudent() {
     });
 }
 function updateStudent() {
-    var id = $(this).parents("tr").find("th").eq(0).attr("id");
-    alert(id);
     var properties = $("#myModalBody").children("div").find("input");
     var student = {};
-    // student.id = $("#myModalBody").attr("id");
-    // alert(student.id);
+    student.id = $("#myModalLabel").find("th").eq(0).attr("id");
     student.sno = properties.eq(0).val();
     student.name = properties.eq(1).val();
     student.sex = properties.eq(2).val();
@@ -160,7 +158,6 @@ function clearModal() {
     for(var i = 0; i < 6; i++) {
         properties.eq(i).val("");
     }
-    // $("#myModalBody").removeAttr("id");
     $("#modal-submit").html("");
     $("#myModalLabel").html("");
 }
