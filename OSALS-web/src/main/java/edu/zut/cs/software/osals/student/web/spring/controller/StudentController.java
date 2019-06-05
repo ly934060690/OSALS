@@ -117,10 +117,7 @@ public class StudentController extends GenericController<Student, Long, StudentM
 	@ResponseBody
 	@PostMapping(value = "update", produces = "application/json;charset=utf-8")
 	public Boolean update(@RequestBody String msg) {
-		Map map = (Map) JSONObject.parse(msg);
 		Student student = JSONObject.parseObject(msg, Student.class);
-		Long id = Long.valueOf((String) map.get("id"));
-		student.setId(id);
 		student.setDateModified(new Date());
 		this.manager.save(student);
 		return true;
