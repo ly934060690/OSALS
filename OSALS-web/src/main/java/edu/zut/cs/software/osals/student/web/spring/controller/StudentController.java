@@ -114,10 +114,27 @@ public class StudentController extends GenericController<Student, Long, StudentM
 		return true;
 	}
 
+	/**
+	 * 		student.sno = properties.eq(0).val();
+	 *     	student.name = properties.eq(1).val();
+	 *     	student.sex = properties.eq(2).val();
+	 *     	student.major = properties.eq(3).val();
+	 *     	student.grade = properties.eq(4).val();
+	 *     	student.sclass = properties.eq(5).val();
+	 * @param msg
+	 * @return
+	 */
 	@ResponseBody
 	@PostMapping(value = "update", produces = "application/json;charset=utf-8")
 	public Boolean update(@RequestBody String msg) {
-		Student student = JSONObject.parseObject(msg, Student.class);
+		Student studentUpdate = JSONObject.parseObject(msg, Student.class);
+		Student student = this.manager.findById(studentUpdate.getId());
+		student.setSno(studentUpdate.getSno());
+		student.setName(studentUpdate.getName());
+		student.setSex(studentUpdate.getSex());
+		student.setMajor(studentUpdate.getMajor());
+		student.setGrade(studentUpdate.getGrade());
+		student.setSclass(studentUpdate.getSclass());
 		student.setDateModified(new Date());
 		this.manager.save(student);
 		return true;
