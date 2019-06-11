@@ -70,6 +70,13 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!--HanLP-->
+        <dependency>
+            <groupId>com.hankcs</groupId>
+            <artifactId>hanlp</artifactId>
+            <version>portable-1.7.3</version>
+        </dependency>
+
 
     </dependencies>
 

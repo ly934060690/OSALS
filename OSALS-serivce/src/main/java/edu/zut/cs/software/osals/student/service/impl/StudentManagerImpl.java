@@ -32,7 +32,7 @@ import java.util.Optional;
  * @Transactional
  * @Service("studentManager")
  *
- *
+ * @Service("studentManager") Or @Component
  */
 @Component
 @Transactional
