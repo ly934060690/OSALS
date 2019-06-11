@@ -21,7 +21,7 @@ public class Student extends BaseEntity {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 7322046441088004051L;
+	private static final long serialVersionUID = -2149998881257140258L;
 
 	@Column(name = "GRADE")
 	String grade;

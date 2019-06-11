@@ -1,1 +1,1 @@
-package edu.zut.cs.software.OSALS.courier.domain;
+package edu.zut.cs.software.osals.courier.domain;
