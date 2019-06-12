@@ -6,6 +6,9 @@ import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
 import edu.zut.cs.software.osals.nlp.dao.NlpWordTaggingDao;
 import edu.zut.cs.software.osals.nlp.domain.NlpWordTagging;
 import edu.zut.cs.software.osals.nlp.service.NlpWordTaggingManager;
+import me.midday.FoolNLTK;
+import me.midday.lexical.LexicalAnalyzer;
+import me.midday.lexical.Word;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -36,4 +39,26 @@ public class NlpWordTaggingManagerImpl extends GenericManagerImpl<NlpWordTagging
         List<Term> termList = StandardTokenizer.segment(text);
         return termList;
     }
+
+    /**
+     * FoolNLTK
+     * Participle : cutWord
+     * POS Tagging : posTagging
+     *
+     * @param text
+     */
+    @Override
+    public List<List<Word>> foolCutWord(String text) {
+        LexicalAnalyzer lexicalAnalyzer = FoolNLTK.getLSTMLexicalAnalyzer();
+        List<List<Word>> result = lexicalAnalyzer.cut(text);
+        return result;
+    }
+
+    @Override
+    public List<List<Word>> foolPosTagging(String text) {
+        LexicalAnalyzer lexicalAnalyzer = FoolNLTK.getLSTMLexicalAnalyzer();
+        List<List<Word>> result = lexicalAnalyzer.pos(text);
+        return result;
+    }
+
 }
