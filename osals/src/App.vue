@@ -15,8 +15,8 @@
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose"
-            background-color="#7dc6ca"
-            text-color="#0400b4"
+            background-color="#173d4a"
+            text-color="#2f882c"
             active-text-color="#ffd04b">
 
 
@@ -26,7 +26,7 @@
                 <span>导航一</span>
               </template>
               <el-menu-item-group >
-                <el-menu-item index="/components/page1">选项一</el-menu-item>
+                <el-menu-item index="/components/page1">选项1</el-menu-item>
                 <el-menu-item index="1-2">选项2</el-menu-item>
                 <el-menu-item index="1-3">选项3</el-menu-item>
               </el-menu-item-group>
@@ -62,6 +62,8 @@
         <el-main>
           <router-view></router-view>
         </el-main>
+
+
       </el-container>
     </el-container>
 
@@ -71,14 +73,14 @@
 
 <style>
   .el-header, .el-footer {
-    background-color: #677de3;
+    background-color: #173d4a;
     color: #333;
     text-align: center;
     line-height: 200%;
   }
 
   .el-aside {
-    background-color: #7dc6ca;
+    background-color: #173d4a;
     color: #333;
     text-align: center;
     line-height: 200px;
