@@ -11,5 +11,4 @@ public interface OrderGoodsManager extends GenericManager<OrderGoods, Long> {
     List<OrderGoods> findAll();
 
     List<OrderGoods> findByName(String name);
-    boolean modifyOrderGoods(String name);
 }

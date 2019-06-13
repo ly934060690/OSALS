@@ -21,4 +21,10 @@ public interface NlpWordTaggingManager extends GenericManager<NlpWordTagging, Lo
 
     List<List<Word>> foolPosTagging(String text);
 
+    /**
+     * Stanford CoreNlp
+     * POS Tagging : posTagging
+     */
+    List<Word> stanfordPosTagging(String text);
+
 }

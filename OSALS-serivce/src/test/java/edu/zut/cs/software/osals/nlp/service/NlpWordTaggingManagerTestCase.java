@@ -2,6 +2,7 @@ package edu.zut.cs.software.osals.nlp.service;
 
 import com.hankcs.hanlp.HanLP;
 import com.hankcs.hanlp.seg.common.Term;
+import com.huaban.analysis.jieba.JiebaSegmenter;
 import edu.zut.cs.software.base.service.GenericManagerTestCase;
 import edu.zut.cs.software.osals.nlp.domain.NlpWordTagging;
 import me.midday.FoolNLTK;
@@ -59,7 +60,7 @@ public class NlpWordTaggingManagerTestCase extends GenericManagerTestCase<Long, 
         List<List<Word>> words = this.manager.foolCutWord(text);
 
         System.out.println(words);
-        for(List<Word> ws: words){
+        for(List<Word> ws: words) {
             ws.forEach(System.out::println);
         }
 
@@ -74,7 +75,7 @@ public class NlpWordTaggingManagerTestCase extends GenericManagerTestCase<Long, 
         // Named Entity Recognition
         List<List<Entity>>  entities = lexicalAnalyzer.ner(text);
 
-        for(List<Entity> ents :entities){
+        for(List<Entity> ents :entities) {
             ents.forEach(System.out::println);
         }
 
@@ -113,6 +114,29 @@ public class NlpWordTaggingManagerTestCase extends GenericManagerTestCase<Long, 
         dResults.forEach(System.out::println);
 
     }
+
+    /**
+     * Stanford pos tagging
+     */
+    @Test
+    public void test3() {
+        String text = "克林顿说，华盛顿将逐步落实对韩国的经济援助。"
+                + "金大中对克林顿的讲话报以掌声：克林顿总统在会谈中重申，他坚定地支持韩国摆脱经济危机。";
+        List<Word> wordList = this.manager.stanfordPosTagging(text);
+        System.out.println(wordList.toString());
+    }
+
+    @Test
+    public void test4() {
+        JiebaSegmenter segmenter = new JiebaSegmenter();
+        String[] sentences =
+                new String[] {"这是一个伸手不见五指的黑夜。我叫孙悟空，我爱北京，我爱Python和C++。", "我不喜欢日本和服。", "雷猴回归人间。",
+                        "工信处女干事每月经过下属科室都要亲口交代24口交换机等技术性器件的安装工作", "结果婚的和尚未结过婚的"};
+        for (String sentence : sentences) {
+            System.out.println(segmenter.process(sentence, JiebaSegmenter.SegMode.INDEX).toString());
+        }
+    }
+
 
 
 }

@@ -40,18 +40,5 @@ public class OrderGoodsManagerImpl extends GenericManagerImpl<OrderGoods, Long> 
         List<OrderGoods> result = this.dao.findAll(example);
         return result;
     }
-    @Override
-    public boolean modifyOrderGoods(String name) {
-        List<OrderGoods> orderList = this.findByName(name);
-        if(orderList.size() == 0) {
-            return false;
-        }
-        else {
-            for(int i = 0; i < orderList.size(); i++) {
-                this.dao.delete(orderList.get(i));
-            }
-            return true;
-        }
-    }
 
 }
