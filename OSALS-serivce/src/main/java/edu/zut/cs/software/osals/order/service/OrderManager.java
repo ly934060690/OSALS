@@ -8,4 +8,7 @@ import java.util.List;
 public interface OrderManager extends GenericTreeManager<Order, Long> {
 
     List<Order> findByName(String name);
+    List<Order> findByState(String state);
+    List<Order> createOrder(String success_time,String payment_method,float order_num);
+    boolean modifyOrder(String state);
 }
