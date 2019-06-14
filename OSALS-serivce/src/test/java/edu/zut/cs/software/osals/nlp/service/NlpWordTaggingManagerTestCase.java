@@ -10,6 +10,8 @@ import me.midday.lexical.AnalysisResult;
 import me.midday.lexical.Entity;
 import me.midday.lexical.LexicalAnalyzer;
 import me.midday.lexical.Word;
+import org.ansj.domain.Result;
+import org.ansj.splitWord.analysis.BaseAnalysis;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -36,6 +38,11 @@ public class NlpWordTaggingManagerTestCase extends GenericManagerTestCase<Long, 
         this.manager = this.nlpWordTaggingManager;
     }
 
+    /**
+     * HanLP
+     * POS tagging : PosTagging
+     * -- 01
+     */
     @Test
     public void test1() {
         System.out.println(HanLP.segment("你好，欢迎使用HanLP汉语处理包！"));
@@ -117,13 +124,16 @@ public class NlpWordTaggingManagerTestCase extends GenericManagerTestCase<Long, 
 
     /**
      * Stanford pos tagging
+     * -- 03
      */
     @Test
-    public void test3() {
+    public void testStanfordPosTagging() {
         String text = "克林顿说，华盛顿将逐步落实对韩国的经济援助。"
                 + "金大中对克林顿的讲话报以掌声：克林顿总统在会谈中重申，他坚定地支持韩国摆脱经济危机。";
         List<Word> wordList = this.manager.stanfordPosTagging(text);
-        System.out.println(wordList.toString());
+        if (logger.isInfoEnabled()) {
+            logger.info("testStanfordPosTagging() - List<Word> wordList={}", wordList.toString()); //$NON-NLS-1$
+        }
     }
 
     @Test
@@ -134,6 +144,19 @@ public class NlpWordTaggingManagerTestCase extends GenericManagerTestCase<Long, 
                         "工信处女干事每月经过下属科室都要亲口交代24口交换机等技术性器件的安装工作", "结果婚的和尚未结过婚的"};
         for (String sentence : sentences) {
             System.out.println(segmenter.process(sentence, JiebaSegmenter.SegMode.INDEX).toString());
+        }
+    }
+
+    /**
+     * Ansj -- 04
+     * POS tagging : PosTagging
+     */
+    @Test
+    public void testAnsjPosTagging() {
+        String text = "腾讯公司的员工非常多，有40678个员工，老板是马化腾";
+        List<org.ansj.domain.Term> termList = this.manager.ansjPosTagging(text);
+        if (logger.isInfoEnabled()) {
+            logger.info("testAnsjPosTagging() - List<org.ansj.domain.Term> termList={}", termList.toString()); //$NON-NLS-1$
         }
     }
 

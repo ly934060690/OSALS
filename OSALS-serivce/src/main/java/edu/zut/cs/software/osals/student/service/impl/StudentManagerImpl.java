@@ -61,9 +61,7 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 
 	@Override
 	public List<Student> getAll() {
-		// TODO Auto-generated method stub
 		List<Student> all = new ArrayList<Student>();
-		
 		/**
 		 * 利用poi读取excel
 		 */
@@ -99,14 +97,11 @@ public class StudentManagerImpl extends GenericManagerImpl<Student, Long> implem
 	                		student.setSex(String.valueOf(cell));
 	                	} 
 	                	cellNumber++;
-	                    System.out.print(cell + "\t");
 	                }
 	                all.add(student);
             	}
-            	
                 rowNumber++;
                 cellNumber = 0;
-                System.out.println();
             }
             fileInputStream.close();
         } catch (FileNotFoundException e) {

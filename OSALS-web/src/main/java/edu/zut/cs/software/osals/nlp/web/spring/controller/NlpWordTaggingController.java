@@ -44,12 +44,14 @@ public class NlpWordTaggingController extends GenericController<NlpWordTagging, 
         List<Term> result = this.manager.normWord(text);
         List<List<Word>> foolPosTagging = this.manager.foolPosTagging(text);
         List<Word> stanfordPosTagging = this.manager.stanfordPosTagging(text);
+        List<org.ansj.domain.Term> ansjPosTagging = this.manager.ansjPosTagging(text);
 
         NlpWordTagging hanlp = new NlpWordTagging();
         hanlp.setText(text);
         hanlp.setWord_1(result.toString());
         hanlp.setWord_2(foolPosTagging.toString());
         hanlp.setWord_3(stanfordPosTagging.toString());
+        hanlp.setWord_4(ansjPosTagging.toString());
         this.manager.save(hanlp);
 
         String string = "";
@@ -79,6 +81,14 @@ public class NlpWordTaggingController extends GenericController<NlpWordTagging, 
         string += '\n';
         for(Word word : stanfordPosTagging) {
             string += (word.getPos() + '\t');
+        }
+        string += '\n';
+        for(org.ansj.domain.Term term : ansjPosTagging) {
+            string += (term.getRealName() + '\t');
+        }
+        string += '\n';
+        for(org.ansj.domain.Term term : ansjPosTagging) {
+            string += (term.getNatureStr() + '\t');
         }
         return string;
     }
