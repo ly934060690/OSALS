@@ -14,6 +14,8 @@ import edu.zut.cs.software.osals.nlp.service.NlpWordTaggingManager;
 import me.midday.FoolNLTK;
 import me.midday.lexical.LexicalAnalyzer;
 import me.midday.lexical.Word;
+import org.ansj.domain.Result;
+import org.ansj.splitWord.analysis.BaseAnalysis;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -89,6 +91,19 @@ public class NlpWordTaggingManagerImpl extends GenericManagerImpl<NlpWordTagging
             }
         }
         return wordList;
+    }
+
+    /**
+     * Ansj
+     * POS Tagging : posTagging
+     *
+     * @param text
+     */
+    @Override
+    public List<org.ansj.domain.Term> ansjPosTagging(String text) {
+        Result result = BaseAnalysis.parse(text);
+        List<org.ansj.domain.Term> resultTerms = result.getTerms();
+        return resultTerms;
     }
 
 }

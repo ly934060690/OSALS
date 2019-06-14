@@ -39,93 +39,37 @@ public class StudentDaoTest extends GenericDaoTestCase<Long, Student, StudentDao
 		this.dao = this.studentdao;
 	}
 
-	private static FileInputStream fileInputStream;
-	private static InputStream inputStream;
-
-    private static XSSFWorkbook hssfWorkbook;
-    
-    private static XSSFSheet hssfSheet;
-    
-    private static Integer rowNumber = 0;
-    private static Integer cellNumber = 0;
-    
-	@Test
 	/**
 	 * 事务回滚false这个注释别取消掉，我所写的实体都别动
 	 */
+	@Test
 //	@Rollback(false)
-	public void test() {
-		
-		List<Student> all = new ArrayList<Student>();
-		
-		/**
-		 * 利用poi解析xlsx
-		 */
-		URL url = StudentDaoTest.class.getClassLoader().getResource("Software17_Student_JavaEE.xlsx");
-		try {
-            fileInputStream = new FileInputStream(url.getFile());
-            hssfWorkbook = new XSSFWorkbook(fileInputStream);
-
-            hssfSheet = hssfWorkbook.getSheet("Sheet1");
-
-            for(Row row : hssfSheet) {
-            	if(rowNumber == 0) {
-            		for(Cell cell : row) {
-	                    System.out.print(cell + "\t");
-	                    if(cellNumber++ == 5) {
-	                    	System.out.print('\t');
-	                    }
-	                }
-            	} else {
-            		Student student = new Student();
-	                for(Cell cell : row) {
-	                	if(cellNumber == 1) {
-	                		student.setGrade(String.valueOf(cell));
-	                	} else if(cellNumber == 2) {
-	                		student.setMajor(String.valueOf(cell));
-	                	} else if(cellNumber == 3) {
-	                		student.setSclass(String.valueOf(cell));
-	                	} else if(cellNumber == 5) {
-	                		student.setSno(String.valueOf(cell));
-	                	} else if(cellNumber == 6) {
-	                		student.setName(String.valueOf(cell));
-	                	} else if(cellNumber == 7) {
-	                		student.setSex(String.valueOf(cell));
-	                	} 
-	                	cellNumber++;
-	                    System.out.print(cell + "\t");
-	                }
-	                this.studentdao.save(student);
-	                this.studentdao.flush();
-	                all.add(student);
-            	}
-            	
-                rowNumber++;
-                cellNumber = 0;
-                System.out.println();
-            }
-            fileInputStream.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-//		if (logger.isInfoEnabled()) {
-//			logger.info("test() - List<Student> all={}", all); //$NON-NLS-1$
-//		}
-		List<Student> allStudent = this.studentdao.findAll();
-		if (logger.isInfoEnabled()) {
-			logger.info("test() - List<Student> allStudent={}", allStudent); //$NON-NLS-1$
-		}
-		
+	public void testSaveStudent() {
+		Student student = new Student();
+		student.setSno("201708044226");
+		student.setName("刘研");
+		student.setMajor("软件工程");
+		student.setGrade("2017");
+		student.setSclass("软件172");
+		student.setSex("男");
+		this.dao.save(student);
 	}
 
 	@Test
-	public void testfindById() {
-		Optional<Student> student = this.dao.findById(1l);
-
+	public void testFindById() {
+		Student student1 = new Student();
+		this.entity = this.dao.save(student1);
+		Optional<Student> student = this.dao.findById(this.entity.getId());
 		if (logger.isInfoEnabled()) {
-		    logger.info("$() - $ $={}", student); //$NON-NLS-1$
+		    logger.info("testFindById() - Optional<Student> student={}", student); //$NON-NLS-1$
+		}
+	}
+
+	@Test
+	public void testFindAll() {
+		List<Student> studentList = this.dao.findAll();
+		if (logger.isInfoEnabled()) {
+		    logger.info("testFindAll() - List<Student> studentList={}", studentList); //$NON-NLS-1$
 		}
 	}
 }
