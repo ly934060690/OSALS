@@ -27,4 +27,10 @@ public interface NlpWordTaggingManager extends GenericManager<NlpWordTagging, Lo
      */
     List<Word> stanfordPosTagging(String text);
 
+    /**
+     * Ansj
+     * POS Tagging : posTagging
+     */
+    List<org.ansj.domain.Term> ansjPosTagging(String text);
+
 }
