@@ -1,15 +1,9 @@
 <template>
   <div style="padding:30px">
-    <el-alert title="测试" :closable="false">
-      <el-button @click="getcrfdata" type="success" round><i class="el-icon-refresh"></i>刷新</el-button>
-    <router-view/>
-    <div>
+    <el-input  v-bind:value="datatest.username" placeholder="请输入内容"></el-input>
 
-    </div>
-      <div>
-        <h2>{{datatest.string}}</h2>
-      </div>
-    </el-alert>
+    <el-button @click="getcrfdata" type="success" round><i class="el-icon-refresh"></i>刷新</el-button>
+    <router-view/>
   </div>
 </template>
 
@@ -19,8 +13,7 @@
     name:'axiostest',
     data(){
       return {
-        userData: {
-        },
+        userData:{},
         sites:{},
         datatest:{}
       }
@@ -44,18 +37,18 @@
       //     console.log(error);
       //   })
       // this.getdata()
-      this.getcrfdata()
-      alert(this.datatest.username)
+      this.getcrfdata();
+      alert("11111"+this.datatest.username)
     },
     methods:{
       zz:function () {
         let that = this
-        var url = this.HOST+"/user/test"
+        var url = this.HOST+"/user/response"
 
         this.$axios.get(url)
           .then(function (response) {
               console.log("此处显示信息");
-              console.log("response.data.name:"+response.data.name);
+              console.log("response.data.username:"+response.data.username);
               that.userData = response.data;
               // alert(that.userData.dateModified)
               //this.userData.name="张成文";
@@ -71,7 +64,7 @@
 
       getcrfdata:function () {
         var that=this;
-        const path='http://localhost:8081/user/test';
+        const path='http://localhost:8081/user/response';
         axios.get(path).then(function (response) {
           that.datatest=response.data;
           that.ss()
@@ -80,7 +73,7 @@
         })
       },
       ss:function () {
-        alert(this.datatest.username)
+        alert("32222"+this.datatest.username)
       }
     }
   }
