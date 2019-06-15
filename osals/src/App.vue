@@ -4,7 +4,7 @@
     <el-container >
         <el-header
           style="height: 100px">
-          <img src="assets/logo_nlp.png" align="left">
+          <img src="assets/logo/logo_nlp.png" align="left">
         </el-header>
 
         <el-container

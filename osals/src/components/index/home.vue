@@ -5,12 +5,14 @@
       <br>
       <font size="10">欢迎使用NLP系统</font>
     </h3>
-    <div class="login_form" id="txt" style="line-height: 20px">
-      <input type="text"  class="qxs-ic_user"  placeholder="要提交的语句" v-model="text" style="width: 600px ; height:60px">
+    <div class="login_form" style="line-height: 20px">
+      <input id="txt" type="text"  class="qxs-ic_user"  placeholder="要提交的语句" v-model="postData" style="width: 600px ; height:60px">
       <br>
-      <el-button class="submit_btn" @click.native="submit" type="primary" round :loading="isBtnLoading">提交</el-button>
+      <el-button class="submit_btn" @click.native="message" type="primary" round :loading="isBtnLoading">提交</el-button>
     </div>
-
+    <!-- @click.native you can invoke function by click this button -->
+    <!--  ps: this from submit data is also json property -->
+    <!-- ps: sometime you should take care for the content-type of your data -->
   </div>
 </template>
 
@@ -18,23 +20,46 @@
   export default {
   data() {
     return {
-      userName: '',
-      password: '',
+      postData:'',
       isBtnLoading: false,
-      str:{}
     }
   },
   created:function(){
-    this.postdata()
   },
-  methods:{
 
-    }
+  methods: {
+    message: function () {
+      /* you can bind this from by this id(txt) */
+      let content = document.getElementById("txt");
+      let postData = {
+        "text": content.value,
+        /* here is transferring value of text */
+      }
+      alert('您要提交的数据为：' + postData.text)
+      this.submits(postData)
+      /* invoking function(submits)
+       *  if you change this order you may be meet the data's value miss
+       *  or you can put this function into that(submit) function
+       */
+    },
+    submits: function (postData) {
+      this.$axios({
+        method: 'post',
+        url: 'http://localhost:999/user/request',
+        data: postData
+        /* parameter match  */
+      }).then((res) => {
+        console.log(res.data)
+      }).catch(err => {
+        console.log(err)
+      })
+    },
+   }
   }
 </script>
 
 <style>
-
+ /*  these are styles for just this page */
   input::-webkit-input-placeholder {
     /* placeholder颜色  */
     color: #000000;
@@ -46,24 +71,20 @@
     padding-left: 10%;
     padding-right: 10%;
   }
-  .qxs-ic_user {
-   /* background: url("../assets/login/ic_user.png") no-repeat; */
+  .submit_text {
+    /* you can set the logo for this from !
+    background: url("../assets/login/ic_user.png") no-repeat; */
     background-size: 13px 15px;
     background-position: 10%;
   }
-  .qxs-ic_password {
-   /* background: url("../assets/login/ic_password.png") no-repeat; */
-    background-size: 13px 15px;
-    background-position: 3%;
-    margin-bottom: 20px;
-  }
+
   .submit_btn {
     width: 25%;
     font-size: 25px;
     background: -webkit-linear-gradient(left, #000099, #2154FA); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(right, #000099, #2154FA); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(right, #000099, #2154FA); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to right, #000099 , #2154FA); /* 标准的语法 */
+    background: linear-gradient(to right, #000099 , #2154FA); /* Standard grammar */
     filter: brightness(1.4);
   }
 </style>
