@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName HanlpController
@@ -24,6 +26,8 @@ import java.util.List;
 public class NlpWordTaggingController extends GenericController<NlpWordTagging, Long, NlpWordTaggingManager> {
 
     NlpWordTaggingManager hanlpManager;
+
+    private String text;
 
     @Autowired
     public void setHanlpManager(NlpWordTaggingManager hanlpManager) {
@@ -91,5 +95,26 @@ public class NlpWordTaggingController extends GenericController<NlpWordTagging, 
             string += (term.getNatureStr() + '\t');
         }
         return string;
+    }
+
+    @ResponseBody
+    @PostMapping(value = "request", produces = "application/json;charset=utf-8")
+    public String getText(@RequestBody Map<String, Object> map) {
+        text = (String) map.get("text");
+        System.out.print("text : ");
+        System.out.println(text);
+        return text;
+    }
+
+    @ResponseBody
+    @GetMapping(value = "response", produces = "application/json;charset=utf-8")
+    public List<Term> response(HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        List<Term> result = this.manager.normWord(text);
+        NlpWordTagging hanlp = new NlpWordTagging();
+        hanlp.setText(text);
+        hanlp.setWord_1(result.toString());
+        this.manager.save(hanlp);
+        return result;
     }
 }

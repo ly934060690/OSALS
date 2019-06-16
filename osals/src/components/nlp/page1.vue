@@ -1,10 +1,10 @@
 <template>
   <div>
     <h1 style="line-height:4px;">下面为分词标注：</h1>
-    <h1 style="line-height:2px">*****:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data1.username" style="width: 500px ; height: 25px"></h1>
-    <h1 style="line-height:2px">*****:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data2.username" style="width: 500px ; height: 25px"></h1>
-    <h1 style="line-height:2px">*****:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data3.username" style="width: 500px ; height: 25px"></h1>
-    <h1 style="line-height:2px">*****:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data4.username" style="width: 500px ; height: 25px"></h1>
+    <h1 style="line-height:2px">HanLP:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data1.username" style="width: 500px ; height: 25px"></h1>
+    <h1 style="line-height:2px">FoolNLTK:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data2.username" style="width: 500px ; height: 25px"></h1>
+    <h1 style="line-height:2px">standfordNLP:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data3.username" style="width: 500px ; height: 25px"></h1>
+    <h1 style="line-height:2px">Ansj:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data4.username" style="width: 500px ; height: 25px"></h1>
     <h1 style="line-height:2px">*****:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data5.username" style="width: 500px ; height: 25px"></h1>
     <h1 style="line-height:2px">*****:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data6.username" style="width: 500px ; height: 25px"></h1>
     <h1 style="line-height:2px">*****:<input type="text"  class="qxs-ic_password qxs-icon"  v-bind:value="data7.username" style="width: 500px ; height: 25px"></h1>
@@ -42,7 +42,7 @@
     methods:{
       test1:function () {
         let that = this
-        var url = this.HOST+"/user/response"
+        var url = this.HOST+"/nlpwt/response"
         //if you want to change the value of HOST ,please go to /osals/config/index.js/->module.exports->dev->proxyTable->target
         this.$axios.get(url)
           .then(function (res) {

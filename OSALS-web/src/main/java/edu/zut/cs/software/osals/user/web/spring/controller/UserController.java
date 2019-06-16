@@ -22,9 +22,9 @@ public class UserController extends HttpServlet {
     }
 
     @ResponseBody
-    @RequestMapping(value = "/request", method = RequestMethod.POST)
+    @RequestMapping(value = "/request", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
     public String gettext(@RequestBody Map<String, Object> map) {
-        String text=(String) map.get("text");
+        String text = (String) map.get("text");
         System.out.println("从前端传来的数据为：");
         System.out.println(text);
         return text;
