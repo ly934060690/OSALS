@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
 
 @RestController
 @RequestMapping("user")
@@ -16,16 +17,17 @@ public class UserController extends HttpServlet {
     public User response(HttpServletResponse response) {
         response.setHeader("Access-Control-Allow-Origin", "*");
         User user = new User();
-        user.setUsername("李博文222");
+        user.setUsername("李博文");
         return user;
     }
 
-    @RequestMapping(value = "/request", method = RequestMethod.POST)
     @ResponseBody
-    public Object request(@RequestBody Object object,HttpServletResponse response){
-        response.setHeader("Access-Control-Allow-Origin", "*");
-        System.out.println(object);
-        return object;
+    @RequestMapping(value = "/request", method = RequestMethod.POST)
+    public String gettext(@RequestBody Map<String, Object> map) {
+        String text=(String) map.get("text");
+        System.out.println("从前端传来的数据为：");
+        System.out.println(text);
+        return text;
     }
 
 }
