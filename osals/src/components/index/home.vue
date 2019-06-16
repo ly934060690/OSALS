@@ -45,7 +45,7 @@
     submits: function (postData) {
       this.$axios({
         method: 'post',
-        url: 'http://localhost:999/user/request',
+        url: this.HOST + '/user/request',
         data: postData
         /* parameter match  */
       }).then((res) => {
