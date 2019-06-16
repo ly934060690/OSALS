@@ -107,14 +107,37 @@ public class NlpWordTaggingController extends GenericController<NlpWordTagging, 
     }
 
     @ResponseBody
-    @GetMapping(value = "response", produces = "application/json;charset=utf-8")
-    public List<Term> response(HttpServletResponse response) {
+    @GetMapping(value = "responseHanLP", produces = "application/json;charset=utf-8")
+    public String responseHanLP(HttpServletResponse response) {
         response.setHeader("Access-Control-Allow-Origin", "*");
         List<Term> result = this.manager.normWord(text);
-        NlpWordTagging hanlp = new NlpWordTagging();
-        hanlp.setText(text);
-        hanlp.setWord_1(result.toString());
-        this.manager.save(hanlp);
-        return result;
+        return result.toString();
+    }
+    @ResponseBody
+    @GetMapping(value = "responseStanfordNlp", produces = "application/json;charset=utf-8")
+    public String responseStanfordNlp(HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        List<Word> stanfordPosTagging = this.manager.stanfordPosTagging(text);
+        return stanfordPosTagging.toString();
+    }
+
+    @ResponseBody
+    @GetMapping(value = "response", produces = "application/json;charset=utf-8")
+    public NlpWordTagging response(HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        List<Term> result = this.manager.normWord(text);
+        List<List<Word>> foolPosTagging = this.manager.foolPosTagging(text);
+        List<Word> stanfordPosTagging = this.manager.stanfordPosTagging(text);
+        List<org.ansj.domain.Term> ansjPosTagging = this.manager.ansjPosTagging(text);
+
+        NlpWordTagging nlpWordTagging = new NlpWordTagging();
+        nlpWordTagging.setText(text);
+        nlpWordTagging.setWord_1(result.toString());
+        nlpWordTagging.setWord_2(foolPosTagging.toString());
+        nlpWordTagging.setWord_3(stanfordPosTagging.toString());
+        nlpWordTagging.setWord_4(ansjPosTagging.toString());
+        this.manager.save(nlpWordTagging);
+
+        return nlpWordTagging;
     }
 }
