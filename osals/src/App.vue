@@ -3,8 +3,8 @@
 
     <el-container >
         <el-header
-          style="height: 131px">
-          <img src="assets/logo_nlp.png" height="131" width="180" align="left"/>
+          style="height: 134px">
+          <img src="assets/logo_nlp.png" align="left"/>
         </el-header>
 
         <el-container

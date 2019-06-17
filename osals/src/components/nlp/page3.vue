@@ -4,21 +4,21 @@
     <h1 style="line-height:8px">
       <textarea  class="textarea0" v-bind:value="data.name1" ></textarea></h1>
     <h1 style="line-height:8px">
-    <h style="position: relative; left: -50px">
-      <p style="line-height:0px ; position:relative; left:40px ; white-space:pre">***1                                                          ***2</p>
-    <textarea  class="textarea1" v-bind:value="data.name1" ></textarea></h>
+      <h style="position: relative; left: -50px">
+        <p style="line-height:0px ; position:relative; left:40px ; white-space:pre">***1                                                          ***2</p>
+        <textarea  class="textarea1" v-bind:value="data.name1"></textarea></h>
 
-    <h style="position: relative; right: -50px">
-      <textarea  class="textarea2" v-bind:value="data.name2" ></textarea></h>
+      <h style="position: relative; right: -50px">
+        <textarea  class="textarea2" v-bind:value="data.name2" ></textarea></h>
 
     </h1>
     <h1 style="line-height:8px">
-    <h style="position: relative; left:  -50px">
-      <p style="line-height:0px ; position:relative; left:40px ; white-space:pre">***3                                                          ***4</p>
-    <textarea  class="textarea3" v-bind:value="data.name3" ></textarea></h>
+      <h style="position: relative; left:  -50px">
+        <p style="line-height:0px ; position:relative; left:40px ; white-space:pre">***3                                                          ***4</p>
+        <textarea  class="textarea3" v-bind:value="data.name3" ></textarea></h>
 
-    <h style="position: relative; right: -50px">
-    <textarea  class="textarea4" v-bind:value="data.name4" ></textarea></h>
+      <h style="position: relative; right: -50px">
+        <textarea  class="textarea4" v-bind:value="data.name4" ></textarea></h>
     </h1>
     <el-button class="login_btn" @click.native="test1" type="primary" round :loading="isBtnLoading">刷新</el-button>
     <!--the @click.native is to call this function-->
@@ -65,7 +65,7 @@
     border: double ;
     border-color: #c9ffaf;
     border-width: 5px ;
-
+    font-size: 25px;
   }
   .textarea1{
     width: 400px ;
@@ -73,7 +73,7 @@
     border: inset ;
     border-color: aqua ;
     border-width: 10px ;
-
+    font-size: 25px;
   }
   .textarea2{
     width: 400px ;
@@ -82,6 +82,7 @@
     border-color: aqua ;
     border-width: 10px ;
     margin-right: 5px;
+    font-size: 25px;
   }
   .textarea3{
     width: 400px ;
@@ -89,6 +90,7 @@
     border: double ;
     border-width: 10px ;
     border-color: aqua;
+    font-size: 25px;
   }
   .textarea4{
     width: 400px ;
@@ -96,5 +98,6 @@
     border: outset ;
     border-color: aqua ;
     border-width: 10px ;
+    font-size: 25px;
   }
 </style>
