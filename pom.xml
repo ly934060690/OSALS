@@ -106,6 +106,7 @@
             <classifier>models-chinese</classifier>
         </dependency>
 
+
         <!--Ansj fenci-->
         <!--ansjsun sunjian-->
         <!-- https://mvnrepository.com/artifact/org.ansj/ansj_seg -->
@@ -113,6 +114,20 @@
             <groupId>org.ansj</groupId>
             <artifactId>ansj_seg</artifactId>
             <version>5.1.6</version>
+
+        <!--Stanford Parser-->
+        <!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-parser -->
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-parser</artifactId>
+            <version>3.9.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.2</version>
+
         </dependency>
 
         <!--jieba fenci-->

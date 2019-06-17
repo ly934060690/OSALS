@@ -1,5 +1,9 @@
 package edu.zut.cs.software.osals.nlp.service.impl;
 
+import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.TypedDependency;
+import edu.stanford.nlp.trees.international.pennchinese.ChineseGrammaticalStructure;
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
 import edu.zut.cs.software.osals.nlp.dao.NlpDependencyRelationDao;
 import edu.zut.cs.software.osals.nlp.domain.NlpDependencyRelation;
@@ -8,10 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
+import java.util.Collection;
 
 /**
- * @Author:
- * @Description:
+ * @Author: hyh
+ * @Description: NlpDependencyRelationManager Impl
  * @Date:Created in 11:50 2019/6/13
  * @Modified By:
  */
@@ -27,4 +32,46 @@ public class NlpDependencyRelationManagerImpl extends GenericManagerImpl<NlpDepe
         this.dao = this.nlpDependencyRelationDao;
     }
 
+    /**
+     *@Description: StanfordParser 创建语法树 impl
+     *@Date: 10:35 2019/6/14
+     */
+    @Override
+    public Tree stanfordParseTree(String text) {
+        String modelpath="edu/stanford/nlp/models/lexparser/xinhuaFactoredSegmenting.ser.gz";
+        LexicalizedParser lexicalizedParser=LexicalizedParser.loadModel(modelpath);
+        Tree tree=lexicalizedParser.parse(text);
+        return tree;
+    }
+
+    /**
+     *@Description: StanfordParser 创建依存关系 impl
+     *@Date: 10:35 2019/6/14
+     */
+    @Override
+    public Collection<TypedDependency> stanfordDependencyRelation(String text) {
+        Tree tree=stanfordParseTree(text);
+        ChineseGrammaticalStructure cgs=new ChineseGrammaticalStructure(tree);
+        Collection<TypedDependency> tdl=cgs.typedDependenciesCollapsed();
+        return tdl;
+    }
+
+    /**
+     *@Description: StanfordParser 创建标注指代 impl
+     *@Date: 10:35 2019/6/14
+     */
+    @Override
+    public String stanfordAnnotatedReference(String text) {
+        String s="";
+        Collection<TypedDependency> typedDependencies=stanfordDependencyRelation(text);
+        for(int i=0;i<typedDependencies.size()-1;i++){
+            TypedDependency td=(TypedDependency)typedDependencies.toArray()[i];
+            String stringAnnotated=td.dep().toString();
+            s+=stringAnnotated+",";
+        }
+        TypedDependency td=(TypedDependency)typedDependencies.toArray()[typedDependencies.size()-1];
+        String stringAnnotated=td.dep().toString();
+        s+=stringAnnotated;
+        return s;
+    }
 }
