@@ -41,11 +41,24 @@
        *  if you change this order you may be meet the data's value miss
        *  or you can put this function into that(submit) function
        */
+      this.submits2(postData)
     },
     submits: function (postData) {
       this.$axios({
         method: 'post',
         url: this.HOST + '/nlpwt/request',
+        data: postData
+        /* parameter match  */
+      }).then((res) => {
+        console.log(res.data)
+      }).catch(err => {
+        console.log(err)
+      })
+    },
+    submits2: function (postData) {
+      this.$axios({
+        method: 'post',
+        url: this.HOST + '/stu/request',
         data: postData
         /* parameter match  */
       }).then((res) => {
