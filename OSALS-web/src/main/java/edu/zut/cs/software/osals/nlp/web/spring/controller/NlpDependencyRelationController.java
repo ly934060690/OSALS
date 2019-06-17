@@ -1,14 +1,14 @@
 package edu.zut.cs.software.osals.nlp.web.spring.controller;
 
+import edu.stanford.nlp.trees.TypedDependency;
 import edu.zut.cs.software.base.web.spring.controller.GenericController;
 import edu.zut.cs.software.osals.nlp.domain.NlpDependencyRelation;
 import edu.zut.cs.software.osals.nlp.service.NlpDependencyRelationManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Collection;
 
 /**
  * @Author: hyh
@@ -37,7 +37,27 @@ public class NlpDependencyRelationController  extends GenericController<NlpDepen
     @ResponseBody
     @GetMapping(value = "hello", produces = "application/json;charset=utf-8")
     public String hello() {
-        return "Hello, This is NlpDependencyRelation Hanlp!";
+        return "Hello, This is NlpDependencyRelation nlp!";
     }
 
+    @ResponseBody
+    @GetMapping(value = "text/{text}", produces = "application/json;charset=utf-8")
+    public String getDependencyRelation(@PathVariable("text") String text){
+
+        /**
+         * StanfordParser 返回依存关系，标注指代
+         */
+        Collection<TypedDependency> collection=this.manager.stanfordDependencyRelation(text);
+        String annotated=this.manager.stanfordAnnotatedReference(text);
+        String relation=collection.toString();
+
+        NlpDependencyRelation nlp=new NlpDependencyRelation();
+        nlp.setText(text);
+        nlp.setRelation(relation);
+        nlp.setAnnotated(annotated);
+        this.manager.save(nlp);
+
+        String result=relation+"\n"+annotated;
+        return result;
+    }
 }

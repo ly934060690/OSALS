@@ -106,6 +106,20 @@
             <classifier>models-chinese</classifier>
         </dependency>
 
+        <!--Stanford Parser-->
+        <!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-parser -->
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-parser</artifactId>
+            <version>3.9.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+
         <!--jieba fenci-->
         <dependency>
             <groupId>com.huaban</groupId>

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * @Author: hyh
- * @Description:
+ * @Description: NlpDependencyRelation Dao
  * @Date:Created in 11:08 2019/6/13
  * @Modified By:
  */
