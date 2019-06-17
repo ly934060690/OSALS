@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../assets/logo/logo_nlp.png" height="393" width="540"/>
+    <img src="../assets/logo_nlp.png" height="393" width="540"/>
     <br>
     <font size="10">Welcome to NLP !</font>
   </div>

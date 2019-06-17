@@ -1,10 +1,10 @@
-<template>
+<template xmlns:img="http://www.w3.org/1999/xhtml">
   <div>
 
     <el-container >
         <el-header
-          style="height: 100px">
-          <img src="assets/logo/logo_nlp.png" align="left">
+          style="height: 131px">
+          <img src="assets/logo_nlp.png" height="131" width="180" align="left"/>
         </el-header>
 
         <el-container
@@ -40,6 +40,7 @@
                   <el-menu-item index="/components/nlp/page5">文本分类</el-menu-item>
                   <el-menu-item index="/components/nlp/page6">依存关系</el-menu-item>
                   <el-menu-item index="/components/nlp/page7">摘要提取</el-menu-item>
+                  <el-menu-item index="/components/nlp/page8">跳转按钮</el-menu-item>
                 </el-menu-item-group>
 
               </el-submenu>

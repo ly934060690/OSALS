@@ -6,8 +6,9 @@
       <font size="10">欢迎使用NLP系统</font>
     </h3>
     <div class="login_form" style="line-height: 20px">
-      <textarea id="txt" type="text"  class="qxs-ic_user"  placeholder="在这里输入要提交的语句：" v-model="postData" style="width: 600px ; height:60px ; text:top"></textarea>      <br>
-      <el-button class="submit_btn" @click.native="message" type="primary" round :loading="isBtnLoading">提交</el-button>
+      <textarea id="txt" type="text"  class="qxs-ic_user"  placeholder="在这里输入要提交的语句：" v-model="postData" style="width: 600px ; height:60px ; text:top"></textarea>
+      <br>
+      <el-button class="submit_btn" @click.native="message();" type="primary" round :loading="isBtnLoading">提交</el-button>
     </div>
     <!-- @click.native you can invoke function by click this button -->
     <!--  ps: this from submit data is also json property -->
@@ -33,14 +34,14 @@
       let postData = {
         "text": content.value,
         /* here is transferring value of text */
-      }
-      alert('您要提交的数据为：' + postData.text)
-      this.submits(postData)
+      };
+      alert('您要提交的数据为：' + postData.text);
+      this.submits(postData);
       /* invoking function(submits)
        *  if you change this order you may be meet the data's value miss
        *  or you can put this function into that(submit) function
        */
-      this.submits2(postData)
+      this.submits2(postData);/* another function ! */
     },
     submits: function (postData) {
       this.$axios({
@@ -55,11 +56,11 @@
       })
     },
     submits2: function (postData) {
+      /* another function !! */
       this.$axios({
         method: 'post',
-        url: this.HOST + '/stu/request',
+        url: this.HOST + '/user/request22',
         data: postData
-        /* parameter match  */
       }).then((res) => {
         console.log(res.data)
       }).catch(err => {
@@ -76,7 +77,7 @@
     /* placeholder颜色  */
     color: #000000;
     /* placeholder字体大小  */
-    font-size: 20px;
+    font-size: 30px;
   }
   .login_form {
     padding-top: 10%;
