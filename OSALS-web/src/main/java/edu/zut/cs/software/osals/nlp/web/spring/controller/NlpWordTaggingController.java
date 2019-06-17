@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName HanlpController
@@ -24,6 +26,8 @@ import java.util.List;
 public class NlpWordTaggingController extends GenericController<NlpWordTagging, Long, NlpWordTaggingManager> {
 
     NlpWordTaggingManager hanlpManager;
+
+    private NlpWordTagging nlpWordTagging = new NlpWordTagging();
 
     @Autowired
     public void setHanlpManager(NlpWordTaggingManager hanlpManager) {
@@ -91,5 +95,47 @@ public class NlpWordTaggingController extends GenericController<NlpWordTagging, 
             string += (term.getNatureStr() + '\t');
         }
         return string;
+    }
+
+    @ResponseBody
+    @PostMapping(value = "request", produces = "application/json;charset=utf-8")
+    public String getText(@RequestBody Map<String, Object> map) {
+        String text = (String) map.get("text");
+        List<Term> result = this.manager.normWord(text);
+        List<List<Word>> foolPosTagging = this.manager.foolPosTagging(text);
+        List<Word> stanfordPosTagging = this.manager.stanfordPosTagging(text);
+        List<org.ansj.domain.Term> ansjPosTagging = this.manager.ansjPosTagging(text);
+
+        nlpWordTagging.setText(text);
+        nlpWordTagging.setWord_1(result.toString());
+        nlpWordTagging.setWord_2(foolPosTagging.toString());
+        nlpWordTagging.setWord_3(stanfordPosTagging.toString());
+        nlpWordTagging.setWord_4(ansjPosTagging.toString());
+        this.manager.save(nlpWordTagging);
+        System.out.print("text : ");
+        System.out.println(text);
+        return text;
+    }
+
+    @ResponseBody
+    @GetMapping(value = "responseHanLP", produces = "application/json;charset=utf-8")
+    public String responseHanLP(HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        List<Term> result = this.manager.normWord(nlpWordTagging.getText());
+        return result.toString();
+    }
+    @ResponseBody
+    @GetMapping(value = "responseStanfordNlp", produces = "application/json;charset=utf-8")
+    public String responseStanfordNlp(HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        List<Word> stanfordPosTagging = this.manager.stanfordPosTagging(nlpWordTagging.getText());
+        return stanfordPosTagging.toString();
+    }
+
+    @ResponseBody
+    @GetMapping(value = "response", produces = "application/json;charset=utf-8")
+    public NlpWordTagging response(HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        return nlpWordTagging;
     }
 }

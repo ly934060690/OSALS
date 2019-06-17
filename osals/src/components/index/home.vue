@@ -6,8 +6,7 @@
       <font size="10">欢迎使用NLP系统</font>
     </h3>
     <div class="login_form" style="line-height: 20px">
-      <input id="txt" type="text"  class="qxs-ic_user"  placeholder="要提交的语句" v-model="postData" style="width: 600px ; height:60px">
-      <br>
+      <textarea id="txt" type="text"  class="qxs-ic_user"  placeholder="在这里输入要提交的语句：" v-model="postData" style="width: 600px ; height:60px ; text:top"></textarea>      <br>
       <el-button class="submit_btn" @click.native="message" type="primary" round :loading="isBtnLoading">提交</el-button>
     </div>
     <!-- @click.native you can invoke function by click this button -->
@@ -41,11 +40,24 @@
        *  if you change this order you may be meet the data's value miss
        *  or you can put this function into that(submit) function
        */
+      this.submits2(postData)
     },
     submits: function (postData) {
       this.$axios({
         method: 'post',
-        url: this.HOST + '/user/request',
+        url: this.HOST + '/nlpwt/request',
+        data: postData
+        /* parameter match  */
+      }).then((res) => {
+        console.log(res.data)
+      }).catch(err => {
+        console.log(err)
+      })
+    },
+    submits2: function (postData) {
+      this.$axios({
+        method: 'post',
+        url: this.HOST + '/stu/request',
         data: postData
         /* parameter match  */
       }).then((res) => {

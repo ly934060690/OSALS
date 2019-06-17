@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @Author: hyh
- * @Description:
+ * @Description: NlpDependencyRelationDao Test
  * @Date:Created in 11:33 2019/6/13
  * @Modified By:
  */
@@ -25,9 +25,9 @@ public class NlpDependencyRelationDaoTest extends GenericDaoTestCase<Long, NlpDe
 
     @Test
     public void findAll() {
-        List<NlpDependencyRelation> hanlpList = this.dao.findAll();
+        List<NlpDependencyRelation> nlpList = this.dao.findAll();
         if (logger.isInfoEnabled()) {
-            logger.info("findAll() - List<Hanlp> hanlpList={}", hanlpList); //$NON-NLS-1$
+            logger.info("findAll() - List<NlpDependencyRelation> nlpList={}", nlpList); //$NON-NLS-1$
         }
     }
 }
