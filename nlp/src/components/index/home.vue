@@ -1,15 +1,17 @@
 <template>
-  <div>
-    <h3 style="line-height: 40px">
+  <div style="line-height: 40px">
+
       <img src="../../assets/picture/u=2982202372,1719347959&fm=26&gp=0.jpg" height="500" width="700"/>
       <br>
       <font size="10">欢迎使用NLP系统</font>
-    </h3>
-    <div class="login_form" style="line-height: 0px">
-      <input id="txt" type="text"  class="qxs-ic_user"  placeholder="要提交的语句" v-model="postData" style="width: 600px ; height:60px">
       <br>
+
+
+
+      <textarea id="txt" type="text"  class="qxs-ic_user" placeholder="要提交的语句" v-model="postData" style="width: 700px ; height:200px ; font-size: 20px">
+      </textarea><br>
       <el-button class="submit_btn"  @click.native="message" type="primary" round :loading="isBtnLoading">提交</el-button>
-    </div>
+
     <!-- @click.native you can invoke function by click this button -->
     <!--  ps: this from submit data is also json property -->
     <!-- ps: sometime you should take care for the content-type of your data -->
@@ -45,7 +47,7 @@
       submits: function (postData) {
         this.$axios({
           method: 'post',
-          url: this.HOST + '/user/request',
+          url: this.HOST + '/nlpwt/request',
           data: postData
           /* parameter match  */
         }).then((res) => {
