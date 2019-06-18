@@ -70,6 +70,8 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!--FenCi-->
+
         <!--HanLP-->
         <dependency>
             <groupId>com.hankcs</groupId>
@@ -114,6 +116,24 @@
             <groupId>org.ansj</groupId>
             <artifactId>ansj_seg</artifactId>
             <version>5.1.6</version>
+        </dependency>
+
+        <!--jieba fenci-->
+        <dependency>
+        <groupId>com.huaban</groupId>
+        <artifactId>jieba-analysis</artifactId>
+        <version>1.0.2</version>
+        </dependency>
+
+        <!--FNLP - FudanNLP-->
+        <!-- https://mvnrepository.com/artifact/org.fnlp/fnlp-core -->
+        <!--<dependency>-->
+        <!--<groupId>org.fnlp</groupId>-->
+        <!--<artifactId>fnlp-core</artifactId>-->
+        <!--<version>2.1</version>-->
+        <!--</dependency>-->
+
+        <!--FenCi-->
 
         <!--Stanford Parser-->
         <!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-parser -->
@@ -130,20 +150,7 @@
 
         </dependency>
 
-        <!--jieba fenci-->
-        <dependency>
-            <groupId>com.huaban</groupId>
-            <artifactId>jieba-analysis</artifactId>
-            <version>1.0.2</version>
-        </dependency>
 
-        <!--FNLP - FudanNLP-->
-        <!-- https://mvnrepository.com/artifact/org.fnlp/fnlp-core -->
-        <dependency>
-            <groupId>org.fnlp</groupId>
-            <artifactId>fnlp-core</artifactId>
-            <version>2.1</version>
-        </dependency>
 
 
     </dependencies>

@@ -10,6 +10,7 @@ import page6 from '@/components/nlp/page6'
 import page7 from '@/components/nlp/page7'
 import home from '@/components/index/home'
 import user from '@/components/user'
+import jump from '@/components/jump'
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
       path: '/components/index/home',
       name: 'home',
       component: home
+    },
+    {
+      path: '/components/jump',
+      name: 'jump',
+      component: jump
     }
   ]
 })

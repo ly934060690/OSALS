@@ -10,10 +10,6 @@ import me.midday.lexical.AnalysisResult;
 import me.midday.lexical.Entity;
 import me.midday.lexical.LexicalAnalyzer;
 import me.midday.lexical.Word;
-import org.ansj.domain.Result;
-import org.ansj.splitWord.analysis.BaseAnalysis;
-import org.fnlp.nlp.cn.CNFactory;
-import org.fnlp.util.exception.LoadModelException;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
