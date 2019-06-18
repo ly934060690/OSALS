@@ -74,4 +74,22 @@ public class NlpDependencyRelationManagerImpl extends GenericManagerImpl<NlpDepe
         s+=stringAnnotated;
         return s;
     }
+
+    /**
+     *@Description: StanfordParser 返回NlpDependenceRelation impl
+     *@Date: 10:35 2019/6/14
+     */
+    @Override
+    public NlpDependencyRelation stanfordTextNlp(String text) {
+        Collection<TypedDependency> collection=stanfordDependencyRelation(text);
+        String annotated=stanfordAnnotatedReference(text);
+        String relation=collection.toString();
+
+        NlpDependencyRelation nlp=new NlpDependencyRelation();
+        nlp.setText(text);
+        nlp.setRelation(relation);
+        nlp.setAnnotated(annotated);
+
+        return nlp;
+    }
 }
