@@ -32,4 +32,10 @@ public interface NlpDependencyRelationManager extends GenericManager<NlpDependen
      *@Date: 10:45 2019/6/14
      */
     String stanfordAnnotatedReference(String text);
+
+    /**
+    *@Description: StanfordParser 返回依存关系,标注指代NlpDependencyRelation
+    *@Date: 16:51 2019/6/18
+    */
+    NlpDependencyRelation stanfordTextNlp(String text);
 }
