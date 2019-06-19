@@ -47,7 +47,7 @@
       submits: function (postData) {
         this.$axios({
           method: 'post',
-          url: this.HOST + '/nlpwt/request',
+          url: this.HOST + '/nlp/request',
           data: postData
           /* parameter match  */
         }).then((res) => {
