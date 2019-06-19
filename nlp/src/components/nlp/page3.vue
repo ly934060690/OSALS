@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="line-height:4px">下面为分词标注：</h1>
+    <h1 style="line-height:4px">下面为关键词提取：</h1>
     <h1 style="line-height:8px">
       <textarea  class="textarea0" v-bind:value="data.text" ></textarea></h1>
     <h1 style="line-height:8px">
