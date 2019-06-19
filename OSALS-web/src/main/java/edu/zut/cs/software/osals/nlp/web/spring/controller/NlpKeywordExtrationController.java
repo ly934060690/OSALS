@@ -19,7 +19,7 @@ import java.util.Map;
  * @version: 1.0
  */
 @Controller
-@RequestMapping("/nlpwt")
+@RequestMapping("/nlpwtke")
 public class NlpKeywordExtrationController extends GenericController<NlpKeywordExtraction, Long, NlpKeywordExtractionManager> {
 
     NlpKeywordExtractionManager nlpKeywordExtractionManager;
