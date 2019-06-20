@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
-@RequestMapping("/nlpEntityRecognition")
+//@Controller
+//@RequestMapping("/nlpEntityRecognition")
 public class NlpEntityRecognitionController extends GenericController<NlpEntityRecognition,Long, NlpEntityRecognitionManager> {
 
     NlpEntityRecognitionManager nlpEntityRecognitionManager;

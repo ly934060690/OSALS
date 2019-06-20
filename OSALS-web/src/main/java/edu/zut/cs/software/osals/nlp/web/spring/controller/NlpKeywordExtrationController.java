@@ -19,7 +19,7 @@ import java.util.Map;
  * @version: 1.0
  */
 @Controller
-@RequestMapping("/nlpwtke")
+@RequestMapping("/nlpke")
 public class NlpKeywordExtrationController extends GenericController<NlpKeywordExtraction, Long, NlpKeywordExtractionManager> {
 
     NlpKeywordExtractionManager nlpKeywordExtractionManager;
@@ -41,7 +41,7 @@ public class NlpKeywordExtrationController extends GenericController<NlpKeywordE
     }
 
     @ResponseBody
-    @RequestMapping(value = "/request", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
+    @RequestMapping(value = "request", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
     public String gettext(@RequestBody Map<String, Object> map) throws IOException {
         String text = (String) map.get("text");
 

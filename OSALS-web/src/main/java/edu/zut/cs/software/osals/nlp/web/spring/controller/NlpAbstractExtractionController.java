@@ -31,7 +31,7 @@ public class NlpAbstractExtractionController extends GenericController<NlpAbstra
         String text = (String) map.get("text");
         nlpAbstractExtraction.setText(text);
         nlpAbstractExtraction.setText1(this.nlpAbstractExtractionManager.AbstractExtractionHanlp(text));
-        nlpAbstractExtraction.setText2(this.nlpAbstractExtractionManager.AbstractExtractionHanlp(text));
+        nlpAbstractExtraction.setText2(this.nlpAbstractExtractionManager.AbstractExtractionAnsj(text));
         System.out.println(text);
     }
 

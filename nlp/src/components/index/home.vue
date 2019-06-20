@@ -38,16 +38,55 @@
           /* here is transferring value of text */
         }
         alert('您要提交的数据为：' + postData.text)
-        this.submits(postData)
+        this.submits1(postData)
         /* invoking function(submits)
          *  if you change this order you may be meet the data's value miss
          *  or you can put this function into that(submit) function
          */
+        this.submits2(postData)
+        this.submits3(postData)
+        this.submits4(postData)
       },
-      submits: function (postData) {
+      submits1: function (postData) {
         this.$axios({
           method: 'post',
-          url: this.HOST + '/nlp/request',
+          url: this.HOST + '/nlpwt/request',
+          data: postData
+          /* parameter match  */
+        }).then((res) => {
+          console.log(res.data)
+        }).catch(err => {
+          console.log(err)
+        })
+      },
+      submits2: function (postData) {
+        this.$axios({
+          method: 'post',
+          url: this.HOST + '/nlpke/request',
+          data: postData
+          /* parameter match  */
+        }).then((res) => {
+          console.log(res.data)
+        }).catch(err => {
+          console.log(err)
+        })
+      },
+      submits3: function (postData) {
+        this.$axios({
+          method: 'post',
+          url: this.HOST + '/nlpae/request',
+          data: postData
+          /* parameter match  */
+        }).then((res) => {
+          console.log(res.data)
+        }).catch(err => {
+          console.log(err)
+        })
+      },
+      submits4: function (postData) {
+        this.$axios({
+          method: 'post',
+          url: this.HOST + '/nlpdr/request',
           data: postData
           /* parameter match  */
         }).then((res) => {
