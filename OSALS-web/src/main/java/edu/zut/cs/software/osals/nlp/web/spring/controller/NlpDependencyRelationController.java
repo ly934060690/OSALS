@@ -17,7 +17,7 @@ import java.util.Map;
  * @Modified By:
  */
 @Controller
-@RequestMapping("/nlp")
+@RequestMapping("/nlpdr")
 public class NlpDependencyRelationController  extends GenericController<NlpDependencyRelation, Long, NlpDependencyRelationManager> {
 
     NlpDependencyRelationManager hanlpManager;
@@ -64,7 +64,7 @@ public class NlpDependencyRelationController  extends GenericController<NlpDepen
     }
 
     @ResponseBody
-    @GetMapping(value = "responsedr", produces = "application/json;charset=utf-8")
+    @GetMapping(value = "response", produces = "application/json;charset=utf-8")
     public NlpDependencyRelation response(HttpServletResponse response) {
         response.setHeader("Access-Control-Allow-Origin", "*");
         return nlp;
