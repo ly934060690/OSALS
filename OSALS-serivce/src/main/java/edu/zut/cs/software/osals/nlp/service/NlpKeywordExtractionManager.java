@@ -2,7 +2,6 @@ package edu.zut.cs.software.osals.nlp.service;
 
 import edu.zut.cs.software.base.service.GenericManager;
 import edu.zut.cs.software.osals.nlp.domain.NlpKeywordExtraction;
-import edu.zut.cs.software.osals.nlp.domain.NlpTextClassify;
 
 import java.io.IOException;
 
@@ -19,5 +18,18 @@ public interface NlpKeywordExtractionManager extends GenericManager<NlpKeywordEx
      * NLP 关键词提取
      * http://www.hankcs.com/nlp/hanlp.html
      */
-    public void keywordList(String text) throws IOException;
+    public String KeywordList(String text) throws IOException;
+
+    /**
+     * Jieba 关键词提取
+     * http://maven.apache.org
+     */
+    public void tfidfAnalyzer();
+
+    /**
+     * Ansj 关键词提取
+     *https://github.com/NLPchina/ansj_seg
+     * @param content
+     */
+    public  String  KeyWordComputer(String content);
 }
