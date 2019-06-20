@@ -41,7 +41,7 @@
     methods:{
       test1:function () {
         let that = this
-        var url = this.HOST+"/nlpwt/response"
+        var url = this.HOST+"/nlp/TCresponse"
         //if you want to change the value of HOST ,please go to /osals/config/index.js/->module.exports->dev->proxyTable->target
         this.$axios.get(url)
           .then(function (res) {
