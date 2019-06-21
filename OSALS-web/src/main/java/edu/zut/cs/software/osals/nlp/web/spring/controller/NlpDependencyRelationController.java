@@ -18,11 +18,7 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("/nlpdr")
-<<<<<<< HEAD
 public class NlpDependencyRelationController extends GenericController<NlpDependencyRelation, Long, NlpDependencyRelationManager> {
-=======
-public class NlpDependencyRelationController  extends GenericController<NlpDependencyRelation, Long, NlpDependencyRelationManager> {
->>>>>>> fa1677b9b30f8e092fd7039f2c179258c1ecfaa5
 
     NlpDependencyRelationManager hanlpManager;
 
