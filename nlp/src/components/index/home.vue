@@ -43,9 +43,10 @@
          *  if you change this order you may be meet the data's value miss
          *  or you can put this function into that(submit) function
          */
-        this.submits2(postData)
-        this.submits3(postData)
-        this.submits4(postData)
+        this.submits2(postData);
+        this.submits3(postData);
+        this.submits4(postData);
+        this.submits5(postData);
       },
       submits1: function (postData) {
         this.$axios({
@@ -95,6 +96,18 @@
           console.log(err)
         })
       },
+      submits5: function (postData) {
+        this.$axios({
+          method: 'post',
+          url: this.HOST + '/nlptc/request',
+          data: postData
+          /* parameter match  */
+        }).then((res) => {
+          console.log(res.data)
+        }).catch(err => {
+          console.log(err)
+        })
+      }
     }
   }
 </script>
