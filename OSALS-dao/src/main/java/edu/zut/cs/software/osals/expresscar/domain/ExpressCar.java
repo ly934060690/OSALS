@@ -31,4 +31,12 @@ public class ExpressCar extends BaseTreeEntity<ExpressCar> {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Set<Enwrap> getEnwraps() {
+        return enwraps;
+    }
+
+    public void setEnwraps(Set<Enwrap> enwraps) {
+        this.enwraps = enwraps;
+    }
 }
