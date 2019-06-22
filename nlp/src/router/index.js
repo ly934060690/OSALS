@@ -12,6 +12,15 @@ import home from '@/components/index/home'
 import user from '@/components/user'
 import jump from '@/components/jump'
 
+import table1 from '@/components/nlptable/table1'
+import table2 from '@/components/nlptable/table2'
+import table3 from '@/components/nlptable/table3'
+import table4 from '@/components/nlptable/table4'
+import table5 from '@/components/nlptable/table5'
+import table6 from '@/components/nlptable/table6'
+import table7 from '@/components/nlptable/table7'
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -76,6 +85,41 @@ export default new Router({
       path: '/components/jump',
       name: 'jump',
       component: jump
-    }
+    },
+    {
+      path:'/components/nlptable/table1',
+      name:'table1',
+      component:table1
+    },
+    {
+      path:'/components/nlptable/table2',
+      name:'table2',
+      component:table2
+    },
+    {
+      path:'/components/nlptable/table3',
+      name:'table3',
+      component:table3
+    },
+    {
+      path:'/components/nlptable/table4',
+      name:'table4',
+      component:table4
+    },
+    {
+      path:'/components/nlptable/table5',
+      name:'table5',
+      component:table5
+    },
+    {
+      path:'/components/nlptable/table6',
+      name:'table6',
+      component:table6
+    },
+    {
+      path:'/components/nlptable/table7',
+      name:'table7',
+      component:table7
+    },
   ]
 })
