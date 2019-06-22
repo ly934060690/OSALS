@@ -35,6 +35,37 @@ public class NlpKeywordExtractionManagerImpl extends GenericManagerImpl<NlpKeywo
     }
 
     @Override
+    public NlpKeywordExtraction findById(Long id)
+    {
+        return nlpKeywordExtractionDao.getOne(id);
+    }
+    @Override
+    public List<NlpKeywordExtraction> findAll()
+    {
+        return nlpKeywordExtractionDao.findAll();
+    }
+    @Override
+    public void deleteById(Long id)
+    {
+        nlpKeywordExtractionDao.deleteById(id);
+    }
+    @Override
+    public NlpKeywordExtraction save(NlpKeywordExtraction nlpKeywordExtraction)
+    {
+        return nlpKeywordExtractionDao.save( nlpKeywordExtraction);
+    }
+
+    /**
+     * 不是很明白这里不加 ，为啥报错
+     * @param nlpKeywordExtractionDao
+     * @return
+     */
+    @Override
+    public NlpKeywordExtraction save(NlpKeywordExtractionDao nlpKeywordExtractionDao) {
+        return null;
+    }
+
+    @Override
     public String  KeywordList(String text) throws IOException {
 
         System.out.println("下面调用了HanLP的extractKeyword方法！");
