@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="line-height:4px">下面为分词标注：</h1>
+    <h1 style="line-height:4px">下面为关键词提取：</h1>
     <h1 style="line-height:8px">
       <textarea  class="textarea0" v-bind:value="data.text" ></textarea></h1>
     <h1 style="line-height:8px">
@@ -41,7 +41,7 @@
     methods:{
       test1:function () {
         let that = this
-        var url = this.HOST+"/nlpwt/response"
+        var url = this.HOST+"/nlpke/response"
         //if you want to change the value of HOST ,please go to /osals/config/index.js/->module.exports->dev->proxyTable->target
         this.$axios.get(url)
           .then(function (res) {

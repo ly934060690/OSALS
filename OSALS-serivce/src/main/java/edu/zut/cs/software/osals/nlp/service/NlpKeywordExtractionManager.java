@@ -1,9 +1,11 @@
 package edu.zut.cs.software.osals.nlp.service;
 
 import edu.zut.cs.software.base.service.GenericManager;
+import edu.zut.cs.software.osals.nlp.dao.NlpKeywordExtractionDao;
 import edu.zut.cs.software.osals.nlp.domain.NlpKeywordExtraction;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @Auther: LBW
@@ -13,6 +15,16 @@ import java.io.IOException;
  */
 
 public interface NlpKeywordExtractionManager extends GenericManager<NlpKeywordExtraction,Long> {
+
+
+    public NlpKeywordExtraction save(NlpKeywordExtractionDao nlpKeywordExtractionDao);
+
+    public void deleteById(Long id);
+
+    public List<NlpKeywordExtraction> findAll();
+
+    public NlpKeywordExtraction findById(Long id);
+
 
     /**
      * NLP 关键词提取

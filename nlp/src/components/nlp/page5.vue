@@ -1,24 +1,24 @@
 <template>
   <div>
-    <h1 style="line-height:4px">下面为分词标注：</h1>
+    <h1 style="line-height:4px">文本分类：</h1>
     <h1 style="line-height:8px">
       <textarea  class="textarea0" v-bind:value="data.text" ></textarea></h1>
     <h1 style="line-height:8px">
       <h style="position: relative; left: -50px">
-        <p style="line-height:0px ; position:relative; left:30px ; white-space:pre">HanLP                                                                                                           FoolNlp</p>
-        <textarea  class="textarea1" v-bind:value="data.word_1"></textarea></h>
+        <p style="line-height:0px ; position:relative; left:30px ; white-space:pre">THUCTC                                                                                                          EasyDL</p>
+        <textarea  class="textarea1" v-bind:value="data.classify1"></textarea></h>
 
       <h style="position: relative; right: -50px">
-        <textarea  class="textarea2" v-bind:value="data.word_2" ></textarea></h>
+        <textarea  class="textarea2" v-bind:value="data.classify2" ></textarea></h>
 
     </h1>
     <h1 style="line-height:8px">
       <h style="position: relative; left:  -50px">
-        <p style="line-height:0px ; position:relative; left:30px ; white-space:pre">StanfordNlp                                                                                                  AnsjNlp</p>
-        <textarea  class="textarea3" v-bind:value="data.word_3" ></textarea></h>
+        <p style="line-height:0px ; position:relative; left:30px ; white-space:pre">Fudannlp                                                                                                  Nlp</p>
+        <textarea  class="textarea3" v-bind:value="data.classify3" ></textarea></h>
 
       <h style="position: relative; right: -50px">
-        <textarea  class="textarea4" v-bind:value="data.word_4" ></textarea></h>
+        <textarea  class="textarea4" v-bind:value="data.classify4" ></textarea></h>
     </h1>
     <el-button class="login_btn" @click.native="test1" type="primary" round :loading="isBtnLoading">刷新</el-button>
     <!--the @click.native is to call this function-->
@@ -40,8 +40,8 @@
     },
     methods:{
       test1:function () {
-        let that = this
-        var url = this.HOST+"/nlpwt/response"
+        let that = this;
+        var url = this.HOST+"/nlptc/response";
         //if you want to change the value of HOST ,please go to /osals/config/index.js/->module.exports->dev->proxyTable->target
         this.$axios.get(url)
           .then(function (res) {

@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @Author: hyh
- * @Description:
+ * @Description: ExpressCar Entity Generator
  * @Date:Created in 23:02 2019/5/16
  * @Modified By:
  */
@@ -22,10 +22,11 @@ public class ExpressCarEntityGenerator extends GenericGenerator {
 
     @Test
     public void gen_ExpressCar() {
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < 2; i++) {
             ExpressCar e = new ExpressCar();
-            e.setName("expressCar_" + i);//这样把
-            for(int j = 0; j < 10; j++) {
+            e.setName("expressCar_" + i);
+            this.expressCarManager.save(e);
+            for(int j = 0; j < 2; j++) {
                 ExpressCar expressCar = new ExpressCar();
                 expressCar.setName("expressCar_" + i + "_" + j);
                 expressCar.setParent(e);
@@ -36,7 +37,7 @@ public class ExpressCarEntityGenerator extends GenericGenerator {
     }
 
     public void gen_enwrap(ExpressCar e) {
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < 2; i++) {
             Enwrap enwrap = new Enwrap();
             enwrap.setName("enwrap_" + i);
             enwrap.setTelephone(i+"11111");

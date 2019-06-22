@@ -19,7 +19,7 @@ import java.util.Map;
  * @version: 1.0
  */
 @Controller
-@RequestMapping("/nlpwt")
+@RequestMapping("/nlpke")
 public class NlpKeywordExtrationController extends GenericController<NlpKeywordExtraction, Long, NlpKeywordExtractionManager> {
 
     NlpKeywordExtractionManager nlpKeywordExtractionManager;
@@ -41,15 +41,18 @@ public class NlpKeywordExtrationController extends GenericController<NlpKeywordE
     }
 
     @ResponseBody
-    @RequestMapping(value = "/request", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
+    @RequestMapping(value = "request", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
     public String gettext(@RequestBody Map<String, Object> map) throws IOException {
         String text = (String) map.get("text");
 
         String KeywordList= nlpKeywordExtractionManager.KeywordList(text);
         String KeyWordComputer =  nlpKeywordExtractionManager.KeyWordComputer(text);
 
+        nlpKeywordExtraction.setText(text);
         nlpKeywordExtraction.setWord_1(KeywordList);//Hanlp
         nlpKeywordExtraction.setWord_2(KeyWordComputer);//Ansj
+        nlpKeywordExtraction.setWord_4(KeywordList);//嘿嘿
+        nlpKeywordExtraction.setWord_3(KeyWordComputer);//嘿嘿
         this.manager.save(nlpKeywordExtraction);
         System.out.println("从前端传来的数据为：" );
         System.out.println(text);
@@ -60,6 +63,40 @@ public class NlpKeywordExtrationController extends GenericController<NlpKeywordE
     @GetMapping(value = "response", produces = "application/json;charset=utf-8")
     public NlpKeywordExtraction response(HttpServletResponse response) {
         response.setHeader("Access-Control-Allow-Origin", "*");
+        return nlpKeywordExtraction;
+    }
+
+    /**
+     * 这里是打开关键词提取的页面后就直接执行了getall方法
+     * @return
+     */
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+    public @ResponseBody
+    List<NlpKeywordExtraction> getAll(){
+        List<NlpKeywordExtraction> all = this.nlpKeywordExtractionManager.findAll();
+        return all;
+    }
+
+    /**
+     * 这里是删除，依据了在数据库中的id的值来查找 这里暂时没有继续完善
+     * @param id
+     * @return nlpKeywordExtraction
+     */
+    @RequestMapping(path = "/delete/{id}",method = RequestMethod.DELETE,produces = "application/json;charset=utf-8")
+    public  @ResponseBody NlpKeywordExtraction  deleteOne(@PathVariable(value = "id") Long id) {
+        NlpKeywordExtraction nlpKeywordExtraction = this.nlpKeywordExtractionManager.findById(id);
+        this.nlpKeywordExtractionManager.deleteById(id);
+        return nlpKeywordExtraction;
+    }
+
+    /**
+     * 这里对应前端的部分是新增
+     * @param nlpKeywordExtraction
+     * @return nlpKeywordExtraction
+     */
+    @RequestMapping(path = "/save",method = RequestMethod.POST,produces = "application/json;charset=utf-8")
+    public @ResponseBody NlpKeywordExtraction saveOne( NlpKeywordExtraction nlpKeywordExtraction){
+        this.nlpKeywordExtractionManager.save(nlpKeywordExtraction);
         return nlpKeywordExtraction;
     }
 
