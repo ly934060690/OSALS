@@ -1,6 +1,6 @@
 package edu.zut.cs.software.osals.nlp.service.impl;
 
-import edu.fudan.data.reader.FileReader;
+/*import edu.fudan.data.reader.FileReader;
 import edu.fudan.data.reader.Reader;
 import edu.fudan.ml.classifier.linear.Linear;
 import edu.fudan.ml.classifier.linear.OnlineTrainer;
@@ -8,7 +8,7 @@ import edu.fudan.ml.eval.Evaluation;
 import edu.fudan.ml.types.Instance;
 import edu.fudan.ml.types.InstanceSet;
 import edu.fudan.ml.types.alphabet.AlphabetFactory;
-import edu.fudan.nlp.pipe.*;
+import edu.fudan.nlp.pipe.*;*/
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
 
 import edu.zut.cs.software.osals.nlp.domain.NlpTextClassify;
