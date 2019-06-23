@@ -107,6 +107,21 @@
             <version>3.9.2</version>
             <classifier>models-chinese</classifier>
         </dependency>
+		 <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-segmenter-3.9.2</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-ner</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-ner-3.9.2</artifactId>
+            <version>1.0</version>
+        </dependency>
 
 
         <!--Ansj fenci-->

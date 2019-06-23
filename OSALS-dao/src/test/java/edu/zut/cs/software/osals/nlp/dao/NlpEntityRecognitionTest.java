@@ -22,9 +22,8 @@ public class NlpEntityRecognitionTest extends GenericDaoTestCase<Long, edu.zut.c
     {
         NlpEntityRecognition nlpEntityRecognition=new NlpEntityRecognition();
         nlpEntityRecognition.setSentence("巴希尔强调，政府坚决主张通过和平和政治途径结束目前的武装冲突，在全国实现和平。");
-        nlpEntityRecognition.setPer("巴希尔");
-        nlpEntityRecognition.setLoc("全国");
-        nlpEntityRecognition.setOrg("政府");
+        nlpEntityRecognition.setStanford("巴希尔");
+        nlpEntityRecognition.setHanLP("政府");
         this.nlpEntityRecognitionDao.save(nlpEntityRecognition);
         if (logger.isInfoEnabled()) {
             logger.info("TestEntityRecoginition() - NlpEntityRecognition nlpEntityRecognition={}", nlpEntityRecognition); //$NON-NLS-1$
