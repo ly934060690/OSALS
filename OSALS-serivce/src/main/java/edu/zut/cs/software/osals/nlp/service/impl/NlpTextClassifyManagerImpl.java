@@ -9,10 +9,21 @@ import edu.fudan.ml.types.Instance;
 import edu.fudan.ml.types.InstanceSet;
 import edu.fudan.ml.types.alphabet.AlphabetFactory;
 import edu.fudan.nlp.pipe.*;*/
+import edu.fudan.data.reader.FileReader;
+import edu.fudan.data.reader.Reader;
+import edu.fudan.ml.classifier.linear.Linear;
+import edu.fudan.ml.classifier.linear.OnlineTrainer;
+import edu.fudan.ml.eval.Evaluation;
+import edu.fudan.ml.types.Instance;
+import edu.fudan.ml.types.InstanceSet;
+import edu.fudan.ml.types.alphabet.AlphabetFactory;
+import edu.fudan.nlp.pipe.*;
 import edu.zut.cs.software.base.service.impl.GenericManagerImpl;
 
+import edu.zut.cs.software.osals.nlp.dao.NlpTextClassifyDao;
 import edu.zut.cs.software.osals.nlp.domain.NlpTextClassify;
 import edu.zut.cs.software.osals.nlp.service.NlpTextClassifyManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
@@ -28,6 +39,40 @@ import java.util.Map;
 @Component
 @Transactional
 public class NlpTextClassifyManagerImpl extends GenericManagerImpl<NlpTextClassify,Long> implements NlpTextClassifyManager {
+
+    NlpTextClassifyDao nlpTextClassifyDao;
+
+    @Autowired
+    public void setHanLPDao(NlpTextClassifyDao nlpTextClassifyDao) {
+        this.nlpTextClassifyDao = nlpTextClassifyDao;
+        this.dao = this.nlpTextClassifyDao;
+    }
+
+    @Override
+    public NlpTextClassify findById(Long id)
+    {
+        return nlpTextClassifyDao.getOne(id);
+    }
+    @Override
+    public List<NlpTextClassify> findAll()
+    {
+        return nlpTextClassifyDao.findAll();
+    }
+    @Override
+    public void deleteById(Long id)
+    {
+        nlpTextClassifyDao.deleteById(id);
+    }
+    @Override
+    public NlpTextClassify save(NlpTextClassify nlpTextClassify)
+    {
+        return nlpTextClassifyDao.save( nlpTextClassify);
+    }
+
+    @Override
+    public NlpTextClassify save(NlpTextClassifyDao nlpTextClassifyDao) {
+        return null;
+    }
 
 //    NlpTextClassifyDao nlpTextClassifyDao;
 //    @Autowired

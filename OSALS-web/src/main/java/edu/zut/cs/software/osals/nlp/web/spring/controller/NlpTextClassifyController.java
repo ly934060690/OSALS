@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -63,6 +64,39 @@ public class NlpTextClassifyController extends GenericController<NlpTextClassify
     public NlpTextClassify response(HttpServletResponse response)
     {
         response.setHeader("Access-Control-Allow-Origin", "*");
+        return nlpTextClassify;
+    }
+    /**
+     * 这里是打开关键词提取的页面后就直接执行了getall方法
+     * @return
+     */
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+    public @ResponseBody
+    List<NlpTextClassify> getAll(){
+        List<NlpTextClassify> all = this.nlpTextClassifyManager.findAll();
+        return all;
+    }
+
+    /**
+     * 这里是删除，依据了在数据库中的id的值来查找 这里暂时没有继续完善
+     * @param id
+     * @return nlpKeywordExtraction
+     */
+    @RequestMapping(path = "/delete/{id}",method = RequestMethod.DELETE,produces = "application/json;charset=utf-8")
+    public  @ResponseBody NlpTextClassify  deleteOne(@PathVariable(value = "id") Long id) {
+        NlpTextClassify nlpTextClassify = this.nlpTextClassifyManager.findById(id);
+        this.nlpTextClassifyManager.deleteById(id);
+        return nlpTextClassify;
+    }
+
+    /**
+     * 这里对应前端的部分是新增
+     * @param
+     * @return nlpKeywordExtraction
+     */
+    @RequestMapping(path = "/save",method = RequestMethod.POST,produces = "application/json;charset=utf-8")
+    public @ResponseBody NlpTextClassify saveOne( NlpTextClassify nlpTextClassify){
+        this.nlpTextClassifyManager.save(nlpTextClassify);
         return nlpTextClassify;
     }
 }

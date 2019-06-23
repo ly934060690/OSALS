@@ -14,29 +14,45 @@
     </el-table-column>
 
     <el-table-column
-      label="货品"
+      label="text"
       width="180">
       <template slot-scope="scope">
         <!--<i class="el-icon-time"></i>-->
-        <span style="margin-left: 10px">{{ scope.row.goodName }}</span>
+        <span style="margin-left: 10px">{{ scope.row.text }}</span>
       </template>
     </el-table-column>
 
     <el-table-column
-      label="负责人"
+      label="THUCTC"
       width="160">
       <template slot-scope="scope">
         <!--<i class="el-icon-time"></i>-->
-        <span style="margin-left: 10px">{{ scope.row.dealByPersonName }}</span>
+        <span style="margin-left: 10px">{{ scope.row.classify1 }}</span>
       </template>
     </el-table-column>
 
     <el-table-column
-      label="重量"
+      label="EasyDL"
       width="180">
       <template slot-scope="scope">
         <!--<i class="el-icon-time"></i>-->
-        <span style="margin-left: 10px">{{ scope.row.dealMoney }}</span>
+        <span style="margin-left: 10px">{{ scope.row.classify2 }}</span>
+      </template>
+    </el-table-column>
+    <el-table-column
+      label="FudanNLP"
+      width="180">
+      <template slot-scope="scope">
+        <!--<i class="el-icon-time"></i>-->
+        <span style="margin-left: 10px">{{ scope.row.classify3 }}</span>
+      </template>
+    </el-table-column>
+    <el-table-column
+      label="fasttext"
+      width="180">
+      <template slot-scope="scope">
+        <!--<i class="el-icon-time"></i>-->
+        <span style="margin-left: 10px">{{ scope.row.classify4 }}</span>
       </template>
     </el-table-column>
     <el-table-column label="操作">
@@ -48,16 +64,24 @@
         <!-- Form -->
         <el-button type="primary" @click="dialogFormVisible = true" size="mini">新增</el-button>
 
-        <el-dialog title="采购" :visible.sync="dialogFormVisible">
-          <el-form :model="epdtForm">
-            <el-form-item label="货品名称" :label-width="formLabelWidth">
-              <el-input v-model="epdtForm.goodName" autocomplete="off"></el-input>
+        <el-dialog title="文本分类" :visible.sync="dialogFormVisible">
+          <el-form :model="Form">
+            <el-form-item label="text" :label-width="formLabelWidth">
+              <el-input v-model="Form.text" autocomplete="off"></el-input>
             </el-form-item>
-            <el-form-item label="负责人" :label-width="formLabelWidth">
-              <el-input v-model="epdtForm.dealByPersonName" autocomplete="off"></el-input>
+            <el-form-item label="THUCTC" :label-width="formLabelWidth">
+              <el-input v-model="Form.classify1" autocomplete="off"></el-input>
             </el-form-item>
-            <el-form-item label="重量" :label-width="formLabelWidth">
-              <el-input v-model="epdtForm.dealMoney" autocomplete="off">
+            <el-form-item label="EasyDL" :label-width="formLabelWidth">
+              <el-input v-model="Form.classify2" autocomplete="off">
+              </el-input>
+            </el-form-item>
+            <el-form-item label="FudanNLP" :label-width="formLabelWidth">
+              <el-input v-model="Form.classify3" autocomplete="off">
+              </el-input>
+            </el-form-item>
+            <el-form-item label="fasttext" :label-width="formLabelWidth">
+              <el-input v-model="Form.classify4" autocomplete="off">
               </el-input>
             </el-form-item>
           </el-form>
@@ -93,49 +117,21 @@
         tableData: [],
         dialogTableVisible: false,
         dialogFormVisible: false,
-        epdtForm: {
-          goodName: '',
-          dealByPersonName: '',
-          dealMoney: ''
+        Form: {
+          text: '',
+          classify1: '',
+          classify2: '',
+          classify3: '',
+          classify4: ''
         },
         formLabelWidth: '120px',
-        // epdtFormToUpdate:{
-        //
-        // }
       }
     },
     methods: {
-      updateExpenditure(index,row) {
-        this.$prompt('请输入更改的重量', '修改', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-        }).then(({value}) => {
-          this.$message({
-            type: 'success',
-            message: '已保存: '
-          });
-          var Expenditure={"id": row.id, "dealMoney": value}
-          console.log(Expenditure);
-          this.$axios({
-            method: "put",
-            url:this.HOST + '/sun/expenditure/info',
-            data:{
-              Expenditure
-            },
-            headers: {
-              'Content-Type': 'application/json;charset=UTF-8'
-            }
-          });
-          // this.$axios.put(this.HOST + '/sun/expenditure/info', Expenditure,);
-        }).catch(() => {
-          this.$message({
-            type: 'info',
-            message: '取消输入'
-          });
-        });
+      update(index,row) {
       },
       postForm() {
-        const url = this.HOST + '/sun/expenditure/info';
+        const url = this.HOST + '/nlptc/save';
         this.dialogFormVisible = false;
 
         var params = new URLSearchParams();
@@ -187,7 +183,7 @@
       }
     },
     created() {
-      this.$axios.get(this.HOST+'/nlpke/expenditure/info')
+      this.$axios.get(this.HOST+'/nlptc/all')
 
       //then获取成功；response成功后的返回值（对象）
 
