@@ -50,9 +50,13 @@
                   <span>导航二</span>
                 </template>
                 <el-menu-item-group >
-                  <el-menu-item index="1-1">选项1</el-menu-item>
-                  <el-menu-item index="1-2">选项2</el-menu-item>
-                  <el-menu-item index="1-3">选项3</el-menu-item>
+                  <el-menu-item index="/components/nlptable/table1">分词标注</el-menu-item>
+                  <el-menu-item index="/components/nlptable/table2">实体抽取</el-menu-item>
+                  <el-menu-item index="/components/nlptable/table3">实体关系</el-menu-item>
+                  <el-menu-item index="/components/nlptable/table4">关键词提取</el-menu-item>
+                  <el-menu-item index="/components/nlptable/table5">文本分类</el-menu-item>
+                  <el-menu-item index="/components/nlptable/table6">依存关系</el-menu-item>
+                  <el-menu-item index="/components/nlptable/table7">跳转按钮</el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
 
