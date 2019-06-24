@@ -71,14 +71,13 @@ public class NlpKeywordExtrationController extends GenericController<NlpKeywordE
      * @return
      */
     @RequestMapping(value = "/all", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
-    public @ResponseBody
-    List<NlpKeywordExtraction> getAll(){
+    public @ResponseBody List<NlpKeywordExtraction> getAll(){
         List<NlpKeywordExtraction> all = this.nlpKeywordExtractionManager.findAll();
         return all;
     }
 
     /**
-     * 这里是删除，依据了在数据库中的id的值来查找 这里暂时没有继续完善
+     * 这里是删除，依据了在数据库中的id的值来查找 这个已经ok了
      * @param id
      * @return nlpKeywordExtraction
      */
