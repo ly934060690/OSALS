@@ -2,7 +2,7 @@
   <div>
     <h1 style="line-height:4px">下面为实体抽取：</h1>
     <h1 style="line-height:8px">
-      <textarea  class="textarea0" v-bind:value="data.text" ></textarea></h1>
+      <textarea  class="textarea0" v-bind:value="data.Sentence" ></textarea></h1>
     <h1 style="line-height:8px">
       <h style="position: relative; left: -50px">
         <p style="line-height:0px ; position:relative; left:30px ; white-space:pre">HanLP                                                                                                           FoolNlp</p>
