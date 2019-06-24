@@ -9,7 +9,7 @@
       width="200">
       <template slot-scope="scope">
         <i class="el-icon-time"></i>
-        <span style="margin-left: 10px">{{ getLocalTime(scope.row.creatTime) }}</span>
+        <span style="margin-left: 10px">{{date}}</span>
       </template>
     </el-table-column>
 
@@ -107,6 +107,7 @@
           size="mini"
           @click="update(scope.$index, scope.row)">修改</el-button>
 
+
       </template>
     </el-table-column>
   </el-table>
@@ -127,45 +128,23 @@
           word_4: '',
         },
         formLabelWidth: '120px',
+        date:new Date(),
       }
     },
     methods: {
       update(index,row) {
-        this.$prompt('请输入要改变的word:', '修改', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-        }).then(({value}) => {
-          this.$message({
-            type: 'success',
-            message: '已保存: '
-          });
-          var Expenditure={"id": row.id, "dealMoney": value};
-          console.log(Expenditure);
-          this.$axios({
-            method: "put",
-            url:this.HOST + '/nlpke/save',
-            data:{
-              Expenditure
-            },
-            headers: {
-              'Content-Type': 'application/json;charset=UTF-8'
-            }
-          });
-        }).catch(() => {
-          this.$message({
-            type: 'info',
-            message: '取消输入'
-          });
-        });
+
       },
       postForm() {
         const url = this.HOST + '/nlpke/save';
         this.dialogFormVisible = false;
 
         var params = new URLSearchParams();
-        params.append('goodName', this.epdtForm.goodName);
-        params.append('dealByPersonName', this.epdtForm.dealByPersonName);
-        params.append('dealMoney', this.epdtForm.dealMoney);
+        params.append('text', this.Form.text);
+        params.append('word_1', this.Form.word_1);
+        params.append('word_2', this.Form.word_2);
+        params.append('word_3', this.Form.word_3);
+        params.append('word_4', this.Form.word_4);
 
         console.log(params);
         this.$axios({
@@ -191,12 +170,11 @@
 
       },
       handleDelete(index, row) {
-        alert("此功能暂未完成。。");
         console.log(index, row);
         var expenditureId = row.id;
         console.log(expenditureId);
         this.$axios
-          .delete(this.HOST + '/nlp/delete/' + expenditureId)
+          .delete(this.HOST + '/nlpke/delete/' + expenditureId)
           .then(res => {
             console.log(res);
             this.tableData.splice(index, 1)
@@ -209,8 +187,12 @@
       //时间戳转化
       getLocalTime(nS) {
         return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+      },
+      timeNow () {
+        return moment().utc().format('YYYY年MM月DD日') + ' ' + moment().utc().format('dddd')
       }
     },
+
     created() {
       this.$axios.get(this.HOST+'/nlpke/all')
         .then(response=>{
@@ -227,7 +209,17 @@
           alert('网络错误，不能访问');
 
         })
-
-    }
+    },
+    mounted() {
+      let _this = this;
+      this.timer = setInterval(function() {
+        _this.date = new Date().toLocaleString();
+      });
+    },
+    beforeDestroy: function() {
+      if (this.timer) {
+        clearInterval(this.timer);
+      }
+    },
   }
 </script>

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -20,14 +21,14 @@ import java.util.Map;
 @RequestMapping("/nlpdr")
 public class NlpDependencyRelationController extends GenericController<NlpDependencyRelation, Long, NlpDependencyRelationManager> {
 
-    NlpDependencyRelationManager hanlpManager;
+    NlpDependencyRelationManager nlpManager;
 
     private NlpDependencyRelation nlp=new NlpDependencyRelation();
 
     @Autowired
     public void setHanlpManager(NlpDependencyRelationManager hanlpManager) {
-        this.hanlpManager = hanlpManager;
-        this.manager = this.hanlpManager;
+        this.nlpManager = hanlpManager;
+        this.manager = this.nlpManager;
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/main")
@@ -60,7 +61,7 @@ public class NlpDependencyRelationController extends GenericController<NlpDepend
         String text = (String) map.get("text");
         nlp=this.manager.stanfordTextNlp(text);
         this.manager.save(nlp);
-        System.out.println(nlp.getRelation()+"\n"+nlp.getAnnotated());
+        System.out.println( nlp.getRelation()+"\n"+nlp.getAnnotated());
     }
 
     @ResponseBody
@@ -69,4 +70,39 @@ public class NlpDependencyRelationController extends GenericController<NlpDepend
         response.setHeader("Access-Control-Allow-Origin", "*");
         return nlp;
     }
+
+    /**
+    *@Description: 查找
+    *@Date: 16:59 2019/6/24
+    */
+    @ResponseBody
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+    public List<NlpDependencyRelation> getAllNlp(){
+        List<NlpDependencyRelation> list = this.manager.findAll();
+        return list;
+    }
+
+    /**
+    *@Description: 删除
+    *@Date: 16:59 2019/6/24
+    */
+    @ResponseBody
+    @RequestMapping(path = "/delete/{id}",method = RequestMethod.DELETE,produces = "application/json;charset=utf-8")
+    public NlpDependencyRelation deleteNlp(@PathVariable(value = "id") Long id) {
+        NlpDependencyRelation nlpDependencyRelation = this.manager.findById(id);
+        this.manager.delete(id);
+        return nlpDependencyRelation;
+    }
+
+    /**
+    *@Description: 增加
+    *@Date: 17:00 2019/6/24
+    */
+    @ResponseBody
+    @RequestMapping(path = "/save",method = RequestMethod.POST,produces = "application/json;charset=utf-8")
+    public NlpDependencyRelation saveNlp( NlpDependencyRelation nlpDependencyRelation){
+        this.manager.save(nlpDependencyRelation);
+        return nlpDependencyRelation;
+    }
+
 }

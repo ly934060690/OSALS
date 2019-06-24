@@ -9,36 +9,37 @@
       width="200">
       <template slot-scope="scope">
         <i class="el-icon-time"></i>
-        <span style="margin-left: 10px">{{ getLocalTime(scope.row.creatTime) }}</span>
+        <span style="margin-left: 10px">{{ getLocalTime(scope.row.datecreated) }}</span>
       </template>
     </el-table-column>
 
     <el-table-column
-      label="货品"
+      label="text"
       width="180">
       <template slot-scope="scope">
         <!--<i class="el-icon-time"></i>-->
-        <span style="margin-left: 10px">{{ scope.row.goodName }}</span>
+        <span style="margin-left: 10px">{{ scope.row.text }}</span>
       </template>
     </el-table-column>
 
     <el-table-column
-      label="负责人"
+      label="relation"
       width="160">
       <template slot-scope="scope">
         <!--<i class="el-icon-time"></i>-->
-        <span style="margin-left: 10px">{{ scope.row.dealByPersonName }}</span>
+        <span style="margin-left: 10px">{{ scope.row.relation }}</span>
       </template>
     </el-table-column>
 
     <el-table-column
-      label="重量"
+      label="annotated"
       width="180">
       <template slot-scope="scope">
         <!--<i class="el-icon-time"></i>-->
-        <span style="margin-left: 10px">{{ scope.row.dealMoney }}</span>
+        <span style="margin-left: 10px">{{ scope.row.annotated}}</span>
       </template>
     </el-table-column>
+
     <el-table-column label="操作">
       <template slot-scope="scope">
         <!--<el-button-->
@@ -48,16 +49,16 @@
         <!-- Form -->
         <el-button type="primary" @click="dialogFormVisible = true" size="mini">新增</el-button>
 
-        <el-dialog title="采购" :visible.sync="dialogFormVisible">
-          <el-form :model="epdtForm">
-            <el-form-item label="货品名称" :label-width="formLabelWidth">
-              <el-input v-model="epdtForm.goodName" autocomplete="off"></el-input>
+        <el-dialog title="依存关系" :visible.sync="dialogFormVisible">
+          <el-form :model="Form">
+            <el-form-item label="text" :label-width="formLabelWidth">
+              <el-input v-model="Form.text" autocomplete="off"></el-input>
             </el-form-item>
-            <el-form-item label="负责人" :label-width="formLabelWidth">
-              <el-input v-model="epdtForm.dealByPersonName" autocomplete="off"></el-input>
+            <el-form-item label="relation" :label-width="formLabelWidth">
+              <el-input v-model="Form.relation" autocomplete="off"></el-input>
             </el-form-item>
-            <el-form-item label="重量" :label-width="formLabelWidth">
-              <el-input v-model="epdtForm.dealMoney" autocomplete="off">
+            <el-form-item label="annotated" :label-width="formLabelWidth">
+              <el-input v-model="Form.annotated" autocomplete="off">
               </el-input>
             </el-form-item>
           </el-form>
@@ -78,8 +79,7 @@
         <el-button
           type="success"
           size="mini"
-          @click="updateExpenditure(scope.$index, scope.row)">编辑</el-button>
-
+          @click="update(scope.$index, scope.row)">修改</el-button>
 
       </template>
     </el-table-column>
@@ -93,32 +93,29 @@
         tableData: [],
         dialogTableVisible: false,
         dialogFormVisible: false,
-        epdtForm: {
-          goodName: '',
-          dealByPersonName: '',
-          dealMoney: ''
+        Form: {
+          text: '',
+          relation: '',
+          annotated: '',
         },
         formLabelWidth: '120px',
-        // epdtFormToUpdate:{
-        //
-        // }
       }
     },
     methods: {
-      updateExpenditure(index,row) {
-        this.$prompt('请输入更改的重量', '修改', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-        }).then(({value}) => {
+      update(index,row) {
+          this.$prompt('请输入要改变的信息:', '修改', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+          }).then(({value}) => {
           this.$message({
             type: 'success',
             message: '已保存: '
           });
-          var Expenditure={"id": row.id, "dealMoney": value}
+          var Expenditure={"id": row.id, "dealMoney": value};
           console.log(Expenditure);
           this.$axios({
             method: "put",
-            url:this.HOST + '/sun/expenditure/info',
+            url:this.HOST + '/nlpdr/save',
             data:{
               Expenditure
             },
@@ -126,7 +123,6 @@
               'Content-Type': 'application/json;charset=UTF-8'
             }
           });
-          // this.$axios.put(this.HOST + '/sun/expenditure/info', Expenditure,);
         }).catch(() => {
           this.$message({
             type: 'info',
@@ -135,7 +131,7 @@
         });
       },
       postForm() {
-        const url = this.HOST + '/sun/expenditure/info';
+        const url = this.HOST + '/nlpdr/save';
         this.dialogFormVisible = false;
 
         var params = new URLSearchParams();
@@ -167,11 +163,12 @@
 
       },
       handleDelete(index, row) {
+        alert("已删除！");
         console.log(index, row);
         var expenditureId = row.id;
         console.log(expenditureId);
         this.$axios
-          .delete(this.HOST + '/sun/expenditure/info/' + expenditureId)
+          .delete(this.HOST + '/nlpdr/delete/' + expenditureId)
           .then(res => {
             console.log(res);
             this.tableData.splice(index, 1)
@@ -187,10 +184,7 @@
       }
     },
     created() {
-      this.$axios.get(this.HOST+'/nlpke/expenditure/info')
-
-      //then获取成功；response成功后的返回值（对象）
-
+      this.$axios.get(this.HOST+'/nlpdr/all')
         .then(response=>{
 
           console.log(response);
@@ -198,9 +192,6 @@
           this.tableData=response.data;
 
         })
-
-        //获取失败
-
         .catch(error=>{
 
           console.log(error);
