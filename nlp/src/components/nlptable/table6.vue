@@ -135,9 +135,9 @@
         this.dialogFormVisible = false;
 
         var params = new URLSearchParams();
-        params.append('goodName', this.epdtForm.goodName);
-        params.append('dealByPersonName', this.epdtForm.dealByPersonName);
-        params.append('dealMoney', this.epdtForm.dealMoney);
+        params.append('text', this.Form.text);
+        params.append('relation', this.Form.relation);
+        params.append('annotated', this.Form.annotated);
 
         console.log(params);
         this.$axios({
