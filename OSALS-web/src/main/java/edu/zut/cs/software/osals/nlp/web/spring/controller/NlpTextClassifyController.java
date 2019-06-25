@@ -56,6 +56,7 @@ public class NlpTextClassifyController extends GenericController<NlpTextClassify
         nlpTextClassify.setClassify2(this.nlpTextClassifyManager.EasyDL(text));
         nlpTextClassify.setClassify3(this.nlpTextClassifyManager.EasyDL(text));
         nlpTextClassify.setClassify4(this.nlpTextClassifyManager.EasyDL(text));
+        this.nlpTextClassifyManager.save(nlpTextClassify);
         System.out.println(text);
     }
 
