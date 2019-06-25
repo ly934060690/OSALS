@@ -133,9 +133,9 @@
         this.dialogFormVisible = false;
 
         var params = new URLSearchParams();
-        params.append('goodName', this.epdtForm.goodName);
-        params.append('dealByPersonName', this.epdtForm.dealByPersonName);
-        params.append('dealMoney', this.epdtForm.dealMoney);
+        params.append('sentence', this.Form.sentence);
+        params.append('hanLP', this.Form.hanLP);
+        params.append('stanford', this.Form.stanford);
 
         console.log(params);
         this.$axios({
@@ -161,12 +161,11 @@
 
       },
       handleDelete(index, row) {
-        alert("此功能暂未完成。。");
         console.log(index, row);
         var expenditureId = row.id;
         console.log(expenditureId);
         this.$axios
-          .delete(this.HOST + '/nlper/delete/' + expenditureId)
+          .delete(this.HOST + '/nlperg/delete/' + expenditureId)
           .then(res => {
             console.log(res);
             this.tableData.splice(index, 1)
