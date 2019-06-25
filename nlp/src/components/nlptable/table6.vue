@@ -9,7 +9,7 @@
       width="200">
       <template slot-scope="scope">
         <i class="el-icon-time"></i>
-        <span style="margin-left: 10px">{{ getLocalTime(scope.row.datecreated) }}</span>
+        <span style="margin-left: 10px">{{date}}</span>
       </template>
     </el-table-column>
 
@@ -135,9 +135,9 @@
         this.dialogFormVisible = false;
 
         var params = new URLSearchParams();
-        params.append('goodName', this.epdtForm.goodName);
-        params.append('dealByPersonName', this.epdtForm.dealByPersonName);
-        params.append('dealMoney', this.epdtForm.dealMoney);
+        params.append('text', this.Form.text);
+        params.append('relation', this.Form.relation);
+        params.append('annotated', this.Form.annotated);
 
         console.log(params);
         this.$axios({
@@ -181,8 +181,12 @@
       //时间戳转化
       getLocalTime(nS) {
         return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+      },
+      timeNow () {
+        return moment().utc().format('YYYY年MM月DD日') + ' ' + moment().utc().format('dddd')
       }
     },
+
     created() {
       this.$axios.get(this.HOST+'/nlpdr/all')
         .then(response=>{
@@ -200,6 +204,17 @@
 
         })
 
-    }
+    },
+    mounted() {
+      let _this = this;
+      this.timer = setInterval(function() {
+        _this.date = new Date().toLocaleString();
+      });
+    },
+    beforeDestroy: function() {
+      if (this.timer) {
+        clearInterval(this.timer);
+      }
+    },
   }
 </script>
