@@ -60,6 +60,18 @@
                 </el-menu-item-group>
               </el-submenu>
 
+              <el-submenu index="3">
+                <template slot="title">
+                  <i class="el-icon-location"></i>
+                  <span>实体部分</span>
+                </template>
+                <el-menu-item-group >
+                  <el-menu-item index="/components/table/goods">货物</el-menu-item>
+                  <el-menu-item index="/components/table/warehouse">仓库</el-menu-item>
+
+                </el-menu-item-group>
+              </el-submenu>
+
               <el-menu-item index="4" disabled>
                 <i class="el-icon-document"></i>
                 <span slot="title">危险</span>
