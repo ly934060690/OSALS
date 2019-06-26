@@ -20,8 +20,10 @@ import table5 from '@/components/nlptable/table5'
 import table6 from '@/components/nlptable/table6'
 import table7 from '@/components/nlptable/table7'
 
+import goods from '@/components/table/goods'
+import warehouse from '@/components/table/warehouse'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -121,5 +123,15 @@ export default new Router({
       name:'table7',
       component:table7
     },
+    {
+      path:'/components/table/goods',
+      name:'goods',
+      component:goods
+    },
+    {
+      path:'/components/table/warehouse',
+      name:'warehouse',
+      component:warehouse
+    }
   ]
 })
