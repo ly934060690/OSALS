@@ -22,6 +22,8 @@ import table7 from '@/components/nlptable/table7'
 
 import goods from '@/components/table/goods'
 import warehouse from '@/components/table/warehouse'
+import expresscar from '@/components/table/expresscar'
+import enwrap from '@/components/table/enwrap'
 
 Vue.use(Router);
 
@@ -132,6 +134,16 @@ export default new Router({
       path:'/components/table/warehouse',
       name:'warehouse',
       component:warehouse
+    },
+    {
+      path:'/components/table/enwrap',
+      name:'enwrap',
+      component:enwrap
+    },
+    {
+      path:'/components/table/expresscar',
+      name:'expresscar',
+      component:expresscar
     }
   ]
 })
