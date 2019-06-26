@@ -56,4 +56,35 @@ public class GoodsManagerImpl extends GenericManagerImpl<Goods, Long> implements
         List<Goods> result = this.dao.findAll(example);
         return result;
     }
+
+//    /**
+//     * 这里是查询所有
+//     * @return
+//     */
+//    @Override
+//    public  List<Goods> findAll(){
+//        return goodsDao.findAll();
+//    }
+//
+//    /**
+//     * 这里是按照id值来删除
+//     * @param id
+//     */
+//    @Override
+//    public void  deleteById(Long id)
+//    {
+//        goodsDao.deleteById(id);
+//    }
+//
+//    /**
+//     * 保存&增加
+//     * @param goods
+//     * @return
+//     */
+//    @Override
+//    public Goods save(Goods goods)
+//    {
+//        return goodsDao.save(goods);
+//    }
+
 }

@@ -14,7 +14,11 @@ import java.util.List;
 public interface GoodsManager extends GenericManager<Goods, Long> {
 
 
-    List<Goods> findAll();
+//    void deleteById(Long id);
+//
+//    List<Goods> findAll();
+//
+//    Goods save(Goods goods);
 
     List<Goods> findByGoodNames(String GoodNames);
 

@@ -2,8 +2,8 @@ package edu.zut.cs.software.osals.warehouse.service.impl;
 
 
 import edu.zut.cs.software.base.service.impl.GenericTreeManagerImpl;
-import edu.zut.cs.software.osals.shop.domain.Shop;
 import edu.zut.cs.software.osals.warehouse.dao.WarehouseDao;
+import edu.zut.cs.software.osals.warehouse.daomain.Goods;
 import edu.zut.cs.software.osals.warehouse.daomain.Warehouse;
 import edu.zut.cs.software.osals.warehouse.service.WarehouseManager;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +43,34 @@ public class WarehouseManagerImpl extends GenericTreeManagerImpl<Warehouse, Long
         return result;
     }
 
+//    /**
+//     * 这里是查询所有
+//     * @return List<Warehouse>
+//     */
+//    @Override
+//    public  List<Warehouse> findAll(){
+//        return warehouseDao.findAll();
+//    }
+//
+//    /**
+//     * 这里是按照id值来删除
+//     * @param id
+//     */
+//    @Override
+//    public void deleteById(Long id)
+//    {
+//        warehouseDao.deleteById(id);
+//    }
+//
+//    /**
+//     * 保存&增加
+//     * @param warehouse
+//     * @return Warehouse
+//     */
+//    @Override
+//    public Warehouse save(Warehouse warehouse)
+//    {
+//        return warehouseDao.save(warehouse);
+//    }
 
 }
