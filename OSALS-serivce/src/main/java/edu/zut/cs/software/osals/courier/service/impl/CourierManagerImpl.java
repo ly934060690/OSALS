@@ -18,6 +18,11 @@ import java.util.List;
 public class CourierManagerImpl extends GenericManagerImpl<Courier,Long> implements CourierManager {
 
     CourierDao courierDao;
+    @Autowired
+    public void setCourierDao(CourierDao courierDao) {
+        this.courierDao = courierDao;
+        this.dao = this.courierDao;
+    }
 
     @Override
     public List<Courier> findbyCouriername(String couriername) {
@@ -35,10 +40,6 @@ public class CourierManagerImpl extends GenericManagerImpl<Courier,Long> impleme
         return result;
     }
 
-    @Autowired
-    public void setCourierDao(CourierDao courierDao) {
-        this.courierDao = courierDao;
-        this.dao = this.courierDao;
-    }
+
 
 }

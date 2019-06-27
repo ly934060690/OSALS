@@ -24,6 +24,10 @@ import goods from '@/components/table/goods'
 import warehouse from '@/components/table/warehouse'
 import expresscar from '@/components/table/expresscar'
 import enwrap from '@/components/table/enwrap'
+import ordergoods   from '@/components/table/ordergoods'
+import order from '@/components/table/order'
+import courier from "@/components/table/courier";
+import courierCompany from "@/components/table/courierCompany";
 
 Vue.use(Router);
 
@@ -154,6 +158,16 @@ export default new Router({
       path:'/components/table/ordergoods',
       name:'ordergoods',
       component:ordergoods
+    },
+    {
+      path:'/components/table/courier',
+      name:'courier',
+      component:courier
+    },
+    {
+      path:'/components/table/courierCompany',
+      name:'courierCompany',
+      component:courierCompany
     },
   ]
 })

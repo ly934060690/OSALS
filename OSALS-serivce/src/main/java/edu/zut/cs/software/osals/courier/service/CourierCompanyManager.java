@@ -8,5 +8,4 @@ import java.util.List;
 public interface CourierCompanyManager extends GenericTreeManager<CourierCompany,Long> {
 
     List<CourierCompany> FindByName(String Name);
-
 }

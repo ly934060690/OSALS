@@ -72,6 +72,8 @@
                   <el-menu-item index="/components/table/enwrap">包裹</el-menu-item>
                   <el-menu-item index="/components/table/order">订单</el-menu-item>
                   <el-menu-item index="/components/table/ordergoods">订单中的商品</el-menu-item>
+                  <el-menu-item index="/components/table/courier">快递员</el-menu-item>
+                  <el-menu-item index="/components/table/courierCompany">快递公司</el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
 

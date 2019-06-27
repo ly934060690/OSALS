@@ -7,7 +7,6 @@ import java.util.List;
 
 public interface CourierManager extends GenericManager<Courier,Long> {
 
-    List<Courier> findAll();
 
     List<Courier> findbyCouriername(String couriername);
 }

@@ -35,6 +35,5 @@ public class CourierCompanyManagerImpl extends GenericTreeManagerImpl<CourierCom
         Example<CourierCompany> example = Example.of(queryObject, exampleMatcher);
         List<CourierCompany> result = this.dao.findAll(example);
         return result;
-
     }
 }

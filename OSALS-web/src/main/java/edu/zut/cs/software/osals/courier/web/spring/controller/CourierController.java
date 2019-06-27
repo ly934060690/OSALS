@@ -5,10 +5,7 @@ import edu.zut.cs.software.osals.courier.domain.Courier;
 import edu.zut.cs.software.osals.courier.service.CourierManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,33 +14,31 @@ import java.util.List;
 public class CourierController extends GenericController<Courier,Long, CourierManager> {
 
     CourierManager courierManager;
+    Courier courier=new Courier();
+
     @Autowired
-    public void setCourierManager(CourierManager courierManager)
-    {
-        this.courierManager=courierManager;
+    public void setCourierManager(CourierManager courierManager) {
+        this.courierManager = courierManager;
         this.manager=this.courierManager;
     }
 
-    @ResponseBody
-    @GetMapping(value = "all", produces = "application/json;charset=utf-8")
-    public List<Courier> findAllCourier() {
-        return this.manager.findAll();
-
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+    public @ResponseBody List<Courier> getAll(){
+        List<Courier> all = this.manager.findAll();
+        return all;
     }
 
+    @RequestMapping(path = "/save",method = RequestMethod.POST,produces = "application/json;charset=utf-8")
+    public @ResponseBody Courier saveOne( Courier courier){
+        this.manager.save(courier);
+        return courier;
+    }
 
-    //    @ResponseBody
-//    @GetMapping(value = "id/{id}",produces = "application/json;charset=utf-8")
-//    public Courier getCourierCompany(@PathVariable("id")Long id)
-//    {
-//        Courier result=this.courierManager.findById(id);
-//        System.out.println(result);
-//        return result;
-//    }
-    @ResponseBody
-    @GetMapping(value = "name/{name}",produces = "application/json;charset=utf-8")
-    public List<Courier> getCourier(@PathVariable String name) {
-        return this.courierManager.findbyCouriername(name);
+    @RequestMapping(path = "/delete/{id}",method = RequestMethod.DELETE,produces = "application/json;charset=utf-8")
+    public  @ResponseBody Courier  deleteOne(@PathVariable(value = "id") Long id) {
+        Courier courier = this.manager.findById(id);
+        this.manager.delete(id);
+        return courier;
     }
 }
 
