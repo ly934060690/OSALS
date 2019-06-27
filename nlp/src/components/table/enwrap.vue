@@ -14,7 +14,7 @@
     </el-table-column>
 
     <el-table-column
-      label="enwrapNames"
+      label="EnwrapNames"
       width="180">
       <template slot-scope="scope">
         <!--<i class="el-icon-time"></i>-->
@@ -36,7 +36,7 @@
       width="160">
       <template slot-scope="scope">
         <!--<i class="el-icon-time"></i>-->
-        <span style="margin-left: 10px">{{ scope.row.expresscar.name }}</span>
+        <span style="margin-left: 10px">{{ scope.row.expresscarname }}</span>
       </template>
     </el-table-column>
 
@@ -48,24 +48,6 @@
 
         <!-- Form -->
         <el-button type="primary" @click="dialogFormVisible = true" size="mini">新增</el-button>
-
-        <el-dialog title="包裹" :visible.sync="dialogFormVisible">
-          <el-form :model="Form">
-            <el-form-item label="name" :label-width="formLabelWidth">
-              <el-input v-model="Form.name" autocomplete="off"></el-input>
-            </el-form-item>
-            <el-form-item label="telephone" :label-width="formLabelWidth">
-              <el-input v-model="Form.telephone" autocomplete="off"></el-input>
-            </el-form-item>
-            <el-form-item label="expresscar" :label-width="formLabelWidth">
-              <el-input v-model="Form.expresscar.name" autocomplete="off"></el-input>
-            </el-form-item>
-          </el-form>
-          <div slot="footer" class="dialog-footer">
-            <el-button @click="dialogFormVisible = false">取 消</el-button>
-            <el-button type="primary" @click="postForm">确 定</el-button>
-          </div>
-        </el-dialog>
 
         <el-button
           size="mini"
@@ -87,69 +69,51 @@
   export default {
     data() {
       return {
-        tableData: [],
+        tableData: [{
+          name: 'enwrap_0',
+          telephone: '011111',
+          expresscarname:'expressCar_0_0'
+        }, {
+          name: 'enwrap_1',
+          telephone: '111111',
+          expresscarname:'expressCar_0_0'
+        }, {
+          name: 'enwrap_0',
+          telephone: '011111',
+          expresscarname:'expressCar_0_1'
+        }, {
+          name: 'enwrap_1',
+          telephone: '111111',
+          expresscarname:'expressCar_0_1'
+        }, {
+            name: 'enwrap_0',
+            telephone: '011111',
+            expresscarname:'expressCar_1_0'
+          }, {
+            name: 'enwrap_1',
+            telephone: '111111',
+            expresscarname:'expressCar_1_0'
+          }, {
+            name: 'enwrap_0',
+            telephone: '011111',
+            expresscarname:'expressCar_1_1'
+          }, {
+            name: 'enwrap_1',
+            telephone: '111111',
+            expresscarname:'expressCar_1_1'
+          }],
         dialogTableVisible: false,
         dialogFormVisible: false,
-        Form: {
-          name: '',
-          telephone: '',
-          expresscar:{
-            name: '',
-          }
-        },
         formLabelWidth: '120px',
         date:new Date(),
       }
     },
     methods: {
-      update(index,row) {
-
-      },
-      postForm() {
-        const url = this.HOST + '/enwrap/save';
-        this.dialogFormVisible = false;
-
-        var params = new URLSearchParams();
-        params.append('name', this.Form.name);
-        params.append('telephone', this.Form.telephone);
-        params.append('expresscar.name', this.Form.expresscar.name);
-
-        console.log(params);
-        this.$axios({
-          method: 'post',
-          url: url,
-          data: params
-        })
-
-          .then(function (response) {
-
-            console.log(response);
-
-          })
-
-          .catch(function (error) {
-
-            console.log(error);
-
-          });
-      },
       handleEdit(index, row) {
         console.log(index, row);
-
       },
       handleDelete(index, row) {
         console.log(index, row);
-        var Id = row.id;
-        console.log(Id);
-        this.$axios
-          .delete(this.HOST + '/enwrap/delete/' + Id)
-          .then(res => {
-            console.log(res);
-            this.tableData.splice(index, 1)
-          })
-          .catch(err => {
-            console.log(err);
-          });
       },
 
       //时间戳转化
@@ -159,24 +123,6 @@
       timeNow () {
         return moment().utc().format('YYYY年MM月DD日') + ' ' + moment().utc().format('dddd')
       }
-    },
-
-    created() {
-      this.$axios.get(this.HOST+'/enwrap/all')
-        .then(response=>{
-
-          console.log(response);
-
-          this.tableData=response.data;
-
-        })
-        .catch(error=>{
-
-          console.log(error);
-
-          alert('网络错误，不能访问');
-
-        })
     },
     mounted() {
       let _this = this;
