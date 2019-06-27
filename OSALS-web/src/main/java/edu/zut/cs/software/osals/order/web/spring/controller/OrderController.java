@@ -6,10 +6,7 @@ import edu.zut.cs.software.osals.order.domain.Order;
 import edu.zut.cs.software.osals.order.service.OrderManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -67,6 +64,39 @@ import java.util.List;
     {
         System.out.println("跳轉頁面");
         return "index";
+    }
+
+    /**
+     * 这里是打开关键词提取的页面后就直接执行了getall方法
+     * @return List<Warehouse>
+     */
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+    public @ResponseBody List<Order> getAll(){
+        List<Order> all = this.manager.findAll();
+        return all;
+    }
+
+    /**
+     * 这里是删除，依据了在数据库中的id的值来查找 这个已经ok了
+     * @param id
+     * @return
+     */
+    @RequestMapping(path = "/delete/{id}",method = RequestMethod.DELETE,produces = "application/json;charset=utf-8")
+    public  @ResponseBody Order deleteOne(@PathVariable(value = "id") Long id) {
+        Order order = this.orderManager.findById(id);
+        this.manager.delete(id);
+        return order;
+    }
+
+    /**
+     * 这里对应前端的部分是新增
+     * @param order
+     * @return order
+     */
+    @RequestMapping(path = "/save",method = RequestMethod.POST,produces = "application/json;charset=utf-8")
+    public @ResponseBody Order saveOne( Order order){
+        this.manager.save(order);
+        return order;
     }
 
     }

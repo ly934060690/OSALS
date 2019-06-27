@@ -144,6 +144,16 @@ export default new Router({
       path:'/components/table/expresscar',
       name:'expresscar',
       component:expresscar
-    }
+    },
+    {
+      path:'/components/table/order',
+      name:'order',
+      component:order
+    },
+    {
+      path:'/components/table/ordergoods',
+      name:'ordergoods',
+      component:ordergoods
+    },
   ]
 })

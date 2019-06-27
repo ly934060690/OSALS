@@ -70,6 +70,8 @@
                   <el-menu-item index="/components/table/warehouse">仓库</el-menu-item>
                   <el-menu-item index="/components/table/expresscar">快递车</el-menu-item>
                   <el-menu-item index="/components/table/enwrap">包裹</el-menu-item>
+                  <el-menu-item index="/components/table/order">订单</el-menu-item>
+                  <el-menu-item index="/components/table/ordergoods">订单中的商品</el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
 
