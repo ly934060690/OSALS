@@ -22,8 +22,9 @@ import java.util.List;
 
         OrderManager orderManager;
         @Autowired
-        public void setShopManager(OrderManager orderManager) {
+        public void setOrderManager(OrderManager orderManager) {
             this.orderManager = orderManager;
+             this.manager = this.orderManager;
         }
 
         @RequestMapping("/index")
