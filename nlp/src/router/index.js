@@ -28,6 +28,8 @@ import ordergoods   from '@/components/table/ordergoods'
 import order from '@/components/table/order'
 import courier from "@/components/table/courier";
 import courierCompany from "@/components/table/courierCompany";
+import car from "@/components/table/car";
+import driver from "@/components/table/driver";
 
 Vue.use(Router);
 
@@ -168,6 +170,16 @@ export default new Router({
       path:'/components/table/courierCompany',
       name:'courierCompany',
       component:courierCompany
+    },
+    {
+      path:'/components/table/car',
+      name:'car',
+      component:car
+    },
+    {
+      path:'/components/table/driver',
+      name:'driver',
+      component:driver
     },
   ]
 })
