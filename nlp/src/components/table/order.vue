@@ -127,7 +127,7 @@
       },
       timeNow () {
         return moment().utc().format('YYYY年MM月DD日') + ' ' + moment().utc().format('dddd')
-      }
+    }
     },
 
     created() {
