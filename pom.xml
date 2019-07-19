@@ -13,7 +13,6 @@
         <module>OSALS-dao</module>
         <module>OSALS-serivce</module>
         <module>OSALS-web</module>
-        <module>OSALS-client</module>
     </modules>
 
 
@@ -107,22 +106,6 @@
             <version>3.9.2</version>
             <classifier>models-chinese</classifier>
         </dependency>
-		 <dependency>
-            <groupId>edu.stanford.nlp</groupId>
-            <artifactId>stanford-segmenter-3.9.2</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>edu.stanford.nlp</groupId>
-            <artifactId>stanford-ner</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>edu.stanford.nlp</groupId>
-            <artifactId>stanford-ner-3.9.2</artifactId>
-            <version>1.0</version>
-        </dependency>
-
 
         <!--Ansj fenci-->
         <!--ansjsun sunjian-->
@@ -162,9 +145,23 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-nop</artifactId>
             <version>1.7.2</version>
-
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>edu.stanford.nlp</groupId>-->
+            <!--<artifactId>stanford-segmenter-3.9.2</artifactId>-->
+            <!--<version>3.9.2</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>edu.stanford.nlp</groupId>-->
+            <!--<artifactId>stanford-ner</artifactId>-->
+            <!--<version>1.0</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>edu.stanford.nlp</groupId>-->
+            <!--<artifactId>stanford-ner-3.9.2</artifactId>-->
+            <!--<version>1.0</version>-->
+        <!--</dependency>-->
 
 
 

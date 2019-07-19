@@ -75,7 +75,6 @@ public class StudentController extends GenericController<Student, Long, StudentM
 	@ResponseBody
 	@GetMapping(value = "getBySno",produces = "application/json;charset=utf-8")
 	public String getStudentDemo(@RequestParam("sno") String sno) {
-
 		return JSON.toJSONString(this.manager.findBySno(sno));
 	}
 

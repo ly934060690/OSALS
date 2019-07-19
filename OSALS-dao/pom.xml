@@ -67,9 +67,9 @@
                         <vendor>hibernate</vendor>
                         <packageToScan>edu.zut.cs.software</packageToScan>
                         <jdbcDriver>com.mysql.cj.jdbc.Driver</jdbcDriver>
-                        <jdbcUrl>jdbc:mysql://202.196.37.168:3306/OSALS</jdbcUrl>
-                        <jdbcUser>student</jdbcUser>
-                        <jdbcPassword>Student_123456</jdbcPassword>
+                        <jdbcUrl>jdbc:mysql://10.36.31.162:3306/OSALS</jdbcUrl>
+                        <jdbcUser>root</jdbcUser>
+                        <jdbcPassword>123456</jdbcPassword>
                         <!--这里注释掉了-->
                         <!--<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>-->
                         <properties>

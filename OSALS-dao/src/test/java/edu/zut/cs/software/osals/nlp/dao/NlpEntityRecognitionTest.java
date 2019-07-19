@@ -17,7 +17,7 @@ public class NlpEntityRecognitionTest extends GenericDaoTestCase<Long, edu.zut.c
     }
 
     @Test
-    @Rollback(false)
+//    @Rollback(false)
     public void TestEntityRecoginition()
     {
         NlpEntityRecognition nlpEntityRecognition=new NlpEntityRecognition();

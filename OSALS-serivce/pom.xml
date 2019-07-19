@@ -91,14 +91,12 @@
                 <artifactId>trove</artifactId>
                 <version>1.0.2</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/gnu.trove/trove -->
-            <dependency>
-                <groupId>gnu.trove</groupId>
-                <artifactId>trove</artifactId>
-                <version>3.0.3</version>
-            </dependency>
-
-
+            <!--&lt;!&ndash; https://mvnrepository.com/artifact/gnu.trove/trove &ndash;&gt;-->
+            <!--<dependency>-->
+                <!--<groupId>gnu.trove</groupId>-->
+                <!--<artifactId>trove</artifactId>-->
+                <!--<version>3.0.3</version>-->
+            <!--</dependency>-->
 
         </dependencies>
 
