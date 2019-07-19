@@ -60,7 +60,7 @@
                 </el-menu-item-group>
               </el-submenu>
 
-              <el-submenu index="3">
+              <el-submenu index="4">
                 <template slot="title">
                   <i class="el-icon-location"></i>
                   <span>实体部分</span>
@@ -79,12 +79,12 @@
                 </el-menu-item-group>
               </el-submenu>
 
-              <el-menu-item index="4" disabled>
+              <el-menu-item index="5" disabled>
                 <i class="el-icon-document"></i>
                 <span slot="title">危险</span>
               </el-menu-item>
 
-              <el-menu-item index="5">
+              <el-menu-item index="6">
                 <i class="el-icon-setting"></i>
                 <span slot="title">关于</span>
               </el-menu-item>
