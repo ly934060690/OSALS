@@ -1,3 +1,0 @@
-JDBC-Java DataBase Connectivity   Java数据库连接
-SQL-Structured Query Language
-API-Application Programming interface 应用程序编程接口
